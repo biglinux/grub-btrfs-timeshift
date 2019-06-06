@@ -1,0 +1,10 @@
+Package: grub-btrfs-timeshift
+Version: 1.0.0-1big1
+Depends: timeshift, grub-btrfs
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Installed-Size:28
+Description: Automatic run grub-btrfs after run timeshift
+

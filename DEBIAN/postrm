@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+package_name=grub-btrfs-timeshift
+case "$1" in
+  remove)
+    dpkg-divert --package "$package_name" --rename --remove "/usr/bin/timeshift"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/bin/timeshift-gtk"
+    ;;
+  purge)
+    dpkg-divert --package "$package_name" --rename --remove "/usr/bin/timeshift"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/bin/timeshift-gtk"
+;;
+esac
+exit 0
