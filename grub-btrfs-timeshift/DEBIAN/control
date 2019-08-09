@@ -5,6 +5,6 @@ Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
 Section: admin
 Priority: optional
-Installed-Size:240
+Installed-Size:28
 Description: Automatic run grub-btrfs after run timeshift
 
