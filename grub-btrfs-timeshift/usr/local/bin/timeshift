@@ -1,5 +1,6 @@
-/usr/share/dpkgdivert/grub-btrfs-timeshift/usrbintimeshift $*
+#!/bin/bash
 
+/usr/bin/timeshift $*
 
 if [ "$(grep grep grub-btrfs /boot/grub/grub.cfg)" = "" ]; then
     update-grub

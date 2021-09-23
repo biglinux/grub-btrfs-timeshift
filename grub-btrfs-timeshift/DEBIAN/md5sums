@@ -1,7 +1,0 @@
-681a78c9d50dfb0a80f5717c20e12aa6  DEBIAN/dpkg-divert
-c4ae2d3d9ea0c644d88e6453785abc28  DEBIAN/preinst
-d5af63b6c59e2a4238612761b38d2118  DEBIAN/postrm
-d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-f94a253dfb3714e7ac4009475aae2409  DEBIAN/control
-3cc3a176d7c63b55474133cb41eed9f2  usr/bin/timeshift
-f032a49370f7bb5a272c27960579a9c1  usr/bin/timeshift-gtk

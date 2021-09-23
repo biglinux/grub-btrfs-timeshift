@@ -1,2 +1,0 @@
-/usr/share/dpkgdivert/grub-btrfs-timeshift/usrbintimeshift-gtk $*
-/etc/grub.d/41_snapshots-btrfs
