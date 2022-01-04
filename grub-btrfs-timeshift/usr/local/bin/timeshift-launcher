@@ -1,10 +1,4 @@
 #!/bin/bash
 
-pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/bin/timeshift-gtk $*
-
-if [ "$(grep grep grub-btrfs /boot/grub/grub.cfg)" = "" ]; then
-    update-grub
-else
-    /etc/grub.d/41_snapshots-btrfs
-fi
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/local/bin/timeshift-gtk $*
 

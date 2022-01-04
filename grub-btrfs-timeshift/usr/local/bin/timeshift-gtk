@@ -2,7 +2,7 @@
 
 /usr/bin/timeshift-gtk $*
 
-if [ "$(grep grep grub-btrfs /boot/grub/grub.cfg)" = "" ]; then
+if [ "$(grep grub-btrfs /boot/grub/grub.cfg)" = "" ]; then
     update-grub
 else
     /etc/grub.d/41_snapshots-btrfs
