@@ -1,7 +1,7 @@
 # Maintainer: Bruno Goncalves <bigbruno@gmail.com>
 
 pkgname=grub-btrfs-timeshift
-pkgver=$(date +%y.%m.%d)
+pkgver=$(date +%Y.%m.%d)
 pkgrel=$(date +%H%M)
 arch=('any')
 license=('GPL')
