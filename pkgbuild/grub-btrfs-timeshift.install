@@ -1,0 +1,33 @@
+## arg 1:  the new package version
+pre_install() {
+	systemctl stop grub-btrfsd.service
+}
+
+## arg 1:  the new package version
+post_install() {
+
+    sed -i '/ExecStart=/s/.*/ExecStart=\/usr\/bin\/grub-btrfsd --syslog --timeshift-auto/' /usr/lib/systemd/system/grub-        btrfsd.service
+    systemctl enable --now grub-btrfsd.service
+
+}
+
+## arg 2:  the old package version
+#pre_upgrade() {
+	# do something here
+#}
+
+## arg 2:  the old package version
+post_upgrade() {
+	post_install
+}
+
+## arg 1:  the old package version
+#pre_remove() {
+	# do something here
+#}
+
+## arg 1:  the old package version
+#post_remove() {
+	# do something here
+#}
+ 

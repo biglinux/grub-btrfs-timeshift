@@ -7,9 +7,12 @@ arch=('any')
 license=('GPL')
 url="https://github.com/biglinux/grub-btrfs-timeshift"
 pkgdesc="Fix to timeshift and refresh grub configuration after new snapshot"
-depends=('timeshift')
+depends=('timeshift' 'inotify-tools' 'grub-btrfs')
 source=("git+https://github.com/biglinux/grub-btrfs-timeshift.git")
 md5sums=(SKIP)
+if [ -e "${pkgname}.install" ];then
+    install=${pkgname}.install
+fi
 
 package() {
     # Verify default folder

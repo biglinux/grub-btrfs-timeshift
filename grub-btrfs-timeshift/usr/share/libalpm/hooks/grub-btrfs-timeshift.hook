@@ -1,0 +1,10 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = grub-btrfs
+
+[Action]
+Description = Fix to timeshift and refresh grub configuration after new snapshot
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/grub-btrfs-timeshift
