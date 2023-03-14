@@ -2,6 +2,6 @@
 
 systemctl stop grub-btrfsd.service
 
-sed -i '/ExecStart=/s/.*/ExecStart=\/usr\/bin\/grub-btrfsd --syslog --timeshift-auto/' /usr/lib/systemd/system/grub-        btrfsd.service
+sed -i '/ExecStart=/s/.*/ExecStart=\/usr\/bin\/grub-btrfsd --syslog --timeshift-auto/' /usr/lib/systemd/system/grub-btrfsd.service
 
 systemctl enable --now grub-btrfsd.service
