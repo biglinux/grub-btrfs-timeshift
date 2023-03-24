@@ -1,0 +1,8 @@
+#!/bin/bash
+
+/usr/bin/timeshift-gtk $*
+
+# if [ "$(grep grub-btrfs /boot/grub/grub.cfg)" != "" ]; then
+#     /etc/grub.d/41_snapshots-btrfs
+# fi
+
