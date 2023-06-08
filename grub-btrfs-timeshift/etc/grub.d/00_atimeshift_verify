@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# Written by Bruno Goncalves (www.biglinux.com.br) 
+#
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# this only disable grub-mkconfig inner timeshift snapshot to not make problematic config
+
+prefix="/usr"
+exec_prefix="/usr"
+datarootdir="/usr/share"
+grub_lang=`echo $LANG | cut -d . -f 1`
+
+export TEXTDOMAIN=grub
+export TEXTDOMAINDIR="${datarootdir}/locale"
+
+. "$pkgdatadir/grub-mkconfig_lib"
+
+if [ "$(btrfs subvolume show /  2> /dev/null | head -n1 | grep 'timeshift-btrfs')" != "" ]; then
+
+    echo "Running in Timeshift snapshot, grub-mkconfig disabled."
+    grub_warn "$(gettext "Running in Timeshift snapshot, grub-mkconfig disabled.")"
+    exit 1
+
+fi
