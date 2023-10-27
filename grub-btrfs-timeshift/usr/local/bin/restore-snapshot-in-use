@@ -1,7 +1,15 @@
 #!/bin/bash
 
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=grub-btrfs-timeshift
+
+txtNotDetect=$"Snapshot não detectado, você realmente inicializa no snapshot?"
+txtOk=$"Concluído!"
+txtRestoration=$"Restauração"
+txtYes=$"Se você realmente deseja restaurar o script de chamada com --yes."
+
 if ! grep -q  'timeshift-btrfs/snapshots' /proc/cmdline ; then
-    echo "Snapshot not detected, you really boot in snapshot?"
+    echo "$txtNotDetect"
     exit
 fi
 
@@ -11,6 +19,7 @@ if [[ "$1" = "--yes" ]]; then
 
     # Restore using Timeshift
     yes "" |  /usr/bin/timeshift  --restore --snapshot "$actualSnapshot" --scripted --yes
+    zenity --info --title="$txtRestoration" --text="$txtOk"
 else
-    echo "If you really wanna restore call script with --yes"
+    echo "$txtYes"
 fi
