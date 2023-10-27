@@ -1,0 +1,51 @@
+#!/bin/bash
+
+snapDate=$(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\1|' /proc/cmdline)
+
+
+read -d $"" ShowText <<EOF
+<link rel="stylesheet" href="css/beer.min.css">
+<link rel="stylesheet" href="css/biglinux.css">
+<body class="light">
+<article class="no-padding secondary-container">
+  <article class="secondary-container">
+    <header class="no-padding secondary-container">
+      <nav class="no-padding">
+        <i></i>
+        <h5 class="small max center-align">
+          <p class="bold">Snapshot ($snapDate)</p>
+        </h5>
+        <a href="/execute close$">
+          <button class="circle transparent">
+            <i>close</i>
+          </button>
+        </a>
+      </nav>
+    </header>
+    <div class="row">
+      <img class="circle large" src="/usr/share/icons/biglinux-icons-material/scalable/apps/timeshift.svg">
+      <div class="max">
+        <h6 class="small bold">Timeshift</h6>
+        <p>O sistema foi iniciado a partir de um ponto de restauração, também chamado de Snapshot. Se você deseja tornar esse ponto de restauração o padrão de início do sistema, clique no botão Restaurar ou utilize o Timeshift para mais opções.</p>
+      </div>
+    </div>
+    <div class="medium-space"></div>  
+        <main class="row center-align max">
+          <button class="border tertiary-border tertiary-text" onclick="_run('timeshift-launcher')">
+            <i>settings</i>
+            <span>TIMESHIFT</span>
+          </button>
+          <button class="border tertiary tertiary" onclick="_run('bigsudo restore-snapshot-in-use --yes')">
+            <i>install_desktop</i>
+            <span>RESTAURAR</span>
+          </button>
+        </main>
+  </article>
+  <label class="switch icon extra large-margin fixed bottom right">
+    <a class="chip circle" onclick="ui('mode', ui('mode') == 'dark' ? 'light' : 'dark')"><i>dark_mode</i></a>
+  </label>
+</article>
+  <script type="module" src="js/beer.min.js"></script>
+</body>  
+EOF
+echo "$ShowText" 
