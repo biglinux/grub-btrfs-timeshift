@@ -6,6 +6,7 @@ snapDate=$(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\1|' /proc/cmdline)
 
 txtRestore=$"RESTAURAR"
 txtReboot=$"REINICIAR"
+txtSnapshot=$"Snapshot"
 
 if [ ! -e "$HOME/.config/bigbashview_lightmode" ]; then
 	# Read background color
@@ -43,7 +44,7 @@ $changeBody
       <nav class="no-padding">
         <i></i>
         <h5 class="small max center-align">
-          <p class="bold">Snapshot ($snapDate)</p>
+          <p class="bold">$txtSnapshot ($snapDate)</p>
         </h5>
         <a href="/execute close$">
           <button class="circle transparent">
