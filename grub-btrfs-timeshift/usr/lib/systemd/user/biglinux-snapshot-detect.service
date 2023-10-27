@@ -4,8 +4,8 @@ PartOf=graphical-session.target
 
 [Service]
 Type=oneshot
+ExecStartPre=/bin/sleep 15
 ExecStart=/usr/local/bin/biglinux-snapshot-detect
-
 
 [Install]
 WantedBy=default.target

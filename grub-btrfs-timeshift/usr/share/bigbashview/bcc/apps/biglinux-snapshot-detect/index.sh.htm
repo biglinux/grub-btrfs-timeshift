@@ -1,12 +1,26 @@
 #!/bin/bash
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=grub-btrfs-timeshift
 
 snapDate=$(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\1|' /proc/cmdline)
 
+txtRestore=$"RESTAURAR"
+txtReboot=$"REINICIAR"
+
+if [[ "$execute" = "restore" ]]; then
+  bigsudo restore-snapshot-in-use --yes
+  msg=$"Restauração concluída! Reinicie o sistema."
+  button="<button class=\"border tertiary tertiary\" onclick=\"_run('reboot')\"><i>install_desktop</i><span>$txtReboot</span></button>"  
+else
+  msg=$"O sistema foi iniciado a partir de um ponto de restauração, também chamado de Snapshot. Se você deseja tornar esse ponto de restauração o padrão de início do sistema, clique no botão Restaurar ou utilize o Timeshift para mais opções."
+  button="<button class=\"border tertiary tertiary\" onclick=\"document.getElementById('DivOverlay').classList.add('active');window.location.href='index.sh.htm?execute=restore';\"><i>install_desktop</i><span>$txtRestore</span></button>"
+fi
 
 read -d $"" ShowText <<EOF
 <link rel="stylesheet" href="css/beer.min.css">
 <link rel="stylesheet" href="css/biglinux.css">
 <body class="light">
+<div class="overlay" id="DivOverlay"></div>
 <article class="no-padding secondary-container">
   <article class="secondary-container">
     <header class="no-padding secondary-container">
@@ -26,7 +40,7 @@ read -d $"" ShowText <<EOF
       <img class="circle large" src="/usr/share/icons/biglinux-icons-material/scalable/apps/timeshift.svg">
       <div class="max">
         <h6 class="small bold">Timeshift</h6>
-        <p>O sistema foi iniciado a partir de um ponto de restauração, também chamado de Snapshot. Se você deseja tornar esse ponto de restauração o padrão de início do sistema, clique no botão Restaurar ou utilize o Timeshift para mais opções.</p>
+        <p>$msg</p>
       </div>
     </div>
     <div class="medium-space"></div>  
@@ -35,10 +49,7 @@ read -d $"" ShowText <<EOF
             <i>settings</i>
             <span>TIMESHIFT</span>
           </button>
-          <button class="border tertiary tertiary" onclick="_run('bigsudo restore-snapshot-in-use --yes')">
-            <i>install_desktop</i>
-            <span>RESTAURAR</span>
-          </button>
+          $button
         </main>
   </article>
   <label class="switch icon extra large-margin fixed bottom right">
