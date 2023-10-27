@@ -8,8 +8,8 @@ txtRestore=$"RESTAURAR"
 txtReboot=$"REINICIAR"
 
 if [[ "$execute" = "restore" ]]; then
-  bigsudo restore-snapshot-in-use --yes
-  msg=$"Restauração concluída! Reinicie o sistema."
+  bigsudo /usr/local/bin/restore-snapshot-in-use --yes 2> /dev/null > /dev/null
+  msg=$"Restauração concluída! <br>Reinicie o sistema."
   button="<button class=\"border tertiary tertiary\" onclick=\"_run('reboot')\"><i>install_desktop</i><span>$txtReboot</span></button>"  
 else
   msg=$"O sistema foi iniciado a partir de um ponto de restauração, também chamado de Snapshot. Se você deseja tornar esse ponto de restauração o padrão de início do sistema, clique no botão Restaurar ou utilize o Timeshift para mais opções."
@@ -22,7 +22,7 @@ read -d $"" ShowText <<EOF
 <body class="light">
 <div class="overlay" id="DivOverlay"></div>
 <article class="no-padding secondary-container">
-  <article class="secondary-container">
+  <main>
     <header class="no-padding secondary-container">
       <nav class="no-padding">
         <i></i>
@@ -51,10 +51,11 @@ read -d $"" ShowText <<EOF
           </button>
           $button
         </main>
-  </article>
+  
   <label class="switch icon extra large-margin fixed bottom right">
     <a class="chip circle" onclick="ui('mode', ui('mode') == 'dark' ? 'light' : 'dark')"><i>dark_mode</i></a>
   </label>
+  </main>
 </article>
   <script type="module" src="js/beer.min.js"></script>
 </body>  
