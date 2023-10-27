@@ -7,6 +7,23 @@ snapDate=$(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\1|' /proc/cmdline)
 txtRestore=$"RESTAURAR"
 txtReboot=$"REINICIAR"
 
+if [ ! -e "$HOME/.config/bigbashview_lightmode" ]; then
+	# Read background color
+	KDE_BG_COLOR="$(kreadconfig5 --group "Colors:Window" --key BackgroundNormal | sed 's|^|(|g;s|,|+|g;s|$|)/3|g' | bc)"
+	# Verify if is light or not
+	if [ "$KDE_BG_COLOR" -gt "127" ]; then
+        changeBody="<body class=light>"
+	else
+		changeBody="<body class=dark>"
+	fi
+else
+	if [ "$(cat "$HOME/.config/bigbashview_lightmode")" = "1" ]; then
+		changeBody="<body class=light>"
+	else
+		changeBody="<body class=dark>"
+	fi
+fi
+
 if [[ "$execute" = "restore" ]]; then
   bigsudo /usr/local/bin/restore-snapshot-in-use --yes 2> /dev/null > /dev/null
   msg=$"Restauração concluída! <br>Reinicie o sistema.<br><br>"
@@ -19,10 +36,8 @@ fi
 read -d $"" ShowText <<EOF
 <link rel="stylesheet" href="css/beer.min.css">
 <link rel="stylesheet" href="css/biglinux.css">
-<body class="light">
+$changeBody
 <article class="small-blur no-padding secondary-container">
-  
-  
 <article class="secondary-container">
     <header class="no-padding secondary-container">
       <nav class="no-padding">
@@ -53,8 +68,6 @@ read -d $"" ShowText <<EOF
           $button
         </main>
 </article>  
-  
-    
     <label class="switch icon extra large-margin fixed bottom right">
         <a class="chip circle" onclick="ui('mode', ui('mode') == 'dark' ? 'light' : 'dark')"><i>dark_mode</i></a>
     </label>
