@@ -8,7 +8,7 @@ post_install() {
 
     sed -i '/ExecStart=/s/.*/ExecStart=\/usr\/bin\/grub-btrfsd --syslog --timeshift-auto/' /usr/lib/systemd/system/grub-btrfsd.service
     systemctl enable --now grub-btrfsd.service
-
+	systemctl --global enable biglinux-snapshot-detect
 }
 
 ## arg 2:  the old package version
@@ -22,9 +22,9 @@ post_upgrade() {
 }
 
 ## arg 1:  the old package version
-#pre_remove() {
-	# do something here
-#}
+pre_remove() {
+	systemctl --global disable biglinux-snapshot-detect
+}
 
 ## arg 1:  the old package version
 #post_remove() {

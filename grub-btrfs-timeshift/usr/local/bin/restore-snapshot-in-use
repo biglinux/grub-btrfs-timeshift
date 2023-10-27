@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if ! grep -q  'timeshift-btrfs/snapshots' /proc/cmdline ; then
+    echo "Snapshot not detected, you really boot in snapshot?"
+    exit
+fi
+
+if [[ "$1" = "--yes" ]]; then
+    # Detect snapshot date
+    actualSnapshot="$(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\1|' /proc/cmdline)"
+
+    # Restore using Timeshift
+    yes "" |  /usr/bin/timeshift  --restore --snapshot "$actualSnapshot" --scripted --yes
+else
+    echo "If you really wanna restore call script with --yes"
+fi

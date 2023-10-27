@@ -1,0 +1,14 @@
+#!/bin/bash 
+if grep -q timeshift /proc/cmdline; then
+    #Translation
+    export TEXTDOMAINDIR="/usr/share/locale"
+    export TEXTDOMAIN=grub-btrfs-timeshift
+
+    Title=$"BigLinux Snapshot Detect"
+
+    cd /usr/share/bigbashview/bcc/apps/biglinux-snapshot-detect/
+
+    bbv -s 530x300 -w frameless -c transparent index.sh.htm -n "$Title" -i /usr/share/icons/biglinux-icons-material/scalable/apps/timeshift.svg
+else
+    echo $"Snapshot não encontrado!"
+fi 

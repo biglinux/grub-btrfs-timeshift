@@ -1,0 +1,10 @@
+[Unit]
+Description=BigLinux Snapshot Detect
+PartOf=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/biglinux-snapshot-detect
+
+[Install]
+WantedBy=default.target
