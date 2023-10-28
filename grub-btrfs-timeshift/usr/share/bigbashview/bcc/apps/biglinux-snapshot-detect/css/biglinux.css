@@ -6,7 +6,7 @@ body.light {
   --on-primary-container:#001e30;
   --secondary:#f7f7f7;
   --on-secondary:#3c3a3a;
-  --secondary-container:#d3e5f5;
+  --secondary-container:#d4d5d7;
   --on-secondary-container:#0c1d29;
   --tertiary:#3a6df0;
   --on-tertiary:#fff;
@@ -36,7 +36,7 @@ body.light {
   --surface-container:#edeef1;
   --surface-container-high:#e8e8eb;
   --surface-container-highest:#e2e2e5;
-  --overlay: rgb(0 0 0 / 0.5);
+  --overlay: rgb(0 0 0 /1);
   --active: rgb(0 0 0 / 0.1);
   --elevate1: 0 0.125rem 0.125rem 0 rgb(0 0 0 / 0.32);
   --elevate2: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 0.4);
@@ -51,7 +51,7 @@ body.dark {
   --on-primary-container:#cae6ff;
   --secondary:#21242d;
   --on-secondary:#ffce45;
-  --secondary-container:#384956;
+  --secondary-container:#2f333e;
   --on-secondary-container:#d3e5f5;
   --tertiary:#3a6df0;
   --on-tertiary:#fff;
