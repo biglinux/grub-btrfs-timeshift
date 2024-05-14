@@ -10,6 +10,10 @@
 # Licensed by GPL V2 or greater
 ##################################
 
+if grep -q 'org.biglinux.batteryandperformance' ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&  [[ -e /usr/sbin/kwriteconfig6 ]]; then
+    /usr/share/bigbashview/apps/biglinux-themes-gui/after-plasma6-update-dialog.sh
+fi
+
 if grep -q timeshift /proc/cmdline; then
     #Translation
     export TEXTDOMAINDIR="/usr/share/locale"
