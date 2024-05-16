@@ -10,7 +10,7 @@
 # Licensed by GPL V2 or greater
 ##################################
 
-if grep -q 'org.biglinux.batteryandperformance' ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&  [[ -e /usr/sbin/kwriteconfig6 ]]; then
+if grep -q 'org.biglinux.batteryandperformance' ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&  [[ -e /usr/sbin/kwriteconfig6 ]] || grep -q '1' ~/.config/enable_latte 2> /dev/null &&  [[ -e /usr/sbin/kwriteconfig6 ]]; then
     /usr/share/bigbashview/apps/biglinux-themes-gui/after-plasma6-update-dialog.sh
 fi
 
