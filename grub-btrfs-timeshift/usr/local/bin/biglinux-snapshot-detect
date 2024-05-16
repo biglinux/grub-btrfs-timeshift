@@ -10,17 +10,17 @@
 # Licensed by GPL V2 or greater
 ##################################
 
-if grep -q 'org.biglinux.batteryandperformance' ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&  [[ -e /usr/sbin/kwriteconfig6 ]] || grep -q '1' ~/.config/enable_latte 2> /dev/null &&  [[ -e /usr/sbin/kwriteconfig6 ]]; then
-    /usr/share/bigbashview/apps/biglinux-themes-gui/after-plasma6-update-dialog.sh
-fi
+# if grep -q 'org.biglinux.batteryandperformance' ~/.config/plasma-org.kde.plasma.desktop-appletsrc &&  [[ -e /usr/sbin/kwriteconfig6 ]] || grep -q '1' ~/.config/enable_latte 2> /dev/null &&  [[ -e /usr/sbin/kwriteconfig6 ]]; then
+#     /usr/share/bigbashview/apps/biglinux-themes-gui/after-plasma6-update-dialog.sh
+# fi
 
-if [[ ! -e "$HOME/.local/share/konsole/BigLinux Dark.colorscheme" ]]; then
-    cp "/etc/skel/.local/share/konsole/BigLinux Dark.colorscheme" "$HOME/.local/share/konsole/BigLinux Dark.colorscheme"
-fi
-
-if [[ ! -e "$HOME/.local/share/konsole/Bash.profile" ]]; then
-    cp "/etc/skel/.local/share/konsole/Bash.profile" "$HOME/.local/share/konsole/Bash.profile"
-fi
+# if [[ ! -e "$HOME/.local/share/konsole/BigLinux Dark.colorscheme" ]]; then
+#     cp "/etc/skel/.local/share/konsole/BigLinux Dark.colorscheme" "$HOME/.local/share/konsole/BigLinux Dark.colorscheme"
+# fi
+# 
+# if [[ ! -e "$HOME/.local/share/konsole/Bash.profile" ]]; then
+#     cp "/etc/skel/.local/share/konsole/Bash.profile" "$HOME/.local/share/konsole/Bash.profile"
+# fi
 
 
 if grep -q timeshift /proc/cmdline; then
