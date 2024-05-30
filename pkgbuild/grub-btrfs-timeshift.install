@@ -8,7 +8,7 @@ post_install() {
 
     sed -i '/ExecStart=/s/.*/ExecStart=\/usr\/bin\/grub-btrfsd --syslog --timeshift-auto/' /usr/lib/systemd/system/grub-btrfsd.service
     systemctl enable --now grub-btrfsd.service
-	systemctl --global enable biglinux-snapshot-detect
+    systemctl --global enable biglinux-snapshot-detect
 }
 
 ## arg 2:  the old package version
