@@ -15,10 +15,10 @@ export TEXTDOMAIN=grub-btrfs-timeshift
 
 snapDate=$(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\1|' /proc/cmdline)
 
-txtRestore=$"RESTAURAR"
-txtReboot=$"REINICIAR"
+txtRestore=$"RESTORE"
+txtReboot=$"REBOOT"
 txtSnapshot=$"Snapshot"
-txtBack=$"Voltar"
+txtBack=$"Back"
 
 if [ ! -e "$HOME/.config/bigbashview_lightmode" ]; then
 	# Read background color
@@ -38,14 +38,14 @@ else
 fi
 
 if [[ "$execute" = "restore" ]]; then
-  pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true "/usr/local/bin/restore-snapshot-in-use" --yes 2> /dev/null > /dev/null
+  pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=6 KDE_FULL_SESSION=true "/usr/local/bin/restore-snapshot-in-use" --yes 2> /dev/null > /dev/null
   if [[ "$?" = "0" ]]; then
-      msg=$"Restauração concluída! <br>Reinicie o sistema.<br><br>"
+      msg=$"Restoration completed! <br>Reboot the system.<br><br>"
       fontSize=" bold large-text"
       button="<button class=\"border tertiary tertiary\" onclick=\"_run('reboot')\"><i>install_desktop</i><span>$txtReboot</span></button>"  
       timeshiftName="<br>"
   else
-      msg=$"A restauração não foi concluída!"
+  msg=$"The restoration was not completed!"
       fontSize=" bold large-text"
       button="<button class=\"border tertiary tertiary\" onclick=\"window.location.href='index.sh.htm';\"><i>arrow_back</i><span>$txtBack</span></button>"
       timeshiftName=""
@@ -53,7 +53,7 @@ if [[ "$execute" = "restore" ]]; then
 else
   timeshiftName="Timeshift"
   fontSize="large-text"
-  msg=$"O sistema foi iniciado a partir de um ponto de restauração, também chamado de Snapshot.<br><br>Se você deseja tornar esse ponto de restauração o padrão de início do sistema, clique no botão Restaurar ou utilize o Timeshift para mais opções."
+  msg=$"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this restore point the default boot option, click the Restore button or use Timeshift for more options."
   button="<button class=\"border tertiary tertiary\" data-ui=\"#overlay\" onclick=\"window.location.href='index.sh.htm?execute=restore';\"><i>install_desktop</i><span>$txtRestore</span></button>"
   timeshiftButton="<button class=\"border tertiary-border tertiary-text\" onclick=\"_run('timeshift-launcher')\"><i>settings</i><span>TIMESHIFT</span></button>"
 fi

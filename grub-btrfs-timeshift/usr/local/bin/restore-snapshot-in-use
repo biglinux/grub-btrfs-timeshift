@@ -13,10 +13,11 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=grub-btrfs-timeshift
 
-txtNotDetect=$"Snapshot não detectado, você realmente inicializa no snapshot?"
-txtOk=$"Concluído!"
-txtRestoration=$"Restauração"
-txtYes=$"Se você realmente deseja restaurar o script de chamada com --yes."
+txtNotDetect=$"Snapshot not detected, did you really boot into the snapshot?"
+txtOk=$"Completed!"
+txtRestoration=$"Restoration"
+txtYes=$"If you really want to restore, call the script with --yes."
+
 
 if ! grep -q  'timeshift-btrfs/snapshots' /proc/cmdline ; then
     echo "$txtNotDetect"

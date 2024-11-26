@@ -32,7 +32,7 @@ if grep -q timeshift /proc/cmdline; then
 
     cd /usr/share/bigbashview/bcc/apps/biglinux-snapshot-detect/
 
-    bbv -s 580x380 -w framelesstop -c transparent index.sh.htm -n "$Title" -i /usr/share/icons/biglinux-icons-material/scalable/apps/timeshift.svg
+    bbv -s 580x380 -w framelesstop -c transparent index.sh.htm -n "$Title" -i $(geticons timeshift)
 else
     echo $"Snapshot não encontrado!"
 fi 
