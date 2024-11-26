@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "BigLinux Snapshot Detecteren"
+
+msgid "Snapshot não encontrado!"
+msgstr "Snapshot niet gevonden!"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "Snapshot niet gedetecteerd, bent u echt opgestart in de snapshot?"
+
+msgid "Completed!"
+msgstr "Voltooid!"
+
+msgid "Restoration"
+msgstr "Herstel"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "Als je echt wilt herstellen, bel het script met --yes."
+
+msgid "RESTORE"
+msgstr "HERSTELLEN"
+
+msgid "REBOOT"
+msgstr "HERSTARTEN"
+
+msgid "Snapshot"
+msgstr "Momentopname"
+
+msgid "Back"
+msgstr "Terug"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "Herstel voltooid! <br>Herstart het systeem.<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "De herstelactie is niet voltooid!"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"Het systeem is opgestart vanaf een herstelpunt, ook wel een Snapshot genoemd.<br><br>Als u dit "
+"herstelpunt de standaard opstartoptie wilt maken, klik dan op de Herstelknop of gebruik Timeshift "
+"voor meer opties."

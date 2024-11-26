@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "BigLinux Snimanje Otkrivanja"
+
+msgid "Snapshot não encontrado!"
+msgstr "Snapshot nije pronađen!"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "Snapshot nije otkriven, jeste li se stvarno pokrenuli u snimci?"
+
+msgid "Completed!"
+msgstr "Završeno!"
+
+msgid "Restoration"
+msgstr "Obnova"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "Ako stvarno želite vratiti, pozovite skriptu s --yes."
+
+msgid "RESTORE"
+msgstr "OBNOVI"
+
+msgid "REBOOT"
+msgstr "REBOOTIRAJ"
+
+msgid "Snapshot"
+msgstr "Snimka"
+
+msgid "Back"
+msgstr "Natrag"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "Obnova završena! <br>Ponovno pokrenite sustav.<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "Obnova nije dovršena!"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"Sustav je pokrenut s točke vraćanja, koja se također naziva Snimak.<br><br>Ako želite ovu točku "
+"vraćanja postaviti kao zadanu opciju pokretanja, kliknite gumb Vrati ili upotrijebite Timeshift za "
+"više opcija."

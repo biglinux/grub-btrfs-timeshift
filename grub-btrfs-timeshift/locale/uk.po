@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "BigLinux Снімок Виявлення"
+
+msgid "Snapshot não encontrado!"
+msgstr "Snapshot not found!"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "Снімок не виявлено, ви дійсно завантажилися в снімок?"
+
+msgid "Completed!"
+msgstr "Завершено!"
+
+msgid "Restoration"
+msgstr "Відновлення"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "Якщо ви дійсно хочете відновити, викликайте скрипт з --yes."
+
+msgid "RESTORE"
+msgstr "ВІДНОВИТИ"
+
+msgid "REBOOT"
+msgstr "ПЕРЕЗАВАННЯ"
+
+msgid "Snapshot"
+msgstr "Знімок"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "Відновлення завершено! <br>Перезавантажте систему.<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "Відновлення не було завершено!"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"Система була завантажена з точки відновлення, також званої Знімком.<br><br>Якщо ви хочете зробити "
+"цю точку відновлення стандартним варіантом завантаження, натисніть кнопку Відновити або "
+"використайте Timeshift для отримання додаткових опцій."

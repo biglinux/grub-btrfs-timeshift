@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "BigLinux Anlık Görüntü Tespiti"
+
+msgid "Snapshot não encontrado!"
+msgstr "Anlık görüntü bulunamadı!"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "Anlık görüntü tespit edilmedi, gerçekten anlık görüntüye mi önyükleme yaptınız?"
+
+msgid "Completed!"
+msgstr "Tamamlandı!"
+
+msgid "Restoration"
+msgstr "Onarım"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "Gerçekten geri yüklemek istiyorsanız, script'i --yes ile çağırın."
+
+msgid "RESTORE"
+msgstr "GERİ YÜKLE"
+
+msgid "REBOOT"
+msgstr "YENİDEN BAŞLAT"
+
+msgid "Snapshot"
+msgstr "Anlık görüntü"
+
+msgid "Back"
+msgstr "Geri dön"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "Geri yükleme tamamlandı! <br>Sistemi yeniden başlatın.<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "Geri yükleme tamamlanmadı!"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"Sistem, bir geri yükleme noktasından, diğer adıyla Anlık Görüntü'den başlatıldı.<br><br>Bu geri "
+"yükleme noktasını varsayılan önyükleme seçeneği yapmak istiyorsanız, Geri Yükle düğmesine tıklayın "
+"veya daha fazla seçenek için Timeshift'i kullanın."

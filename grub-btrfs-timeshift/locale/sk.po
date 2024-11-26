@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "Detekcia snímky BigLinux"
+
+msgid "Snapshot não encontrado!"
+msgstr "Snapshot nenájdete!"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "Momentka nebola zistená, naozaj ste sa spustili do momentky?"
+
+msgid "Completed!"
+msgstr "Dokončené!"
+
+msgid "Restoration"
+msgstr "Obnova"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "Ak chcete naozaj obnoviť, zavolajte skript s --yes."
+
+msgid "RESTORE"
+msgstr "OBNOVIŤ"
+
+msgid "REBOOT"
+msgstr "REŠTARTovať"
+
+msgid "Snapshot"
+msgstr "Momentka"
+
+msgid "Back"
+msgstr "Späť"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "Obnova dokončená! <br>Reštartujte systém.<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "Obnova nebola dokončená!"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"Systém bol spustený z bodu obnovenia, ktorý sa nazýva aj Snapshot.<br><br>Ako chcete tento bod "
+"obnovenia nastaviť ako predvolenú možnosť spustenia, kliknite na tlačidlo Obnoviť alebo použite "
+"Timeshift pre ďalšie možnosti."

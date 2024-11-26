@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "Ανίχνευση BigLinux Snapshot"
+
+msgid "Snapshot não encontrado!"
+msgstr "Δεν βρέθηκε στιγμιότυπο!"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "Δεν ανιχνεύθηκε στιγμιότυπο, μήπως πραγματικά εκκινήσατε στο στιγμιότυπο;"
+
+msgid "Completed!"
+msgstr "Ολοκληρώθηκε!"
+
+msgid "Restoration"
+msgstr "Αποκατάσταση"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "Αν πραγματικά θέλεις να αποκαταστήσεις, κάλεσε το σενάριο με --yes."
+
+msgid "RESTORE"
+msgstr "ΑΠΟΚΑΤΑΣΤΑΣΗ"
+
+msgid "REBOOT"
+msgstr "ΕΠΑΝΕΚΚΙΝΗΣΗ"
+
+msgid "Snapshot"
+msgstr "Στιγμιότυπο"
+
+msgid "Back"
+msgstr "Πίσω"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "Η αποκατάσταση ολοκληρώθηκε! <br>Επανεκκινήστε το σύστημα.<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "Η αποκατάσταση δεν ολοκληρώθηκε!"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"Το σύστημα εκκινήθηκε από ένα σημείο επαναφοράς, που ονομάζεται επίσης Στιγμιότυπο.<br><br>Εάν "
+"θέλετε να κάνετε αυτό το σημείο επαναφοράς την προεπιλεγμένη επιλογή εκκίνησης, κάντε κλικ στο "
+"κουμπί Επαναφορά ή χρησιμοποιήστε το Timeshift για περισσότερες επιλογές."

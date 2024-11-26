@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "BigLinux Snapshot Tunnistus"
+
+msgid "Snapshot não encontrado!"
+msgstr "Snapshotia ei löytynyt!"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "Snapshotia ei havaittu, käynnistitkö todella snapshotista?"
+
+msgid "Completed!"
+msgstr "Valmis!"
+
+msgid "Restoration"
+msgstr "Palautus"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "Jos todella haluat palauttaa, kutsu skriptiä --yes."
+
+msgid "RESTORE"
+msgstr "PALAA KUNTOON"
+
+msgid "REBOOT"
+msgstr "KÄYNNISTÄ UUDELLEEN"
+
+msgid "Snapshot"
+msgstr "Kuvakaappaus"
+
+msgid "Back"
+msgstr "Takaisin"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "Palautus valmis! <br>Käynnistä järjestelmä uudelleen.<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "Palautusta ei saatu päätökseen!"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"Järjestelmä käynnistettiin palautuspisteestä, jota kutsutaan myös tilannekuvaksi.<br><br>Jos haluat "
+"tehdä tästä palautuspisteestä oletuskäynnistysvaihtoehdon, napsauta Palauta-painiketta tai käytä "
+"Timeshiftia saadaksesi lisää vaihtoehtoja."

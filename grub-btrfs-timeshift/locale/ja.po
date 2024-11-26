@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "BigLinux スナップショット検出"
+
+msgid "Snapshot não encontrado!"
+msgstr "スナップショットが見つかりません！"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "スナップショットが検出されませんでした。本当にスナップショットにブートしましたか？"
+
+msgid "Completed!"
+msgstr "完了！"
+
+msgid "Restoration"
+msgstr "復元"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "本当に復元したい場合は、--yesオプションを付けてスクリプトを呼び出してください。"
+
+msgid "RESTORE"
+msgstr "復元"
+
+msgid "REBOOT"
+msgstr "再起動"
+
+msgid "Snapshot"
+msgstr "スナップショット"
+
+msgid "Back"
+msgstr "戻る"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "復元が完了しました！<br>システムを再起動してください。<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "復元は完了していませんでした！"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"システムは、スナップショットとも呼ばれる復元ポイントから起動されました。<br><br>この復元ポイントをデフォルトのブートオプションにしたい場合は、復元ボタンをクリックするか、より多くのオプションの"
+"ためにTimeshiftを使用してください。"

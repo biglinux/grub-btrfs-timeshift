@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "BigLinux 快照检测"
+
+msgid "Snapshot não encontrado!"
+msgstr "快照未找到！"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "未检测到快照，您真的启动到了快照吗？"
+
+msgid "Completed!"
+msgstr "完成！"
+
+msgid "Restoration"
+msgstr "恢复"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "如果您确实想要恢复，请使用 --yes 调用脚本。"
+
+msgid "RESTORE"
+msgstr "恢复"
+
+msgid "REBOOT"
+msgstr "重启"
+
+msgid "Snapshot"
+msgstr "快照"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "恢复完成！<br>重启系统。<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "恢复未完成！"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr "系统是从还原点启动的，也称为快照。<br><br>如果您想将此还原点设置为默认启动选项，请单击还原按钮或使用 Timeshift 以获取更多选项。"

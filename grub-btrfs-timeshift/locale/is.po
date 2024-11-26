@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "BigLinux Skýrsla Ummyndunar"
+
+msgid "Snapshot não encontrado!"
+msgstr "Snapshot ekki fundin!"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "Ekkert mynd var ekki greind, ertu virkilega að ræsa í myndinni?"
+
+msgid "Completed!"
+msgstr "Completed!"
+
+msgid "Restoration"
+msgstr "Endurreisn"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "Ef þú vilt virkilega endurheimta, kallaðu skriftuna með --já."
+
+msgid "RESTORE"
+msgstr "ENDURTTA"
+
+msgid "REBOOT"
+msgstr "ENDURTÖKUN"
+
+msgid "Snapshot"
+msgstr "Skýrsla"
+
+msgid "Back"
+msgstr "Til baka"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "Endurheimt lokið! <br>Endurræstu kerfið.<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "Endurheimt var ekki lokið!"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"Kerfið var ræst úr endurheimtarpunkti, einnig kallað Snapshot.<br><br>Ef þú vilt gera þennan "
+"endurheimtarpunkt að sjálfgefna ræsingarvalkostinum, smelltu á Endurheimta hnappinn eða notaðu "
+"Timeshift fyrir fleiri valkosti."

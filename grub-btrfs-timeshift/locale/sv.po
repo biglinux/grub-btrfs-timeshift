@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the grub-btrfs-timeshift package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: grub-btrfs-timeshift\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "BigLinux Snapshot Detect"
+msgstr "BigLinux Snapshot Detektera"
+
+msgid "Snapshot não encontrado!"
+msgstr "Snapshot inte hittad!"
+
+msgid "Snapshot not detected, did you really boot into the snapshot?"
+msgstr "Snapshot upptäcktes inte, har du verkligen startat i snapshot?"
+
+msgid "Completed!"
+msgstr "Slutfört!"
+
+msgid "Restoration"
+msgstr "Återställning"
+
+msgid "If you really want to restore, call the script with --yes."
+msgstr "Om du verkligen vill återställa, ring skriptet med --yes."
+
+msgid "RESTORE"
+msgstr "ÅTERSTÄLLA"
+
+msgid "REBOOT"
+msgstr "OMSTARTA"
+
+msgid "Snapshot"
+msgstr "Ögonblicksbild"
+
+msgid "Back"
+msgstr "Tillbaka"
+
+msgid "Restoration completed! <br>Reboot the system.<br><br>"
+msgstr "Återställning slutförd! <br>Starta om systemet.<br><br>"
+
+msgid "The restoration was not completed!"
+msgstr "Återställningen slutfördes inte!"
+
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
+"restore point the default boot option, click the Restore button or use Timeshift for more options."
+msgstr ""
+"Systemet startades från en återställningspunkt, även kallad en Snapshot.<br><br>Om du vill göra "
+"denna återställningspunkt till standardstartalternativet, klicka på Återställ-knappen eller använd "
+"Timeshift för fler alternativ."
