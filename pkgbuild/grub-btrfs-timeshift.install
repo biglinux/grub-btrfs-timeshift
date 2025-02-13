@@ -40,6 +40,11 @@ post_install() {
         sed -i '591s/{$/ --class snapshot {/' /etc/grub.d/41_snapshots-btrfs
     fi
     
+    linha35=$(sed -n '35p' /etc/grub.d/30_uefi-firmware)
+    if ! contem_classe "$linha35" "bios"; then
+        sudo sed -i '35s/{$/ --class bios {/' /etc/grub.d/30_uefi-firmware
+    fi    
+    
     sudo sed -i 's/^#GRUB_BTRFS_TITLE_FORMAT=("date" "snapshot" "type" "description")/GRUB_BTRFS_TITLE_FORMAT=("date" "type" "description")/' /etc/default/grub-btrfs/config
     sudo sed -i 's/GRUB_BTRFS_IGNORE_SPECIFIC_PATH=("@")/GRUB_BTRFS_IGNORE_SPECIFIC_PATH=("Manjaro")/' /etc/default/grub-btrfs/config
     
