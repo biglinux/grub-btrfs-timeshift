@@ -40,6 +40,8 @@ msgid "If you really want to restore, call the script with --yes."
 msgstr "If you really want to restore, call the script with --yes."
 
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid ""
 "\n"
 "          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/"
@@ -52,21 +54,31 @@ msgstr ""
 "        "
 
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid "Timeshift"
 msgstr "Timeshift"
 
+#
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
 msgid "File:"
 msgstr "File:"
 
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid "Date:"
 msgstr "Date:"
 
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid "Time:"
 msgstr "Time:"
 
+#
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
 msgid ""
 "\n"
