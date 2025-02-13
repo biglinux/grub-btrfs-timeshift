@@ -38,7 +38,10 @@ post_install() {
     fi
     if ! contem_classe "$linha591" "snapshot"; then
         sed -i '591s/{$/ --class snapshot {/' /etc/grub.d/41_snapshots-btrfs
-    fi    
+    fi
+    
+    sudo sed -i 's/^#GRUB_BTRFS_TITLE_FORMAT=("date" "snapshot" "type" "description")/GRUB_BTRFS_TITLE_FORMAT=("date" "type" "description")/' /etc/default/grub-btrfs/config
+    
     update-grub
 }
 
