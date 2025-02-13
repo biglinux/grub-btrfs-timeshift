@@ -33,7 +33,7 @@ if grep -q timeshift /proc/cmdline; then
     cd /usr/share/bigbashview/apps/biglinux-snapshot-detect/
 
     #bbv -s 580x380 -w framelesstop -c transparent index.sh.htm -n "$Title" -i $(geticons timeshift)
-    bigbashview -s 600x430 -n "$Title" -p biglinux-snapshot-detect -c transparent -w framelesstop index.html -i $(geticons timeshift)
+    bigbashview -s 640x430 -n "$Title" -p biglinux-snapshot-detect -c transparent -w framelesstop index.html -i $(geticons timeshift)
 else
     echo $"Snapshot não encontrado!"
 fi 

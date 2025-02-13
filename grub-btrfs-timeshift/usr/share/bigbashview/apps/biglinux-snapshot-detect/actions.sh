@@ -4,7 +4,7 @@ SERVICE="restore-snapshot-in-use"
 
 case "$1" in
     restore)
-        echo "Starting the restoration process..."
+#         echo "Starting the restoration process..."
         pkexec env DISPLAY="$DISPLAY" XAUTHORITY="$XAUTHORITY" KDE_SESSION_VERSION=6 KDE_FULL_SESSION=true "/usr/local/bin/$SERVICE" --yes > /dev/null 2>&1
 
         if [[ $? -eq 0 ]]; then
@@ -15,11 +15,11 @@ case "$1" in
         fi
         ;;
     reboot)
-        echo "Restarting the system..."
-        pkexec reboot
+#         echo "Restarting the system..."
+        reboot
         ;;
     *)
-        echo "Usage: $0 {restore|reboot}"
+        #echo "Usage: $0 {restore|reboot}"
         exit 1
         ;;
 esac

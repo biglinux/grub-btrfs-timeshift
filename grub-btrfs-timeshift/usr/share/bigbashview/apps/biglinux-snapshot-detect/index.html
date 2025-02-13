@@ -65,7 +65,7 @@
       <div x-data="restoreSystem">
         <!-- Botão dinâmico -->
         <button @click="handleButtonClick" :disabled="isRestoring || isRebooting">
-          <span x-text="buttonText"></span>
+          <span x-text="buttonText" stonejs></span>
         </button>
         <div x-html="message"></div>
       </div>
@@ -94,7 +94,7 @@
             this.message = text;
 
             // Verifica se a restauração foi bem-sucedida
-            if (text.includes('sucesso')) {
+            if (text.includes('successfully')) {
               this.isRestored = true; // Marca a restauração como concluída
               this.buttonText = 'Restart'; // Altera o texto do botão
             }
@@ -115,13 +115,13 @@
             const response = await fetch('actions.sh?reboot');
             const text = await response.text();
 
-            if (text.includes('sucesso')) {
+            if (text.includes('successfully')) {
               this.message = '<div class="snackbar primary top active" stonejs>Restarting the system...</div>';
             } else {
               this.message = '<div class="snackbar error top active" stonejs>Error restarting system.</div>';
             }
           } catch (error) {
-            console.error('Erro ao reiniciar o sistema:', error);
+            console.error('Error restarting system.:', error);
             this.message = '<div class="snackbar error top active" stonejs>Error restarting system.</div>';
           } finally {
             this.isRebooting = false;
