@@ -50,10 +50,14 @@ msgstr  ""
 #
 # #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid   "\n"
         "          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' /proc/cmdline) ?-->\n"
         "        "
 msgstr  ""
+#
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
 # #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
@@ -74,8 +78,12 @@ msgstr  ""
 #
 # #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid   "File:"
 msgstr  ""
+#
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
 # #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
@@ -96,8 +104,12 @@ msgstr  ""
 #
 # #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid   "Time:"
 msgstr  ""
+#
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
 # #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
