@@ -39,6 +39,8 @@ msgid   "If you really want to restore, call the script with --yes."
 msgstr  ""
 
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid   "\n"
         "          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-"
         "btrfs/snapshots/([^ @/]*).*|\\1|' /proc/cmdline) ?-->\n"
@@ -46,21 +48,31 @@ msgid   "\n"
 msgstr  ""
 
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid   "Timeshift"
 msgstr  ""
 
+#
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
 msgid   "File:"
 msgstr  ""
 
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid   "Date:"
 msgstr  ""
 
 #
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+#
 msgid   "Time:"
 msgstr  ""
 
+#
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
 #
 msgid   "\n"
         "          The system was booted from a restore point, also called a "
