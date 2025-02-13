@@ -9,6 +9,37 @@ post_install() {
     sed -i '/ExecStart=/s/.*/ExecStart=\/usr\/bin\/grub-btrfsd --syslog --timeshift-auto/' /usr/lib/systemd/system/grub-btrfsd.service
     systemctl enable --now grub-btrfsd.service
     systemctl --global enable biglinux-snapshot-detect
+    
+    contem_classe() {
+        local linha="$1"
+        local classe="$2"
+        if echo "$linha" | grep -q -- "--class $classe"; then
+            return 0
+        else
+            return 1
+        fi
+    }
+    linha353=$(sed -n '353p' /etc/grub.d/10_linux)
+    if ! contem_classe "$linha353" "advanced"; then
+        sed -i '353s/\(\$menuentry_id_option .*\) {/\1 --class advanced {/' /etc/grub.d/10_linux
+    fi
+    linha193=$(sed -n '193p' /etc/grub.d/41_snapshots-btrfs)
+    linha194=$(sed -n '194p' /etc/grub.d/41_snapshots-btrfs)
+    linha503=$(sed -n '503p' /etc/grub.d/41_snapshots-btrfs)
+    linha591=$(sed -n '591p' /etc/grub.d/41_snapshots-btrfs)
+    if ! contem_classe "$linha193" "snapshot"; then
+        sed -i '193s/{$/--class snapshot {/' /etc/grub.d/41_snapshots-btrfs
+    fi
+    if ! contem_classe "$linha194" "calendar"; then
+        sed -i '194s/{$/--class calendar {/' /etc/grub.d/41_snapshots-btrfs
+    fi
+    if ! contem_classe "$linha503" "calendar"; then
+        sed -i '503s/{ echo }/--class calendar { echo }/' /etc/grub.d/41_snapshots-btrfs
+    fi
+    if ! contem_classe "$linha591" "snapshot"; then
+        sed -i '591s/{$/ --class snapshot {/' /etc/grub.d/41_snapshots-btrfs
+    fi    
+    update-grub
 }
 
 ## arg 2:  the old package version
