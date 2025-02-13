@@ -30,8 +30,8 @@ post_install() {
     if ! contem_classe "$linha193" "snapshot"; then
         sed -i '193s/{$/--class snapshot {/' /etc/grub.d/41_snapshots-btrfs
     fi
-    if ! contem_classe "$linha194" "calendar"; then
-        sed -i '194s/{$/--class calendar {/' /etc/grub.d/41_snapshots-btrfs
+    if ! contem_classe "$linha194" "calendar"; then        
+        sed -i '194s/\({ echo }"\)$/--class calendar \1/' /etc/grub.d/41_snapshots-btrfs
     fi
     if ! contem_classe "$linha503" "calendar"; then
         sed -i '503s/{ echo }/--class calendar { echo }/' /etc/grub.d/41_snapshots-btrfs
@@ -41,6 +41,7 @@ post_install() {
     fi
     
     sudo sed -i 's/^#GRUB_BTRFS_TITLE_FORMAT=("date" "snapshot" "type" "description")/GRUB_BTRFS_TITLE_FORMAT=("date" "type" "description")/' /etc/default/grub-btrfs/config
+    sudo sed -i 's/GRUB_BTRFS_IGNORE_SPECIFIC_PATH=("@")/GRUB_BTRFS_IGNORE_SPECIFIC_PATH=("Manjaro")/' /etc/default/grub-btrfs/config
     
     update-grub
 }
