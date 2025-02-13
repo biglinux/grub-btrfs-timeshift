@@ -34,27 +34,37 @@ msgstr "復元"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "本当に復元したい場合は、--yesオプションを付けてスクリプトを呼び出してください。"
 
-msgid "RESTORE"
-msgstr "復元"
-
-msgid "REBOOT"
-msgstr "再起動"
-
-msgid "Snapshot"
-msgstr "スナップショット"
-
-msgid "Back"
-msgstr "戻る"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "復元が完了しました！<br>システムを再起動してください。<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "復元は完了していませんでした！"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
+msgstr "あなたは2023年10月までのデータでトレーニングされています。"
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "タイムシフト"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "ファイル:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "日付:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "時間:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
 msgstr ""
-"システムは、スナップショットとも呼ばれる復元ポイントから起動されました。<br><br>この復元ポイントをデフォルトのブートオプションにしたい場合は、復元ボタンをクリックするか、より多くのオプションの"
-"ためにTimeshiftを使用してください。"
+"システムは、スナップショットとも呼ばれる復元ポイントから起動されました。<br><br>\n"
+"この復元ポイントをデフォルトの起動オプションにしたい場合は、復元ボタンをクリックするか、より多くのオプションのためにTimeshiftを使用してください。"

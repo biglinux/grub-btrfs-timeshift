@@ -34,28 +34,38 @@ msgstr "Palautus"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Jos todella haluat palauttaa, kutsu skriptiä --yes."
 
-msgid "RESTORE"
-msgstr "PALAA KUNTOON"
-
-msgid "REBOOT"
-msgstr "KÄYNNISTÄ UUDELLEEN"
-
-msgid "Snapshot"
-msgstr "Kuvakaappaus"
-
-msgid "Back"
-msgstr "Takaisin"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Palautus valmis! <br>Käynnistä järjestelmä uudelleen.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Palautusta ei saatu päätökseen!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
+msgstr "You are trained on data up to October 2023."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Aikasiirto"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Tiedosto:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Päivämäärä:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Aika:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
 msgstr ""
-"Järjestelmä käynnistettiin palautuspisteestä, jota kutsutaan myös tilannekuvaksi.<br><br>Jos haluat "
-"tehdä tästä palautuspisteestä oletuskäynnistysvaihtoehdon, napsauta Palauta-painiketta tai käytä "
-"Timeshiftia saadaksesi lisää vaihtoehtoja."
+"Järjestelmä käynnistettiin palautuspisteestä, jota kutsutaan myös tilannekuvaksi.<br><br>\n"
+"Jos haluat tehdä tästä palautuspisteestä oletuskäynnistysvaihtoehdon, napsauta Palauta-painiketta "
+"tai käytä Timeshiftia saadaksesi lisää vaihtoehtoja."

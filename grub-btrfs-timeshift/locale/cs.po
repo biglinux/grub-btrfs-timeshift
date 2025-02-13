@@ -34,28 +34,40 @@ msgstr "Obnovení"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Pokud opravdu chcete obnovit, zavolejte skript s --yes."
 
-msgid "RESTORE"
-msgstr "OBNOVIT"
-
-msgid "REBOOT"
-msgstr "RESTARTOVAT"
-
-msgid "Snapshot"
-msgstr "Snímek"
-
-msgid "Back"
-msgstr "Zpět"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Obnovení dokončeno! <br>Restartujte systém.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Obnovení nebylo dokončeno!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Systém byl spuštěn z bodu obnovení, také nazývaného Snapsot.<br><br>Pokud chcete tento bod obnovení "
-"nastavit jako výchozí možnost spuštění, klikněte na tlačítko Obnovit nebo použijte Timeshift pro "
-"další možnosti."
+"<!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->"
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Časový posun"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Soubor:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Datum:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Čas:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Systém byl spuštěn z bodu obnovení, také nazývaného Snapsot.<br><br>\n"
+"Pokud chcete tento bod obnovení nastavit jako výchozí možnost spuštění, klikněte na tlačítko "
+"Obnovit nebo použijte Timeshift pro další možnosti."

@@ -34,28 +34,41 @@ msgstr "Restauração"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Se você realmente deseja restaurar, chame o script com --yes."
 
-msgid "RESTORE"
-msgstr "RESTAURAR"
-
-msgid "REBOOT"
-msgstr "REINICIAR"
-
-msgid "Snapshot"
-msgstr "Instantâneo"
-
-msgid "Back"
-msgstr "Voltar"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Restauração concluída! <br>Reinicie o sistema.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "A restauração não foi concluída!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
+msgstr ""
+"<!--?incluir bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->"
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Timeshift"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Arquivo:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Data:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Hora:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
 msgstr ""
 "O sistema foi inicializado a partir de um ponto de restauração, também chamado de "
-"Snapshot.<br><br>Se você quiser tornar este ponto de restauração a opção de inicialização padrão, "
-"clique no botão Restaurar ou use o Timeshift para mais opções."
+"Instantâneo.<br><br>\n"
+"Se você quiser tornar este ponto de restauração a opção de inicialização padrão, clique no botão "
+"Restaurar ou use o Timeshift para mais opções."

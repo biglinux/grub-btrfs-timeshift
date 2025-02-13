@@ -34,28 +34,38 @@ msgstr "Obnova"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ak chcete naozaj obnoviť, zavolajte skript s --yes."
 
-msgid "RESTORE"
-msgstr "OBNOVIŤ"
-
-msgid "REBOOT"
-msgstr "REŠTARTovať"
-
-msgid "Snapshot"
-msgstr "Momentka"
-
-msgid "Back"
-msgstr "Späť"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Obnova dokončená! <br>Reštartujte systém.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Obnova nebola dokončená!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Systém bol spustený z bodu obnovenia, ktorý sa nazýva aj Snapshot.<br><br>Ako chcete tento bod "
-"obnovenia nastaviť ako predvolenú možnosť spustenia, kliknite na tlačidlo Obnoviť alebo použite "
-"Timeshift pre ďalšie možnosti."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Časový posun"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Súbor:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Dátum:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Čas:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Systém bol spustený z bodu obnovenia, ktorý sa nazýva aj Snapshot.<br><br>\n"
+"Ak chcete tento bod obnovenia nastaviť ako predvolenú možnosť spustenia, kliknite na tlačidlo "
+"Obnoviť alebo použite Timeshift pre ďalšie možnosti."

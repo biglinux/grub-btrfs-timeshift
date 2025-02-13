@@ -34,25 +34,35 @@ msgstr "恢复"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "如果您确实想要恢复，请使用 --yes 调用脚本。"
 
-msgid "RESTORE"
-msgstr "恢复"
-
-msgid "REBOOT"
-msgstr "重启"
-
-msgid "Snapshot"
-msgstr "快照"
-
-msgid "Back"
-msgstr "返回"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "恢复完成！<br>重启系统。<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "恢复未完成！"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
+msgstr "您已训练的数据截至2023年10月。"
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "时间切换"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "文件："
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "日期："
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "时间："
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
 msgstr "系统是从还原点启动的，也称为快照。<br><br>如果您想将此还原点设置为默认启动选项，请单击还原按钮或使用 Timeshift 以获取更多选项。"

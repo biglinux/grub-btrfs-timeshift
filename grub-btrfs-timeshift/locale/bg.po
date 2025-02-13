@@ -34,28 +34,38 @@ msgstr "Възстановяване"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ако наистина искате да възстановите, извикайте скрипта с --yes."
 
-msgid "RESTORE"
-msgstr "ВЪЗСТАНОВИ"
-
-msgid "REBOOT"
-msgstr "РЕСТАРТ"
-
-msgid "Snapshot"
-msgstr "Снимка"
-
-msgid "Back"
-msgstr "Назад"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Възстановяването е завършено! <br>Рестартирайте системата.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Възстановяването не беше завършено!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Системата беше стартирана от точка за възстановяване, наречена Снимка.<br><br>Ако искате да "
-"направите тази точка за възстановяване по подразбиране за опция за стартиране, кликнете върху "
-"бутона Възстановяване или използвайте Timeshift за повече опции."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Времеви скок"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Файл:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Дата:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Време:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Системата беше стартирана от точка за възстановяване, наречена Снимка.<br><br>\n"
+"Ако искате да направите тази точка за възстановяване по подразбиране за опция за стартиране, "
+"кликнете върху бутона Възстановяване или използвайте Timeshift за повече опции."

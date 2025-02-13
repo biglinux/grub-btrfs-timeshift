@@ -34,28 +34,38 @@ msgstr "Endurreisn"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ef þú vilt virkilega endurheimta, kallaðu skriftuna með --já."
 
-msgid "RESTORE"
-msgstr "ENDURTTA"
-
-msgid "REBOOT"
-msgstr "ENDURTÖKUN"
-
-msgid "Snapshot"
-msgstr "Skýrsla"
-
-msgid "Back"
-msgstr "Til baka"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Endurheimt lokið! <br>Endurræstu kerfið.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Endurheimt var ekki lokið!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Kerfið var ræst úr endurheimtarpunkti, einnig kallað Snapshot.<br><br>Ef þú vilt gera þennan "
-"endurheimtarpunkt að sjálfgefna ræsingarvalkostinum, smelltu á Endurheimta hnappinn eða notaðu "
-"Timeshift fyrir fleiri valkosti."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Tímasetning"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Skrá:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Dagsetning:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Tími:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Kerfið var ræst úr endurheimtarpunkti, einnig kallað Snapshot.<br><br>\n"
+"Ef þú vilt gera þennan endurheimtarpunkt að sjálfgefna ræsingarvalkostinum, smelltu á Endurheimta "
+"hnappinn eða notaðu Timeshift fyrir fleiri valkosti."

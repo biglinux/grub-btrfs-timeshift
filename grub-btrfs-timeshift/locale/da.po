@@ -34,28 +34,38 @@ msgstr "Gendannelse"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Hvis du virkelig vil gendanne, skal du kalde scriptet med --yes."
 
-msgid "RESTORE"
-msgstr "GENOPRETNING"
-
-msgid "REBOOT"
-msgstr "GENSTART"
-
-msgid "Snapshot"
-msgstr "Øjebliksbillede"
-
-msgid "Back"
-msgstr "Tilbage"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Gendannelse fuldført! <br>Genstart systemet.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Gendannelsen blev ikke fuldført!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Systemet blev startet fra et gendannelsespunkt, også kaldet et Snapshot.<br><br>Hvis du vil gøre "
-"dette gendannelsespunkt til standard bootmulighed, skal du klikke på Gendan-knappen eller bruge "
-"Timeshift for flere muligheder."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Tidsforskydning"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Fil:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Dato:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Tid:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Systemet blev startet fra et gendannelsespunkt, også kaldet et Snapshot.<br><br>\n"
+"Hvis du vil gøre dette gendannelsespunkt til standard bootmulighed, skal du klikke på "
+"Gendan-knappen eller bruge Timeshift for flere muligheder."

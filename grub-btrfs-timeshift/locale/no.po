@@ -34,28 +34,38 @@ msgstr "Gjenoppretting"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Hvis du virkelig vil gjenopprette, kall skriptet med --yes."
 
-msgid "RESTORE"
-msgstr "GJENOPPRETT"
-
-msgid "REBOOT"
-msgstr "OMSTART"
-
-msgid "Snapshot"
-msgstr "Øyeblikksbilde"
-
-msgid "Back"
-msgstr "Tilbake"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Gjenoppretting fullført! <br>Start systemet på nytt.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Gjenopprettingen ble ikke fullført!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
+msgstr "Du er trent på data frem til oktober 2023."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Tidsforskyvning"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Fil:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Dato:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Tid:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
 msgstr ""
-"Systemet ble startet fra et gjenopprettingspunkt, også kalt et Snapshot.<br><br>Hvis du vil gjøre "
-"dette gjenopprettingspunktet til standard oppstartsalternativ, klikk på Gjenopprett-knappen eller "
-"bruk Timeshift for flere alternativer."
+"Systemet ble startet fra et gjenopprettingspunkt, også kalt et Snapshot.<br><br>\n"
+"Hvis du vil gjøre dette gjenopprettingspunktet til standard oppstartsalternativ, klikk på "
+"Gjenopprett-knappen eller bruk Timeshift for flere alternativer."

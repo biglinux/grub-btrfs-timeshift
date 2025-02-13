@@ -34,28 +34,38 @@ msgstr "Återställning"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Om du verkligen vill återställa, ring skriptet med --yes."
 
-msgid "RESTORE"
-msgstr "ÅTERSTÄLLA"
-
-msgid "REBOOT"
-msgstr "OMSTARTA"
-
-msgid "Snapshot"
-msgstr "Ögonblicksbild"
-
-msgid "Back"
-msgstr "Tillbaka"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Återställning slutförd! <br>Starta om systemet.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Återställningen slutfördes inte!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Systemet startades från en återställningspunkt, även kallad en Snapshot.<br><br>Om du vill göra "
-"denna återställningspunkt till standardstartalternativet, klicka på Återställ-knappen eller använd "
-"Timeshift för fler alternativ."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Tidsförskjutning"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Fil:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Datum:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Tid:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Systemet startades från en återställningspunkt, även kallad en Snapshot.<br><br>\n"
+"Om du vill göra denna återställningspunkt till standardstartalternativet, klicka på "
+"Återställ-knappen eller använd Timeshift för fler alternativ."

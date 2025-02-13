@@ -5,7 +5,8 @@
 #
 #, fuzzy
 msgid   ""
-msgstr  "Project-Id-Version: grub-btrfs-timeshift\n"
+msgstr  "#-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#\n"
+        "Project-Id-Version: grub-btrfs-timeshift\n"
         "Report-Msgid-Bugs-To: \n"
         "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
         "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,59 +14,53 @@ msgstr  "Project-Id-Version: grub-btrfs-timeshift\n"
         "MIME-Version: 1.0\n"
         "Content-Type: text/plain; charset=UTF-8\n"
         "Content-Transfer-Encoding: 8bit\n"
-
+        "#-#-#-#-#  grub-btrfs-timeshift-js.pot (grub-btrfs-timeshift)  #-#-#-#-#\n"
+        "Project-Id-Version: grub-btrfs-timeshift\n"
+        "Report-Msgid-Bugs-To: \n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=utf-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
 #
 msgid   "BigLinux Snapshot Detect"
 msgstr  ""
-
 #
 msgid   "Snapshot não encontrado!"
 msgstr  ""
-
 #
 msgid   "Snapshot not detected, did you really boot into the snapshot?"
 msgstr  ""
-
 #
 msgid   "Completed!"
 msgstr  ""
-
 #
 msgid   "Restoration"
 msgstr  ""
-
 #
 msgid   "If you really want to restore, call the script with --yes."
 msgstr  ""
-
 #
 msgid   "\n"
-        "          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-"
-        "btrfs/snapshots/([^ @/]*).*|\\1|' /proc/cmdline) ?-->\n"
+        "          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' /proc/cmdline) ?-->\n"
         "        "
 msgstr  ""
-
 #
 msgid   "Timeshift"
 msgstr  ""
-
 #
 msgid   "File:"
 msgstr  ""
-
 #
 msgid   "Date:"
 msgstr  ""
-
 #
 msgid   "Time:"
 msgstr  ""
-
 #
 msgid   "\n"
-        "          The system was booted from a restore point, also called a "
-        "Snapshot.<br><br>\n"
-        "          If you want to make this restore point the default boot "
-        "option, click the Restore button or use Timeshift for more options.\n"
+        "          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+        "          If you want to make this restore point the default boot option, click the Restore button or use Timeshift for more options.\n"
         "        "
 msgstr  ""

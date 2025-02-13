@@ -34,28 +34,38 @@ msgstr "Restaurare"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Dacă vrei cu adevărat să restaurezi, apelează scriptul cu --yes."
 
-msgid "RESTORE"
-msgstr "RESTABILESCI"
-
-msgid "REBOOT"
-msgstr "RESTARTARE"
-
-msgid "Snapshot"
-msgstr "Instantaneu"
-
-msgid "Back"
-msgstr "Înapoi"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Restaurare completă! <br>Reporniți sistemul.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Restaurarea nu a fost finalizată!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Sistemul a fost pornit dintr-un punct de restaurare, numit și Snapshot.<br><br>Dacă doriți să "
-"faceți din acest punct de restaurare opțiunea de boot implicită, faceți clic pe butonul Restaurare "
-"sau utilizați Timeshift pentru mai multe opțiuni."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Timeshift"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Fișier:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Dată:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Timp:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Sistemul a fost pornit dintr-un punct de restaurare, numit și Instantaneu.<br><br>\n"
+"Dacă doriți să faceți din acest punct de restaurare opțiunea de pornire implicită, faceți clic pe "
+"butonul Restaurare sau utilizați Timeshift pentru mai multe opțiuni."

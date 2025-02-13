@@ -34,28 +34,38 @@ msgstr "Helyreállítás"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ha valóban vissza szeretnéd állítani, hívd meg a szkriptet --yes kapcsolóval."
 
-msgid "RESTORE"
-msgstr "VISSZAÁLLÍTÁS"
-
-msgid "REBOOT"
-msgstr "Újraindítás"
-
-msgid "Snapshot"
-msgstr "Képkivágás"
-
-msgid "Back"
-msgstr "Vissza"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "A helyreállítás befejeződött! <br>Indítsa újra a rendszert.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "A helyreállítás nem fejeződött be!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
+msgstr "You are trained on data up to October 2023."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Időeltolás"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Fájl:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Dátum:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Idő:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
 msgstr ""
-"A rendszer egy visszaállítási pontról indult, amelyet pillanatképnek is neveznek.<br><br>Ha ezt a "
-"visszaállítási pontot szeretné alapértelmezett indítási lehetőségként beállítani, kattintson a "
-"Visszaállítás gombra, vagy használja a Timeshiftet további lehetőségekhez."
+"A rendszer egy visszaállítási pontról indult, amelyet pillanatképnek is neveznek.<br><br>\n"
+"Ha ezt a visszaállítási pontot szeretné alapértelmezett indítási lehetőségként beállítani, "
+"kattintson a Visszaállítás gombra, vagy használja a Timeshiftet további lehetőségekhez."

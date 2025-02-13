@@ -34,28 +34,38 @@ msgstr "Taastamine"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Kui soovite tõeliselt taastada, kutsuge skript välja --yes."
 
-msgid "RESTORE"
-msgstr "TAASTA"
-
-msgid "REBOOT"
-msgstr "REBOOT"
-
-msgid "Snapshot"
-msgstr "Kohandamine"
-
-msgid "Back"
-msgstr "Tagasi"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Taastamine lõpetatud! <br>Taaskäivitage süsteem.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Taastamine ei olnud lõpetatud!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
+msgstr "Te olete koolitatud andmetel kuni oktoober 2023."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Ajaotamine"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Fail:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Kuupäev:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Aeg:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
 msgstr ""
-"Süsteem käivitati taastamispunktist, mida nimetatakse ka Snapshotiks.<br><br>Kui soovite teha "
-"sellest taastamispunktist vaikimisi käivitamisvaliku, klõpsake nuppu Taasta või kasutage "
-"Timeshift'i rohkemate valikute jaoks."
+"Süsteem käivitati taastamispunktist, mida nimetatakse ka Snapshotiks.<br><br>\n"
+"Kui soovite teha sellest taastamispunktist vaikimisi käivitamisvaliku, klõpsake nuppu Taasta või "
+"kasutage Timeshift'i rohkemate valikute jaoks."

@@ -34,28 +34,38 @@ msgstr "Obnova"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ako stvarno želite vratiti, pozovite skriptu s --yes."
 
-msgid "RESTORE"
-msgstr "OBNOVI"
-
-msgid "REBOOT"
-msgstr "REBOOTIRAJ"
-
-msgid "Snapshot"
-msgstr "Snimka"
-
-msgid "Back"
-msgstr "Natrag"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Obnova završena! <br>Ponovno pokrenite sustav.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Obnova nije dovršena!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
+msgstr "You are trained on data up to October 2023."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Vremenska pomak"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Datoteka:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Datum:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Vrijeme:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
 msgstr ""
-"Sustav je pokrenut s točke vraćanja, koja se također naziva Snimak.<br><br>Ako želite ovu točku "
-"vraćanja postaviti kao zadanu opciju pokretanja, kliknite gumb Vrati ili upotrijebite Timeshift za "
-"više opcija."
+"Sustav je pokrenut s točke vraćanja, koja se također naziva Snimak.<br><br>\n"
+"Ako želite postaviti ovu točku vraćanja kao zadanu opciju pokretanja, kliknite gumb Vraćanje ili "
+"upotrijebite Timeshift za više opcija."

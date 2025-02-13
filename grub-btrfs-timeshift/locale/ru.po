@@ -34,28 +34,38 @@ msgstr "Восстановление"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Если вы действительно хотите восстановить, вызовите скрипт с --yes."
 
-msgid "RESTORE"
-msgstr "ВОССТАНОВИТЬ"
-
-msgid "REBOOT"
-msgstr "ПЕРЕЗАГРУЗИТЬ"
-
-msgid "Snapshot"
-msgstr "Снимок экрана"
-
-msgid "Back"
-msgstr "Назад"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Восстановление завершено! <br>Перезагрузите систему.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Восстановление не было завершено!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
+msgstr "Вы обучены на данных до октября 2023 года."
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Таймшифт"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Файл:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Дата:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Время:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
 msgstr ""
-"Система была загружена из точки восстановления, также называемой Снимком.<br><br>Если вы хотите "
-"сделать эту точку восстановления параметром загрузки по умолчанию, нажмите кнопку Восстановить или "
-"используйте Timeshift для получения дополнительных опций."
+"Система была загружена из точки восстановления, также называемой Снимком.<br><br>\n"
+"Если вы хотите сделать эту точку восстановления параметром загрузки по умолчанию, нажмите кнопку "
+"Восстановить или используйте Timeshift для получения дополнительных опций."

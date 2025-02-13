@@ -34,28 +34,40 @@ msgstr "Ripristino"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Se desideri davvero ripristinare, chiama lo script con --yes."
 
-msgid "RESTORE"
-msgstr "RIPRISTINA"
-
-msgid "REBOOT"
-msgstr "RIAVVIA"
-
-msgid "Snapshot"
-msgstr "Istantanea"
-
-msgid "Back"
-msgstr "Indietro"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Ripristino completato! <br>Riavviare il sistema.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Il ripristino non è stato completato!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Il sistema è stato avviato da un punto di ripristino, chiamato anche Snapshot.<br><br>Se desideri "
-"rendere questo punto di ripristino l'opzione di avvio predefinita, fai clic sul pulsante Ripristina "
-"o utilizza Timeshift per ulteriori opzioni."
+"<!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->"
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Timeshift"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "File:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Data:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Tempo:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Il sistema è stato avviato da un punto di ripristino, chiamato anche Snapshot.<br><br>\n"
+"Se desideri rendere questo punto di ripristino l'opzione di avvio predefinita, fai clic sul "
+"pulsante Ripristina o utilizza Timeshift per ulteriori opzioni."

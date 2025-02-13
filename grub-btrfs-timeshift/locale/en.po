@@ -15,47 +15,70 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux Snapshot Detect"
 
+#
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot não encontrado!"
 
+#
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Snapshot not detected, did you really boot into the snapshot?"
 
+#
 msgid "Completed!"
 msgstr "Completed!"
 
+#
 msgid "Restoration"
 msgstr "Restoration"
 
+#
 msgid "If you really want to restore, call the script with --yes."
 msgstr "If you really want to restore, call the script with --yes."
 
-msgid "RESTORE"
-msgstr "RESTORE"
-
-msgid "REBOOT"
-msgstr "REBOOT"
-
-msgid "Snapshot"
-msgstr "Snapshot"
-
-msgid "Back"
-msgstr "Back"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Restoration completed! <br>Reboot the system.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "The restoration was not completed!"
-
+#
 msgid ""
-"The system was booted from a restore point, also called a Snapshot."
-"<br><br>If you want to make this restore point the default boot option, "
-"click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/"
+"snapshots/([^ @/]*).*|\\1|' /proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"The system was booted from a restore point, also called a Snapshot."
-"<br><br>If you want to make this restore point the default boot option, "
-"click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/"
+"snapshots/([^ @/]*).*|\\1|' /proc/cmdline) ?-->\n"
+"        "
+
+#
+msgid "Timeshift"
+msgstr "Timeshift"
+
+#
+msgid "File:"
+msgstr "File:"
+
+#
+msgid "Date:"
+msgstr "Date:"
+
+#
+msgid "Time:"
+msgstr "Time:"
+
+#
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot."
+"<br><br>\n"
+"          If you want to make this restore point the default boot option, "
+"click the Restore button or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot."
+"<br><br>\n"
+"          If you want to make this restore point the default boot option, "
+"click the Restore button or use Timeshift for more options.\n"
+"        "

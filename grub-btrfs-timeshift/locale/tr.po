@@ -34,28 +34,40 @@ msgstr "Onarım"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Gerçekten geri yüklemek istiyorsanız, script'i --yes ile çağırın."
 
-msgid "RESTORE"
-msgstr "GERİ YÜKLE"
-
-msgid "REBOOT"
-msgstr "YENİDEN BAŞLAT"
-
-msgid "Snapshot"
-msgstr "Anlık görüntü"
-
-msgid "Back"
-msgstr "Geri dön"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Geri yükleme tamamlandı! <br>Sistemi yeniden başlatın.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Geri yükleme tamamlanmadı!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Sistem, bir geri yükleme noktasından, diğer adıyla Anlık Görüntü'den başlatıldı.<br><br>Bu geri "
-"yükleme noktasını varsayılan önyükleme seçeneği yapmak istiyorsanız, Geri Yükle düğmesine tıklayın "
-"veya daha fazla seçenek için Timeshift'i kullanın."
+"<!--?include bash echo Anlık görüntü $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->"
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Zaman Kaydırma"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Dosya:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Tarih:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Zaman:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Sistem, bir geri yükleme noktasından, diğer adıyla Anlık Görüntü'den başlatıldı.<br><br>\n"
+"Bu geri yükleme noktasını varsayılan önyükleme seçeneği yapmak istiyorsanız, Geri Yükle butonuna "
+"tıklayın veya daha fazla seçenek için Timeshift'i kullanın."

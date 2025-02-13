@@ -34,28 +34,38 @@ msgstr "Αποκατάσταση"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Αν πραγματικά θέλεις να αποκαταστήσεις, κάλεσε το σενάριο με --yes."
 
-msgid "RESTORE"
-msgstr "ΑΠΟΚΑΤΑΣΤΑΣΗ"
-
-msgid "REBOOT"
-msgstr "ΕΠΑΝΕΚΚΙΝΗΣΗ"
-
-msgid "Snapshot"
-msgstr "Στιγμιότυπο"
-
-msgid "Back"
-msgstr "Πίσω"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Η αποκατάσταση ολοκληρώθηκε! <br>Επανεκκινήστε το σύστημα.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Η αποκατάσταση δεν ολοκληρώθηκε!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"Το σύστημα εκκινήθηκε από ένα σημείο επαναφοράς, που ονομάζεται επίσης Στιγμιότυπο.<br><br>Εάν "
-"θέλετε να κάνετε αυτό το σημείο επαναφοράς την προεπιλεγμένη επιλογή εκκίνησης, κάντε κλικ στο "
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Χρονική μετατόπιση"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Αρχείο:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Ημερομηνία:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Χρόνος:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"Το σύστημα εκκινήθηκε από ένα σημείο επαναφοράς, που ονομάζεται επίσης Στιγμιότυπο.<br><br>\n"
+"Αν θέλετε να κάνετε αυτό το σημείο επαναφοράς την προεπιλεγμένη επιλογή εκκίνησης, κάντε κλικ στο "
 "κουμπί Επαναφορά ή χρησιμοποιήστε το Timeshift για περισσότερες επιλογές."

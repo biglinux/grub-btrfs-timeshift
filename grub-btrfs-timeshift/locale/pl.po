@@ -34,28 +34,40 @@ msgstr "Przywracanie"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Jeśli naprawdę chcesz przywrócić, wywołaj skrypt z --yes."
 
-msgid "RESTORE"
-msgstr "PRZYWRÓĆ"
-
-msgid "REBOOT"
-msgstr "REBOOTUJ"
-
-msgid "Snapshot"
-msgstr "Migawka"
-
-msgid "Back"
-msgstr "Wstecz"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "Przywracanie zakończone! <br>Uruchom ponownie system.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "Przywracanie nie zostało zakończone!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"System uruchomiono z punktu przywracania, zwanego również migawką.<br><br>Aby ustawić ten punkt "
-"przywracania jako domyślną opcję rozruchu, kliknij przycisk Przywróć lub użyj Timeshift, aby "
-"uzyskać więcej opcji."
+"<!--?include bash echo Zrzut $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->"
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "Czasoprzestrzeń"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "Plik:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "Data:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "Czas:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"System uruchomiono z punktu przywracania, zwanego również migawką.<br><br>\n"
+"Jeśli chcesz ustawić ten punkt przywracania jako domyślną opcję rozruchu, kliknij przycisk Przywróć "
+"lub użyj Timeshift, aby uzyskać więcej opcji."

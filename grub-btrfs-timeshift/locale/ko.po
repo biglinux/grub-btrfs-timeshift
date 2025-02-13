@@ -34,27 +34,39 @@ msgstr "복원"
 msgid "If you really want to restore, call the script with --yes."
 msgstr "복원하려면 --yes로 스크립트를 호출하세요."
 
-msgid "RESTORE"
-msgstr "복원"
-
-msgid "REBOOT"
-msgstr "재부팅"
-
-msgid "Snapshot"
-msgstr "스냅샷"
-
-msgid "Back"
-msgstr "뒤로"
-
-msgid "Restoration completed! <br>Reboot the system.<br><br>"
-msgstr "복원 완료! <br>시스템을 재부팅하십시오.<br><br>"
-
-msgid "The restoration was not completed!"
-msgstr "복원이 완료되지 않았습니다!"
-
+#: NEEDS WORK
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.<br><br>If you want to make this "
-"restore point the default boot option, click the Restore button or use Timeshift for more options."
+"\n"
+"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
+"/proc/cmdline) ?-->\n"
+"        "
 msgstr ""
-"시스템이 복원 지점(스냅샷이라고도 함)에서 부팅되었습니다.<br><br>이 복원 지점을 기본 부팅 옵션으로 설정하려면 복원 버튼을 클릭하거나 더 많은 옵션을 위해 타임시프트를 "
-"사용하십시오."
+"<!--?include bash echo 스냅샷 $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' /proc/cmdline) "
+"?-->"
+
+#: NEEDS WORK
+msgid "Timeshift"
+msgstr "타임시프트"
+
+#: NEEDS WORK
+msgid "File:"
+msgstr "파일:"
+
+#: NEEDS WORK
+msgid "Date:"
+msgstr "날짜:"
+
+#: NEEDS WORK
+msgid "Time:"
+msgstr "시간:"
+
+#: NEEDS WORK
+msgid ""
+"\n"
+"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
+"          If you want to make this restore point the default boot option, click the Restore button "
+"or use Timeshift for more options.\n"
+"        "
+msgstr ""
+"시스템이 복원 지점에서 부팅되었습니다. 복원 지점을 스냅샷이라고도 합니다.<br><br>\n"
+"이 복원 지점을 기본 부팅 옵션으로 설정하려면 복원 버튼을 클릭하거나 더 많은 옵션을 위해 타임시프트를 사용하십시오."
