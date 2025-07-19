@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux Anlık Görüntü Tespiti"
-
 msgid "Snapshot não encontrado!"
 msgstr "Anlık görüntü bulunamadı!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Anlık görüntü tespit edilmedi, gerçekten anlık görüntüye mi önyükleme yaptınız?"
-
 msgid "Completed!"
 msgstr "Tamamlandı!"
-
 msgid "Restoration"
 msgstr "Onarım"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Gerçekten geri yüklemek istiyorsanız, script'i --yes ile çağırın."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -43,23 +36,18 @@ msgid ""
 msgstr ""
 "<!--?include bash echo Anlık görüntü $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
 "/proc/cmdline) ?-->"
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Zaman Kaydırma"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Dosya:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Tarih:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Zaman:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

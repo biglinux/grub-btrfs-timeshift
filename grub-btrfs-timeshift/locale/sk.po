@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "Detekcia snímky BigLinux"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot nenájdete!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Momentka nebola zistená, naozaj ste sa spustili do momentky?"
-
 msgid "Completed!"
 msgstr "Dokončené!"
-
 msgid "Restoration"
 msgstr "Obnova"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ak chcete naozaj obnoviť, zavolajte skript s --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr ""
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Časový posun"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Súbor:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Dátum:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Čas:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

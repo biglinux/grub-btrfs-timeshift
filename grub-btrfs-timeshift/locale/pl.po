@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "Wykrywanie migawki BigLinux"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot nie znaleziono!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Nie wykryto migawki, czy naprawdę uruchomiłeś się z migawki?"
-
 msgid "Completed!"
 msgstr "Ukończono!"
-
 msgid "Restoration"
 msgstr "Przywracanie"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Jeśli naprawdę chcesz przywrócić, wywołaj skrypt z --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -43,23 +36,18 @@ msgid ""
 msgstr ""
 "<!--?include bash echo Zrzut $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
 "/proc/cmdline) ?-->"
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Czasoprzestrzeń"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Plik:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Data:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Czas:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

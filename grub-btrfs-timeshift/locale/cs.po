@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "Detekce snímku BigLinux"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot nebyl nalezen!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Snapshot nebyl detekován, opravdu jste se spustili do snapshotu?"
-
 msgid "Completed!"
 msgstr "Dokončeno!"
-
 msgid "Restoration"
 msgstr "Obnovení"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Pokud opravdu chcete obnovit, zavolejte skript s --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -43,23 +36,18 @@ msgid ""
 msgstr ""
 "<!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
 "/proc/cmdline) ?-->"
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Časový posun"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Soubor:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Datum:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Čas:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

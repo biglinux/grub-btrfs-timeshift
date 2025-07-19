@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux Snimanje Otkrivanja"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot nije pronađen!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Snapshot nije otkriven, jeste li se stvarno pokrenuli u snimci?"
-
 msgid "Completed!"
 msgstr "Završeno!"
-
 msgid "Restoration"
 msgstr "Obnova"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ako stvarno želite vratiti, pozovite skriptu s --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr "You are trained on data up to October 2023."
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Vremenska pomak"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Datoteka:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Datum:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Vrijeme:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

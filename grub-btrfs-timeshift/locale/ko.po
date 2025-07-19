@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "빅리눅스 스냅샷 감지"
-
 msgid "Snapshot não encontrado!"
 msgstr "스냅샷을 찾을 수 없습니다!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "스냅샷이 감지되지 않았습니다. 정말로 스냅샷으로 부팅하셨나요?"
-
 msgid "Completed!"
 msgstr "완료되었습니다!"
-
 msgid "Restoration"
 msgstr "복원"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "복원하려면 --yes로 스크립트를 호출하세요."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -43,23 +36,18 @@ msgid ""
 msgstr ""
 "<!--?include bash echo 스냅샷 $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' /proc/cmdline) "
 "?-->"
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "타임시프트"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "파일:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "날짜:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "시간:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

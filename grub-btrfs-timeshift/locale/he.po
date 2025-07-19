@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "גילוי תמונת BigLinux"
-
 msgid "Snapshot não encontrado!"
 msgstr "לא נמצא צילום!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "לא זוהה צילומסך, האם באמת את/ה אתחלת לתוך הצילומסך?"
-
 msgid "Completed!"
 msgstr "הושלם!"
-
 msgid "Restoration"
 msgstr "שחזור"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "אם אתה באמת רוצה לשחזר, התקשר לסקריפט עם --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr ""
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "טיימשיפט"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "קובץ:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "תאריך:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "זמן:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

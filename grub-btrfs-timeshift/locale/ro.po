@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "Detectare Instantanee BigLinux"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot not found!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Instantaneu nu a fost detectat, ai pornit cu adevărat în instantaneu?"
-
 msgid "Completed!"
 msgstr "Finalizat!"
-
 msgid "Restoration"
 msgstr "Restaurare"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Dacă vrei cu adevărat să restaurezi, apelează scriptul cu --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr ""
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Timeshift"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Fișier:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Dată:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Timp:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

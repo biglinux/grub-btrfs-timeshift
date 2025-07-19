@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "Détection de l'instantané BigLinux"
-
 msgid "Snapshot não encontrado!"
 msgstr "Instantané non trouvé !"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Instantané non détecté, avez-vous vraiment démarré dans l'instantané ?"
-
 msgid "Completed!"
 msgstr "Terminé !"
-
 msgid "Restoration"
 msgstr "Restauration"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Si vous souhaitez vraiment restaurer, appelez le script avec --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr ""
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Retour en arrière"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Fichier :"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Date :"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Temps :"
-
 #: NEEDS WORK
 msgid ""
 "\n"

@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "Обнаружение снимка BigLinux"
-
 msgid "Snapshot não encontrado!"
 msgstr "Снимок не найден!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Снимок не обнаружен, вы действительно загрузились в снимок?"
-
 msgid "Completed!"
 msgstr "Завершено!"
-
 msgid "Restoration"
 msgstr "Восстановление"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Если вы действительно хотите восстановить, вызовите скрипт с --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr "Вы обучены на данных до октября 2023 года."
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Таймшифт"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Файл:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Дата:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Время:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

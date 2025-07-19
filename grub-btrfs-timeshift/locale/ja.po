@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux スナップショット検出"
-
 msgid "Snapshot não encontrado!"
 msgstr "スナップショットが見つかりません！"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "スナップショットが検出されませんでした。本当にスナップショットにブートしましたか？"
-
 msgid "Completed!"
 msgstr "完了！"
-
 msgid "Restoration"
 msgstr "復元"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "本当に復元したい場合は、--yesオプションを付けてスクリプトを呼び出してください。"
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr "あなたは2023年10月までのデータでトレーニングされています。"
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "タイムシフト"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "ファイル:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "日付:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "時間:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

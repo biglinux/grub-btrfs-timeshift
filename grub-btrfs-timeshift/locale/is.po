@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux Skýrsla Ummyndunar"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot ekki fundin!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Ekkert mynd var ekki greind, ertu virkilega að ræsa í myndinni?"
-
 msgid "Completed!"
 msgstr "Completed!"
-
 msgid "Restoration"
 msgstr "Endurreisn"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ef þú vilt virkilega endurheimta, kallaðu skriftuna með --já."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr ""
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Tímasetning"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Skrá:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Dagsetning:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Tími:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

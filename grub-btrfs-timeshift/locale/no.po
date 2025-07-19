@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux Snapshot Oppdagelse"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot ikke funnet!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Snapshot ikke oppdaget, har du virkelig startet opp i snapshotet?"
-
 msgid "Completed!"
 msgstr "Fullført!"
-
 msgid "Restoration"
 msgstr "Gjenoppretting"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Hvis du virkelig vil gjenopprette, kall skriptet med --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr "Du er trent på data frem til oktober 2023."
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Tidsforskyvning"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Fil:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Dato:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Tid:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

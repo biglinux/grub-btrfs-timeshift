@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux Pillanatkép Észlelés"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot nem található!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "A pillanatkép nem észlelhető, valóban a pillanatképre indítottad a rendszert?"
-
 msgid "Completed!"
 msgstr "Kész!"
-
 msgid "Restoration"
 msgstr "Helyreállítás"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ha valóban vissza szeretnéd állítani, hívd meg a szkriptet --yes kapcsolóval."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr "You are trained on data up to October 2023."
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Időeltolás"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Fájl:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Dátum:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Idő:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

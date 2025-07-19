@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "Ανίχνευση BigLinux Snapshot"
-
 msgid "Snapshot não encontrado!"
 msgstr "Δεν βρέθηκε στιγμιότυπο!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Δεν ανιχνεύθηκε στιγμιότυπο, μήπως πραγματικά εκκινήσατε στο στιγμιότυπο;"
-
 msgid "Completed!"
 msgstr "Ολοκληρώθηκε!"
-
 msgid "Restoration"
 msgstr "Αποκατάσταση"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Αν πραγματικά θέλεις να αποκαταστήσεις, κάλεσε το σενάριο με --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr ""
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Χρονική μετατόπιση"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Αρχείο:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Ημερομηνία:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Χρόνος:"
-
 #: NEEDS WORK
 msgid ""
 "\n"

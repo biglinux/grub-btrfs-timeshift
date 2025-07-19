@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux 快照检测"
-
 msgid "Snapshot não encontrado!"
 msgstr "快照未找到！"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "未检测到快照，您真的启动到了快照吗？"
-
 msgid "Completed!"
 msgstr "完成！"
-
 msgid "Restoration"
 msgstr "恢复"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "如果您确实想要恢复，请使用 --yes 调用脚本。"
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr "您已训练的数据截至2023年10月。"
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "时间切换"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "文件："
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "日期："
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "时间："
-
 #: NEEDS WORK
 msgid ""
 "\n"

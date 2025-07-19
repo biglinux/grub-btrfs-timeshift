@@ -15,25 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux Snapshot Tunnistus"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshotia ei löytynyt!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Snapshotia ei havaittu, käynnistitkö todella snapshotista?"
-
 msgid "Completed!"
 msgstr "Valmis!"
-
 msgid "Restoration"
 msgstr "Palautus"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Jos todella haluat palauttaa, kutsu skriptiä --yes."
-
 #: NEEDS WORK
 msgid ""
 "\n"
@@ -41,23 +34,18 @@ msgid ""
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr "You are trained on data up to October 2023."
-
 #: NEEDS WORK
 msgid "Timeshift"
 msgstr "Aikasiirto"
-
 #: NEEDS WORK
 msgid "File:"
 msgstr "Tiedosto:"
-
 #: NEEDS WORK
 msgid "Date:"
 msgstr "Päivämäärä:"
-
 #: NEEDS WORK
 msgid "Time:"
 msgstr "Aika:"
-
 #: NEEDS WORK
 msgid ""
 "\n"
