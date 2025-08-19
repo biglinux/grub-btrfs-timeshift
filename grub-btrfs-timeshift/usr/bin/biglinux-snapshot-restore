@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# BigLinux Snapshot Restore Wrapper
+# 
+# This wrapper executes the Python GTK4 application
+#
+
+python /usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py "$@"

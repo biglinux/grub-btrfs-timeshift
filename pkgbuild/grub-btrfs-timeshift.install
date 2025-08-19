@@ -71,4 +71,3 @@ pre_remove() {
 #post_remove() {
 	# do something here
 #}
- 
