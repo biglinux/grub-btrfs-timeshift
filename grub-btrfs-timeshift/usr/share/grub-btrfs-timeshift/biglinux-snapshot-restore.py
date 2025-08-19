@@ -4,7 +4,7 @@ BigLinux Snapshot Restore Tool
 Authors: Tales A. Mendonça (communitybig.org)
 Date: 2025
 Description: GTK4 + libadwaita interface for Timeshift snapshot restoration
-License: GPL V2 or greater
+License: GPL V3
 """
 
 import sys
@@ -187,8 +187,9 @@ class SnapshotRestoreApp(Adw.Application):
         """Application activation handler"""
         # Check if in snapshot
         if not SnapshotDetector.is_in_snapshot():
-            self.show_error_dialog(_("Snapshot not detected"), 
-                                 _("Did you really boot into the snapshot?"))
+            print(_("Snapshot not detected: This application only runs when booted from a Timeshift snapshot."))
+            print(_("Did you really boot into the snapshot?"))
+            self.quit()
             return
         
         # Get snapshot information
@@ -214,59 +215,57 @@ class SnapshotRestoreApp(Adw.Application):
         self.window.set_titlebar(header_bar)
         
         # Main content
-        main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=20)
+        main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=24)
         main_box.set_margin_top(30)
         main_box.set_margin_bottom(30)
         main_box.set_margin_start(30)
         main_box.set_margin_end(30)
         
-        # Icon and title
-        icon_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=15)
-        icon_box.set_halign(Gtk.Align.CENTER)
-        
+        # Icon centered
         icon = Gtk.Image.new_from_icon_name("timeshift")
-        icon.set_pixel_size(64)
-        icon_box.append(icon)
-        
-        title_label = Gtk.Label(label="Timeshift")
-        title_label.add_css_class("title-1")
-        icon_box.append(title_label)
-        
-        main_box.append(icon_box)
+        icon.set_pixel_size(48)
+        icon.set_halign(Gtk.Align.CENTER)
+        icon.set_margin_bottom(10)
+        main_box.append(icon)
         
         # Snapshot information group
         info_group = Adw.PreferencesGroup()
         info_group.set_title(_("Snapshot Information"))
+        info_group.set_margin_bottom(10)
         
         # File path row
         file_row = Adw.ActionRow()
         file_row.set_title(_("File"))
         file_row.set_subtitle(self.snapshot_info['path'])
+        file_row.add_css_class("property")
         info_group.add(file_row)
         
         # Date row
         date_row = Adw.ActionRow()
         date_row.set_title(_("Date"))
         date_row.set_subtitle(self.snapshot_info['date'])
+        date_row.add_css_class("property")
         info_group.add(date_row)
         
         # Time row
         time_row = Adw.ActionRow()
         time_row.set_title(_("Time"))
         time_row.set_subtitle(self.snapshot_info['time'])
+        time_row.add_css_class("property")
         info_group.add(time_row)
         
         main_box.append(info_group)
         
         # Description
         description = Gtk.Label()
-        description.set_text(_("The system was booted from a restore point, also called a Snapshot.\n\n"
-                             "If you want to make this restore point the default boot option, "
-                             "click the Restore button or use Timeshift for more options."))
+        description.set_text(_("The system was booted from a restore point (Snapshot).\n\n"
+                             "To make this restore point the default boot option, "
+                             "click the Restore button below."))
         description.set_wrap(True)
         description.set_justify(Gtk.Justification.CENTER)
-        description.set_margin_top(10)
-        description.set_margin_bottom(10)
+        description.add_css_class("body")
+        description.set_margin_top(15)
+        description.set_margin_bottom(20)
         main_box.append(description)
         
         # Progress bar (initially hidden)
@@ -399,22 +398,22 @@ class SnapshotRestoreApp(Adw.Application):
                                  _("Could not restart system: {}").format(str(e)))
     
     def show_error_dialog(self, title, message):
-        """Show error dialog and exit"""
-        dialog = Adw.MessageDialog.new(None, title, message)
+        """Show error dialog using newer libadwaita API"""
+        dialog = Adw.AlertDialog()
+        dialog.set_heading(title)
+        dialog.set_body(message)
         dialog.add_response("ok", _("OK"))
         dialog.set_response_appearance("ok", Adw.ResponseAppearance.DEFAULT)
         dialog.connect("response", lambda d, r: self.quit())
-        dialog.present()
+        if self.window:
+            dialog.present(self.window)
+        else:
+            # If no window exists, just quit
+            self.quit()
 
 
 def main():
     """Main entry point"""
-    # Check if running as root (required for system operations)
-    if os.geteuid() != 0:
-        print(_("This application requires administrator privileges."))
-        print(_("Please run with: pkexec {}").format(sys.argv[0]))
-        return 1
-    
     # Create and run application
     app = SnapshotRestoreApp()
     return app.run(sys.argv)
