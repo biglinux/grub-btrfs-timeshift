@@ -39,13 +39,9 @@ msgstr "Chyba"
 msgid "Could not parse snapshot information"
 msgstr "Nepodarilo sa analyzovať informácie o snímke."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 207
-msgid "BigLinux Snapshot Restore"
-msgstr "Obnovenie snímky BigLinux"
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 239
-msgid "Snapshot Information"
-msgstr "Informácie o snímke"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 231
+msgid "Close"
+msgstr "Zavrieť"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
 msgid "File"
@@ -59,21 +55,20 @@ msgstr "Dátum"
 msgid "Time"
 msgstr "Čas"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 261
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 295
 msgid ""
 "The system was booted from a restore point (Snapshot).\n"
 "\n"
-"To make this restore point the default boot option, click the Restore button below."
+"To make this restore point the default boot option, click the button below."
 msgstr ""
 "Systém bol spustený z bodu obnovenia (Snapshot).\n"
 "\n"
 "Ak chcete tento bod obnovenia nastaviť ako predvolenú možnosť spustenia, kliknite na tlačidlo "
-"Obnoviť nižšie."
+"nižšie."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
-msgid "Restore System"
-msgstr "Obnoviť systém"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 322
+msgid "Restore system to this snapshot"
+msgstr "Obnoviť systém do tejto snímky."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
 msgid "Restoring..."
@@ -111,6 +106,11 @@ msgstr "Reštartovať"
 msgid "Error: {}"
 msgstr "Chyba: {}"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
+msgid "Restore System"
+msgstr "Obnoviť systém"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
 msgid "Reboot Error"
 msgstr "Chyba pri reštartovaní"
@@ -119,4 +119,4 @@ msgstr "Chyba pri reštartovaní"
 msgid "Could not restart system: {}"
 msgstr "Nemožno reštartovať systém: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 405
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454

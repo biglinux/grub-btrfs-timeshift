@@ -39,13 +39,9 @@ msgstr "Felaktigt"
 msgid "Could not parse snapshot information"
 msgstr "Kunde inte analysera ögonblicksbildsinformation"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 207
-msgid "BigLinux Snapshot Restore"
-msgstr "BigLinux Återställning av Snapshot"
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 239
-msgid "Snapshot Information"
-msgstr "Ögonblicksbildsinformation"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 231
+msgid "Close"
+msgstr "Stäng"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
 msgid "File"
@@ -59,21 +55,19 @@ msgstr "Datum"
 msgid "Time"
 msgstr "Tid"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 261
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 295
 msgid ""
 "The system was booted from a restore point (Snapshot).\n"
 "\n"
-"To make this restore point the default boot option, click the Restore button below."
+"To make this restore point the default boot option, click the button below."
 msgstr ""
 "Systemet startades från en återställningspunkt (Snapshot).\n"
 "\n"
-"För att göra denna återställningspunkt till standardstartalternativ, klicka på Återställ-knappen "
-"nedan."
+"För att göra denna återställningspunkt till standardstartalternativ, klicka på knappen nedan."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
-msgid "Restore System"
-msgstr "Återställ system"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 322
+msgid "Restore system to this snapshot"
+msgstr "Återställ systemet till denna ögonblicksbild"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
 msgid "Restoring..."
@@ -110,6 +104,11 @@ msgstr "Starta om"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 385
 msgid "Error: {}"
 msgstr "Fel: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
+msgid "Restore System"
+msgstr "Återställ system"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
 msgid "Reboot Error"

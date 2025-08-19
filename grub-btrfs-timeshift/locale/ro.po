@@ -41,13 +41,9 @@ msgstr "Eroare"
 msgid "Could not parse snapshot information"
 msgstr "Nu s-a putut analiza informațiile despre snapshot."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 207
-msgid "BigLinux Snapshot Restore"
-msgstr "Restaurare Snapshot BigLinux"
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 239
-msgid "Snapshot Information"
-msgstr "Informații despre instantanee"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 231
+msgid "Close"
+msgstr "Închide"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
 msgid "File"
@@ -61,21 +57,20 @@ msgstr "Dată"
 msgid "Time"
 msgstr "Timp"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 261
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 295
 msgid ""
 "The system was booted from a restore point (Snapshot).\n"
 "\n"
-"To make this restore point the default boot option, click the Restore button below."
+"To make this restore point the default boot option, click the button below."
 msgstr ""
 "Sistemul a fost pornit dintr-un punct de restaurare (Instantaneu).\n"
 "\n"
-"Pentru a face din acest punct de restaurare opțiunea de boot implicită, faceți clic pe butonul "
-"Restaurare de mai jos."
+"Pentru a face din acest punct de restaurare opțiunea de boot implicită, faceți clic pe butonul de "
+"mai jos."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
-msgid "Restore System"
-msgstr "Restaurare sistemul"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 322
+msgid "Restore system to this snapshot"
+msgstr "Restaurare sistemul la acest instantaneu"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
 msgid "Restoring..."
@@ -113,6 +108,11 @@ msgstr "Repornire"
 msgid "Error: {}"
 msgstr "Eroare: {}"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
+msgid "Restore System"
+msgstr "Restaurare sistemul"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
 msgid "Reboot Error"
 msgstr "Eroare la repornire"
@@ -121,4 +121,4 @@ msgstr "Eroare la repornire"
 msgid "Could not restart system: {}"
 msgstr "Nu s-a putut reporni sistemul: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 405
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454

@@ -41,13 +41,9 @@ msgstr "Viga"
 msgid "Could not parse snapshot information"
 msgstr "Ei õnnestunud analüüsida hetkeseisu teavet."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 207
-msgid "BigLinux Snapshot Restore"
-msgstr "BigLinuxi Snapshot Taastamine"
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 239
-msgid "Snapshot Information"
-msgstr "Kohandmete teave"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 231
+msgid "Close"
+msgstr "Sulge"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
 msgid "File"
@@ -61,20 +57,19 @@ msgstr "Kuupäev"
 msgid "Time"
 msgstr "Aeg"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 261
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 295
 msgid ""
 "The system was booted from a restore point (Snapshot).\n"
 "\n"
-"To make this restore point the default boot option, click the Restore button below."
+"To make this restore point the default boot option, click the button below."
 msgstr ""
 "Süsteem käivitati taastamispunktist (Snapshot).\n"
 "\n"
-"Selle taastamispunkti vaikimisi käivitamisvalikuks seadmiseks klõpsake alloleval Taasta nupul."
+"Selle taastamispunkti vaikimisi käivitamisvalikuks seadmiseks klõpsake alloleval nupul."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
-msgid "Restore System"
-msgstr "Taasta süsteem"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 322
+msgid "Restore system to this snapshot"
+msgstr "Taasta süsteem sellele hetkepildile."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
 msgid "Restoring..."
@@ -112,6 +107,11 @@ msgstr "Taaskäivita"
 msgid "Error: {}"
 msgstr "Viga: {}"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
+msgid "Restore System"
+msgstr "Taasta süsteem"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
 msgid "Reboot Error"
 msgstr "Taaskäivitamise viga"
@@ -120,4 +120,4 @@ msgstr "Taaskäivitamise viga"
 msgid "Could not restart system: {}"
 msgstr "Süsteemi ei saanud taaskäivitada: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 405
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454

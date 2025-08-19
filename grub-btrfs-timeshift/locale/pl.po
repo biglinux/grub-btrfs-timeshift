@@ -39,13 +39,9 @@ msgstr "Błąd"
 msgid "Could not parse snapshot information"
 msgstr "Nie można przetworzyć informacji o migawce."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 207
-msgid "BigLinux Snapshot Restore"
-msgstr "Przywracanie migawki BigLinux"
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 239
-msgid "Snapshot Information"
-msgstr "Informacje o migawce"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 231
+msgid "Close"
+msgstr "Zamknij"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
 msgid "File"
@@ -59,20 +55,19 @@ msgstr "Data"
 msgid "Time"
 msgstr "Czas"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 261
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 295
 msgid ""
 "The system was booted from a restore point (Snapshot).\n"
 "\n"
-"To make this restore point the default boot option, click the Restore button below."
+"To make this restore point the default boot option, click the button below."
 msgstr ""
 "System uruchomiono z punktu przywracania (Migawka).\n"
 "\n"
-"Aby ustawić ten punkt przywracania jako domyślną opcję rozruchu, kliknij przycisk Przywróć poniżej."
+"Aby ustawić ten punkt przywracania jako domyślną opcję rozruchu, kliknij przycisk poniżej."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
-msgid "Restore System"
-msgstr "Przywróć system"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 322
+msgid "Restore system to this snapshot"
+msgstr "Przywróć system do tego zrzutu."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
 msgid "Restoring..."
@@ -110,6 +105,11 @@ msgstr "Uruchom ponownie"
 msgid "Error: {}"
 msgstr "Błąd: {}"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
+msgid "Restore System"
+msgstr "Przywróć system"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
 msgid "Reboot Error"
 msgstr "Błąd ponownego uruchomienia"
@@ -118,4 +118,4 @@ msgstr "Błąd ponownego uruchomienia"
 msgid "Could not restart system: {}"
 msgstr "Nie można zrestartować systemu: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 405
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
