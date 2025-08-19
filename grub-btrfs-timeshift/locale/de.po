@@ -14,98 +14,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "BigLinux Snapshot Detect"
-msgstr "BigLinux Snapshot erkennen"
-msgid "Snapshot não encontrado!"
-msgstr "Snapshot nicht gefunden!"
-msgid "Snapshot not detected, did you really boot into the snapshot?"
-msgstr "Snapshot nicht erkannt, haben Sie wirklich in den Snapshot gebootet?"
-msgid "Completed!"
-msgstr "Abgeschlossen!"
-msgid "Restoration"
-msgstr "Wiederherstellung"
-msgid "If you really want to restore, call the script with --yes."
-msgstr "Wenn Sie wirklich wiederherstellen möchten, rufen Sie das Skript mit --yes auf."
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-msgid ""
-"\n"
-"          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
-"/proc/cmdline) ?-->\n"
-"        "
-msgstr ""
-"<!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
-"/proc/cmdline) ?-->"
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-msgid "Timeshift"
-msgstr "Zeitschleife"
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-msgid "File:"
-msgstr "Datei:"
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-msgid "Date:"
-msgstr "Datum:"
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-msgid "Time:"
-msgstr "Zeit:"
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
-# 
-msgid ""
-"\n"
-"          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
-"          If you want to make this restore point the default boot option, click the Restore button "
-"or use Timeshift for more options.\n"
-"        "
-msgstr ""
-"Das System wurde von einem Wiederherstellungspunkt, auch Snapshot genannt, gestartet.<br><br>\n"
-"Wenn Sie diesen Wiederherstellungspunkt zur Standard-Boot-Option machen möchten, klicken Sie auf "
-"die Schaltfläche Wiederherstellen oder verwenden Sie Timeshift für weitere Optionen."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
@@ -116,8 +24,10 @@ msgid "Timeshift restoration completed"
 msgstr "Timeshift-Wiederherstellung abgeschlossen"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 190
-msgid "Snapshot not detected"
-msgstr "Schnappschuss nicht erkannt"
+msgid "Snapshot not detected: This application only runs when booted from a Timeshift snapshot."
+msgstr ""
+"Schnappschuss nicht erkannt: Diese Anwendung läuft nur, wenn sie von einem Timeshift-Schnappschuss "
+"gestartet wird."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 191
 msgid "Did you really boot into the snapshot?"
@@ -151,17 +61,16 @@ msgstr "Datum"
 msgid "Time"
 msgstr "Zeit"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 263
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 261
 msgid ""
-"The system was booted from a restore point, also called a Snapshot.\n"
+"The system was booted from a restore point (Snapshot).\n"
 "\n"
-"If you want to make this restore point the default boot option, click the Restore button or use "
-"Timeshift for more options."
+"To make this restore point the default boot option, click the Restore button below."
 msgstr ""
-"Das System wurde von einem Wiederherstellungspunkt, auch Snapshot genannt, gestartet.\n"
+"Das System wurde von einem Wiederherstellungspunkt (Snapshot) gestartet.\n"
 "\n"
-"Wenn Sie diesen Wiederherstellungspunkt zur Standard-Boot-Option machen möchten, klicken Sie auf "
-"die Schaltfläche Wiederherstellen oder verwenden Sie Timeshift für weitere Optionen."
+"Um diesen Wiederherstellungspunkt zur Standard-Boot-Option zu machen, klicken Sie auf die "
+"Schaltfläche Wiederherstellen unten."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
@@ -212,14 +121,4 @@ msgstr "Neustartfehler"
 msgid "Could not restart system: {}"
 msgstr "System konnte nicht neu gestartet werden: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 414
-msgid "This application requires administrator privileges."
-msgstr "Diese Anwendung erfordert Administratorrechte."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 415
-msgid "Please run with: pkexec {}"
-msgstr "Bitte führen Sie aus: pkexec {}"
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 405
