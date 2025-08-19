@@ -205,33 +205,67 @@ class SnapshotRestoreApp(Adw.Application):
     def create_main_window(self):
         """Create the main application window"""
         self.window = Adw.ApplicationWindow(application=self)
-        self.window.set_title(_("BigLinux Snapshot Restore"))
-        self.window.set_default_size(500, 400)
+        self.window.set_title(f"Snapshot {self.snapshot_info['name']}")
+        self.window.set_default_size(500, 630)
         self.window.set_resizable(False)
         
-        # Header bar
-        header_bar = Adw.HeaderBar()
-        header_bar.set_title_widget(Gtk.Label(label=f"Snapshot {self.snapshot_info['name']}"))
-        self.window.set_titlebar(header_bar)
+        # Main container - exactly like WelcomeDialog
+        main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+
+        # Header with close button - exactly like WelcomeDialog  
+        header_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+        header_box.set_size_request(-1, 50)
+        header_box.set_margin_start(20)
+        header_box.set_margin_end(15)
+        header_box.set_margin_top(5)
+        header_box.add_css_class("header-area")
         
-        # Main content
-        main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=24)
-        main_box.set_margin_top(30)
-        main_box.set_margin_bottom(30)
-        main_box.set_margin_start(30)
-        main_box.set_margin_end(30)
+        # Spacer to push close button to the right
+        header_spacer = Gtk.Box()
+        header_spacer.set_hexpand(True)
+        header_box.append(header_spacer)
         
+        # Close button in top right corner
+        close_button = Gtk.Button()
+        close_button.set_icon_name("window-close-symbolic")
+        close_button.set_tooltip_text(_("Close"))
+        close_button.add_css_class("flat")
+        close_button.add_css_class("circular")
+        close_button.set_size_request(32, 32)
+        close_button.connect('clicked', self._on_close_clicked)
+        header_box.append(close_button)
+        
+        main_box.append(header_box)
+
+        # ScrolledWindow for content - exactly like WelcomeDialog
+        scrolled_window = Gtk.ScrolledWindow()
+        scrolled_window.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
+        scrolled_window.set_vexpand(True)
+
+        # Content container
+        content_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=16)
+        content_box.set_margin_top(8)
+        content_box.set_margin_bottom(16)
+        content_box.set_margin_start(20)
+        content_box.set_margin_end(20)
+
         # Icon centered
         icon = Gtk.Image.new_from_icon_name("timeshift")
-        icon.set_pixel_size(48)
+        icon.set_pixel_size(72)
         icon.set_halign(Gtk.Align.CENTER)
-        icon.set_margin_bottom(10)
-        main_box.append(icon)
+        icon.set_margin_bottom(8)
+        content_box.append(icon)
         
+        # Title
+        title_label = Gtk.Label()
+        title_label.set_markup(f"<span size='large' weight='bold'>Snapshot {self.snapshot_info['name']}</span>")
+        title_label.set_halign(Gtk.Align.CENTER)
+        title_label.set_margin_bottom(12)
+        content_box.append(title_label)
+
         # Snapshot information group
         info_group = Adw.PreferencesGroup()
-        info_group.set_title(_("Snapshot Information"))
-        info_group.set_margin_bottom(10)
+        info_group.set_margin_bottom(15)
         
         # File path row
         file_row = Adw.ActionRow()
@@ -254,42 +288,57 @@ class SnapshotRestoreApp(Adw.Application):
         time_row.add_css_class("property")
         info_group.add(time_row)
         
-        main_box.append(info_group)
+        content_box.append(info_group)
         
         # Description
         description = Gtk.Label()
         description.set_text(_("The system was booted from a restore point (Snapshot).\n\n"
-                             "To make this restore point the default boot option, "
-                             "click the Restore button below."))
+                            "To make this restore point the default boot option, "
+                            "click the button below."))
         description.set_wrap(True)
         description.set_justify(Gtk.Justification.CENTER)
         description.add_css_class("body")
         description.set_margin_top(15)
         description.set_margin_bottom(20)
-        main_box.append(description)
+        content_box.append(description)
         
         # Progress bar (initially hidden)
         self.progress_bar = Gtk.ProgressBar()
         self.progress_bar.set_visible(False)
-        main_box.append(self.progress_bar)
+        content_box.append(self.progress_bar)
         
         # Status label
         self.status_label = Gtk.Label()
         self.status_label.set_visible(False)
-        main_box.append(self.status_label)
+        content_box.append(self.status_label)
         
+        # Button container
+        button_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+        button_box.set_halign(Gtk.Align.CENTER)
+        button_box.set_margin_top(16)
+
         # Restore button
         self.restore_button = Gtk.Button()
-        self.restore_button.set_label(_("Restore System"))
+        self.restore_button.set_label(_("Restore system to this snapshot"))
         self.restore_button.add_css_class("suggested-action")
         self.restore_button.add_css_class("pill")
-        self.restore_button.set_halign(Gtk.Align.CENTER)
         self.restore_button.set_size_request(200, 40)
         self.restore_button.connect("clicked", self.on_restore_clicked)
-        main_box.append(self.restore_button)
+        button_box.append(self.restore_button)
         
+        content_box.append(button_box)
+
+        # Add content to ScrolledWindow
+        scrolled_window.set_child(content_box)
+        main_box.append(scrolled_window)
+
+        # Set the content
         self.window.set_content(main_box)
         self.window.present()
+
+    def _on_close_clicked(self, button):
+        """Handle close button click"""
+        self.quit()
     
     def on_restore_clicked(self, button):
         """Handle restore button click"""
