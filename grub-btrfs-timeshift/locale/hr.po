@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the grub-btrfs-timeshift package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: grub-btrfs-timeshift\n"
@@ -15,50 +14,86 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "BigLinux Snimanje Otkrivanja"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot nije pronađen!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Snapshot nije otkriven, jeste li se stvarno pokrenuli u snimci?"
-
 msgid "Completed!"
 msgstr "Završeno!"
-
 msgid "Restoration"
 msgstr "Obnova"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Ako stvarno želite vratiti, pozovite skriptu s --yes."
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid ""
 "\n"
 "          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr "You are trained on data up to October 2023."
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "Timeshift"
 msgstr "Vremenska pomak"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "File:"
 msgstr "Datoteka:"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "Date:"
 msgstr "Datum:"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "Time:"
 msgstr "Vrijeme:"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid ""
 "\n"
 "          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
@@ -69,3 +104,120 @@ msgstr ""
 "Sustav je pokrenut s točke vraćanja, koja se također naziva Snimak.<br><br>\n"
 "Ako želite postaviti ovu točku vraćanja kao zadanu opciju pokretanja, kliknite gumb Vraćanje ili "
 "upotrijebite Timeshift za više opcija."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
+msgid "Starting Timeshift restoration..."
+msgstr "Pokretanje vraćanja Timeshift-a..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
+msgid "Timeshift restoration completed"
+msgstr "Obnova vremenskog pomaka završena"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 190
+msgid "Snapshot not detected"
+msgstr "Trenutna snimka nije otkrivena"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 191
+msgid "Did you really boot into the snapshot?"
+msgstr "Jeste li se stvarno pokrenuli iz snimke?"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 197
+msgid "Error"
+msgstr "Greška"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 198
+msgid "Could not parse snapshot information"
+msgstr "Nije moguće analizirati informacije o snimku."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 207
+msgid "BigLinux Snapshot Restore"
+msgstr "BigLinux Snimanje Vraćanje"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 239
+msgid "Snapshot Information"
+msgstr "Informacije o snimku"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
+msgid "File"
+msgstr "Datoteka"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 249
+msgid "Date"
+msgstr "Datum"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 255
+msgid "Time"
+msgstr "Vrijeme"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 263
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.\n"
+"\n"
+"If you want to make this restore point the default boot option, click the Restore button or use "
+"Timeshift for more options."
+msgstr ""
+"Sustav je pokrenut s točke vraćanja, koja se također naziva Snimak.\n"
+"\n"
+"Ako želite ovu točku vraćanja postaviti kao zadanu opciju pokretanja, kliknite gumb Vrati ili "
+"upotrijebite Timeshift za više opcija."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
+msgid "Restore System"
+msgstr "Obnovi sustav"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
+msgid "Restoring..."
+msgstr "Obnavljanje..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 330
+msgid "Checking system state..."
+msgstr "Provjera stanja sustava..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 337
+msgid "Restoration completed. Checking system consistency..."
+msgstr "Obnova završena. Provjera dosljednosti sustava..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
+msgid "Regenerating GRUB configuration..."
+msgstr "Ponovno generiranje GRUB konfiguracije..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
+msgid "GRUB configuration regeneration failed"
+msgstr "Neuspjela regeneracija GRUB konfiguracije"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
+msgid "Timeshift restoration failed: {}"
+msgstr "Obnova Timeshift-a nije uspjela: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 370
+msgid "Restoration completed successfully! Please reboot the system."
+msgstr "Obnova je uspješno završena! Molimo ponovno pokrenite sustav."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 374
+msgid "Restart"
+msgstr "Ponovno pokreni"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 385
+msgid "Error: {}"
+msgstr "Greška: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
+msgid "Reboot Error"
+msgstr "Pogreška pri ponovnom pokretanju"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 399
+msgid "Could not restart system: {}"
+msgstr "Nije moguće ponovo pokrenuti sustav: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
+msgid "OK"
+msgstr "U redu"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 414
+msgid "This application requires administrator privileges."
+msgstr "Ova aplikacija zahtijeva administratorske privilegije."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 415
+msgid "Please run with: pkexec {}"
+msgstr "Molimo pokrenite s: pkexec {}"

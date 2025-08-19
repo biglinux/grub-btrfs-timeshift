@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the grub-btrfs-timeshift package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: grub-btrfs-timeshift\n"
@@ -15,50 +14,86 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "Ανίχνευση BigLinux Snapshot"
-
 msgid "Snapshot não encontrado!"
 msgstr "Δεν βρέθηκε στιγμιότυπο!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Δεν ανιχνεύθηκε στιγμιότυπο, μήπως πραγματικά εκκινήσατε στο στιγμιότυπο;"
-
 msgid "Completed!"
 msgstr "Ολοκληρώθηκε!"
-
 msgid "Restoration"
 msgstr "Αποκατάσταση"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Αν πραγματικά θέλεις να αποκαταστήσεις, κάλεσε το σενάριο με --yes."
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid ""
 "\n"
 "          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
 "/proc/cmdline) ?-->\n"
 "        "
 msgstr ""
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "Timeshift"
 msgstr "Χρονική μετατόπιση"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "File:"
 msgstr "Αρχείο:"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "Date:"
 msgstr "Ημερομηνία:"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "Time:"
 msgstr "Χρόνος:"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid ""
 "\n"
 "          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
@@ -69,3 +104,120 @@ msgstr ""
 "Το σύστημα εκκινήθηκε από ένα σημείο επαναφοράς, που ονομάζεται επίσης Στιγμιότυπο.<br><br>\n"
 "Αν θέλετε να κάνετε αυτό το σημείο επαναφοράς την προεπιλεγμένη επιλογή εκκίνησης, κάντε κλικ στο "
 "κουμπί Επαναφορά ή χρησιμοποιήστε το Timeshift για περισσότερες επιλογές."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
+msgid "Starting Timeshift restoration..."
+msgstr "Έναρξη αποκατάστασης Timeshift..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
+msgid "Timeshift restoration completed"
+msgstr "Η αποκατάσταση του Timeshift ολοκληρώθηκε"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 190
+msgid "Snapshot not detected"
+msgstr "Δεν ανιχνεύθηκε στιγμιότυπο"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 191
+msgid "Did you really boot into the snapshot?"
+msgstr "Πραγματικά εκκινήσατε από το στιγμιότυπο;"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 197
+msgid "Error"
+msgstr "Σφάλμα"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 198
+msgid "Could not parse snapshot information"
+msgstr "Δεν ήταν δυνατή η ανάλυση των πληροφοριών στιγμιότυπου."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 207
+msgid "BigLinux Snapshot Restore"
+msgstr "Αποκατάσταση στιγμιότυπου BigLinux"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 239
+msgid "Snapshot Information"
+msgstr "Πληροφορίες στιγμιότυπου"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
+msgid "File"
+msgstr "Αρχείο"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 249
+msgid "Date"
+msgstr "Ημερομηνία"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 255
+msgid "Time"
+msgstr "Χρόνος"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 263
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.\n"
+"\n"
+"If you want to make this restore point the default boot option, click the Restore button or use "
+"Timeshift for more options."
+msgstr ""
+"Το σύστημα εκκινήθηκε από ένα σημείο επαναφοράς, που ονομάζεται επίσης Στιγμιότυπο.\n"
+"\n"
+"Αν θέλετε να κάνετε αυτό το σημείο επαναφοράς την προεπιλεγμένη επιλογή εκκίνησης, κάντε κλικ στο "
+"κουμπί Επαναφορά ή χρησιμοποιήστε το Timeshift για περισσότερες επιλογές."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
+msgid "Restore System"
+msgstr "Αποκατάσταση Συστήματος"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
+msgid "Restoring..."
+msgstr "Αποκατάσταση..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 330
+msgid "Checking system state..."
+msgstr "Έλεγχος κατάστασης συστήματος..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 337
+msgid "Restoration completed. Checking system consistency..."
+msgstr "Η αποκατάσταση ολοκληρώθηκε. Έλεγχος συνέπειας συστήματος..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
+msgid "Regenerating GRUB configuration..."
+msgstr "Αναδημιουργία ρύθμισης GRUB..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
+msgid "GRUB configuration regeneration failed"
+msgstr "Η αναγέννηση της διαμόρφωσης GRUB απέτυχε."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
+msgid "Timeshift restoration failed: {}"
+msgstr "Η αποκατάσταση του Timeshift απέτυχε: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 370
+msgid "Restoration completed successfully! Please reboot the system."
+msgstr "Η αποκατάσταση ολοκληρώθηκε με επιτυχία! Παρακαλώ επανεκκινήστε το σύστημα."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 374
+msgid "Restart"
+msgstr "Επανεκκίνηση"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 385
+msgid "Error: {}"
+msgstr "Σφάλμα: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
+msgid "Reboot Error"
+msgstr "Σφάλμα επανεκκίνησης"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 399
+msgid "Could not restart system: {}"
+msgstr "Δεν ήταν δυνατή η επανεκκίνηση του συστήματος: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 414
+msgid "This application requires administrator privileges."
+msgstr "Αυτή η εφαρμογή απαιτεί δικαιώματα διαχειριστή."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 415
+msgid "Please run with: pkexec {}"
+msgstr "Παρακαλώ εκτελέστε με: pkexec {}"

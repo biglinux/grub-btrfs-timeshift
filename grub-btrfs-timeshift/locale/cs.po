@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the grub-btrfs-timeshift package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: grub-btrfs-timeshift\n"
@@ -15,26 +14,27 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
 msgid "BigLinux Snapshot Detect"
 msgstr "Detekce snímku BigLinux"
-
 msgid "Snapshot não encontrado!"
 msgstr "Snapshot nebyl nalezen!"
-
 msgid "Snapshot not detected, did you really boot into the snapshot?"
 msgstr "Snapshot nebyl detekován, opravdu jste se spustili do snapshotu?"
-
 msgid "Completed!"
 msgstr "Dokončeno!"
-
 msgid "Restoration"
 msgstr "Obnovení"
-
 msgid "If you really want to restore, call the script with --yes."
 msgstr "Pokud opravdu chcete obnovit, zavolejte skript s --yes."
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid ""
 "\n"
 "          <!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
@@ -43,24 +43,59 @@ msgid ""
 msgstr ""
 "<!--?include bash echo Snapshot $(sed -E 's|.*timeshift-btrfs/snapshots/([^ @/]*).*|\\1|' "
 "/proc/cmdline) ?-->"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "Timeshift"
 msgstr "Časový posun"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "File:"
 msgstr "Soubor:"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "Date:"
 msgstr "Datum:"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid "Time:"
 msgstr "Čas:"
-
-#: NEEDS WORK
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
+# #-#-#-#-#  grub-btrfs-timeshift-bash.pot (grub-btrfs-timeshift)  #-#-#-#-#
+# 
 msgid ""
 "\n"
 "          The system was booted from a restore point, also called a Snapshot.<br><br>\n"
@@ -71,3 +106,120 @@ msgstr ""
 "Systém byl spuštěn z bodu obnovení, také nazývaného Snapsot.<br><br>\n"
 "Pokud chcete tento bod obnovení nastavit jako výchozí možnost spuštění, klikněte na tlačítko "
 "Obnovit nebo použijte Timeshift pro další možnosti."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
+msgid "Starting Timeshift restoration..."
+msgstr "Zahájení obnovení Timeshift..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
+msgid "Timeshift restoration completed"
+msgstr "Obnovení časového posunu bylo dokončeno."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 190
+msgid "Snapshot not detected"
+msgstr "Snapshot nebyl detekován"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 191
+msgid "Did you really boot into the snapshot?"
+msgstr "Opravdu jste se spustili do snímku?"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 197
+msgid "Error"
+msgstr "Chyba"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 198
+msgid "Could not parse snapshot information"
+msgstr "Nelze analyzovat informace o snímku"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 207
+msgid "BigLinux Snapshot Restore"
+msgstr "Obnovení snímku BigLinux"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 239
+msgid "Snapshot Information"
+msgstr "Informace o snímku"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
+msgid "File"
+msgstr "Soubor"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 249
+msgid "Date"
+msgstr "Datum"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 255
+msgid "Time"
+msgstr "Čas"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 263
+msgid ""
+"The system was booted from a restore point, also called a Snapshot.\n"
+"\n"
+"If you want to make this restore point the default boot option, click the Restore button or use "
+"Timeshift for more options."
+msgstr ""
+"Systém byl spuštěn z bodu obnovení, také nazývaného snímek.\n"
+"\n"
+"Pokud chcete tento bod obnovení nastavit jako výchozí možnost spuštění, klikněte na tlačítko "
+"Obnovit nebo použijte Timeshift pro další možnosti."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
+msgid "Restore System"
+msgstr "Obnovit systém"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
+msgid "Restoring..."
+msgstr "Obnovování..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 330
+msgid "Checking system state..."
+msgstr "Kontrola stavu systému..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 337
+msgid "Restoration completed. Checking system consistency..."
+msgstr "Obnovení dokončeno. Kontrola konzistence systému..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
+msgid "Regenerating GRUB configuration..."
+msgstr "Regeneruji konfiguraci GRUB..."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
+msgid "GRUB configuration regeneration failed"
+msgstr "Regenerace konfigurace GRUB selhala"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
+msgid "Timeshift restoration failed: {}"
+msgstr "Obnovení Timeshiftu selhalo: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 370
+msgid "Restoration completed successfully! Please reboot the system."
+msgstr "Obnovení bylo úspěšně dokončeno! Prosím, restartujte systém."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 374
+msgid "Restart"
+msgstr "Restartovat"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 385
+msgid "Error: {}"
+msgstr "Chyba: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
+msgid "Reboot Error"
+msgstr "Chyba při restartování"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 399
+msgid "Could not restart system: {}"
+msgstr "Nelze restartovat systém: {}"
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 414
+msgid "This application requires administrator privileges."
+msgstr "Tato aplikace vyžaduje oprávnění správce."
+# 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 415
+msgid "Please run with: pkexec {}"
+msgstr "Prosím spusťte s: pkexec {}"
