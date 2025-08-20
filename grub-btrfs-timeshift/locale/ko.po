@@ -81,14 +81,6 @@ msgstr "시스템 상태 확인 중..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "복원 완료. 시스템 일관성 확인 중..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "GRUB 구성 재생성 중..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "GRUB 구성 재생성 실패"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "타임시프트 복원 실패: {}"
@@ -118,4 +110,4 @@ msgstr "재부팅 오류"
 msgid "Could not restart system: {}"
 msgstr "시스템을 재시작할 수 없습니다: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

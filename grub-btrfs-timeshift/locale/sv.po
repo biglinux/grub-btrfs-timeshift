@@ -81,14 +81,6 @@ msgstr "Kontrollerar systemstatus..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Återställning slutförd. Kontrollerar systemets konsistens..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "Återgenererar GRUB-konfiguration..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "GRUB-konfigurationsåterställning misslyckades"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Återställning av tidskopiering misslyckades: {}"

@@ -81,14 +81,6 @@ msgstr "システム状態を確認中..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "復元が完了しました。システムの整合性を確認しています..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "GRUB設定を再生成しています..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "GRUB構成の再生成に失敗しました"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "タイムシフトの復元に失敗しました: {}"
@@ -118,4 +110,4 @@ msgstr "再起動エラー"
 msgid "Could not restart system: {}"
 msgstr "システムを再起動できませんでした: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

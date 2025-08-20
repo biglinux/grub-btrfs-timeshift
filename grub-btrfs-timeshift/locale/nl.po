@@ -83,14 +83,6 @@ msgstr "Systeemstatus controleren..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Herstel voltooid. Systeemconsistentie controleren..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "GRUB-configuratie regenereren..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "GRUB-configuratie regeneratie mislukt"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Tijdverschuiving herstel mislukt: {}"
@@ -120,4 +112,4 @@ msgstr "Herstartfout"
 msgid "Could not restart system: {}"
 msgstr "Kon systeem niet opnieuw opstarten: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

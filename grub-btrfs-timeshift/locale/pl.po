@@ -81,14 +81,6 @@ msgstr "Sprawdzanie stanu systemu..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Przywracanie zakończone. Sprawdzanie spójności systemu..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "Regenerowanie konfiguracji GRUB..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "Regeneracja konfiguracji GRUB nie powiodła się"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Przywracanie punktu przywracania nie powiodło się: {}"
@@ -118,4 +110,4 @@ msgstr "Błąd ponownego uruchomienia"
 msgid "Could not restart system: {}"
 msgstr "Nie można zrestartować systemu: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

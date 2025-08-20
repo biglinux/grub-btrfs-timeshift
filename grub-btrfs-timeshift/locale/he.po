@@ -81,14 +81,6 @@ msgstr "בודק מצב מערכת..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "שחזור הושלם. בודק עקביות מערכת..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "מחדש את תצורת GRUB..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "כישלון בהגדרת GRUB מחדש"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "שחזור טיימשיפט נכשל: {}"

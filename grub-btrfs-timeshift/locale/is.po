@@ -81,14 +81,6 @@ msgstr "Athugun ástand kerfis..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Endurðun lokið. Athuga kerfis samræmi..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "Endurnýja GRUB stillingu..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "GRUB stilling endurreisn mistókst"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Tímasetning endurheimt mistókst: {}"
@@ -118,4 +110,4 @@ msgstr "Endurrótarvilla"
 msgid "Could not restart system: {}"
 msgstr "Gat ekki endurræsa kerfið: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

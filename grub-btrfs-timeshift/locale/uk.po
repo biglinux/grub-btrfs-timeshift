@@ -81,14 +81,6 @@ msgstr "Перевірка стану системи..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Відновлення завершено. Перевірка узгодженості системи..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "Відновлення конфігурації GRUB..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "Не вдалося відновити конфігурацію GRUB."
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Відновлення Timeshift не вдалося: {}"
@@ -118,4 +110,4 @@ msgstr "Помилка перезавантаження"
 msgid "Could not restart system: {}"
 msgstr "Не вдалося перезапустити систему: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

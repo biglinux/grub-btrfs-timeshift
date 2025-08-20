@@ -84,14 +84,6 @@ msgstr "Έλεγχος κατάστασης συστήματος..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Η αποκατάσταση ολοκληρώθηκε. Έλεγχος συνέπειας συστήματος..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "Αναδημιουργία ρύθμισης GRUB..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "Η αναγέννηση της διαμόρφωσης GRUB απέτυχε."
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Η αποκατάσταση του Timeshift απέτυχε: {}"
@@ -121,4 +113,4 @@ msgstr "Σφάλμα επανεκκίνησης"
 msgid "Could not restart system: {}"
 msgstr "Δεν ήταν δυνατή η επανεκκίνηση του συστήματος: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

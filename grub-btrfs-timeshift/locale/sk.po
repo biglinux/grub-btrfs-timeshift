@@ -82,14 +82,6 @@ msgstr "Kontrola stavu systému..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Obnova dokončená. Kontrola konzistencie systému..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "Regenerujem konfiguráciu GRUB..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "Obnovenie konfigurácie GRUB zlyhalo"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Obnovenie Timeshiftu zlyhalo: {}"
@@ -119,4 +111,4 @@ msgstr "Chyba pri reštartovaní"
 msgid "Could not restart system: {}"
 msgstr "Nemožno reštartovať systém: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

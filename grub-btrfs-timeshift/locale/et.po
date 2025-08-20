@@ -83,14 +83,6 @@ msgstr "Kontrollin süsteemi olekut..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Taastamine lõpetatud. Süsteemi järjepidevuse kontrollimine..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "GRUB-i konfiguratsiooni uuendamine..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "GRUBi konfiguratsiooni regeneratsioon ebaõnnestus"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Timeshift'i taastamine ebaõnnestus: {}"
@@ -120,4 +112,4 @@ msgstr "Taaskäivitamise viga"
 msgid "Could not restart system: {}"
 msgstr "Süsteemi ei saanud taaskäivitada: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

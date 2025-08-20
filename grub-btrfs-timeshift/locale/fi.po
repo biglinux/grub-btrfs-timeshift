@@ -81,14 +81,6 @@ msgstr "Tarkistetaan järjestelmän tila..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Palautus valmis. Tarkistetaan järjestelmän johdonmukaisuus..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "Uudelleenluodaan GRUB-konfiguraatiota..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "GRUB-konfiguraation uudelleentekeminen epäonnistui"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Aikasiirron palautus epäonnistui: {}"
@@ -118,4 +110,4 @@ msgstr "Käynnistysvirhe"
 msgid "Could not restart system: {}"
 msgstr "Järjestelmää ei voitu käynnistää uudelleen: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

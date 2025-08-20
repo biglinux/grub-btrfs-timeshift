@@ -83,14 +83,6 @@ msgstr "Sistem durumu kontrol ediliyor..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Kurtarma tamamlandı. Sistem tutarlılığı kontrol ediliyor..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "GRUB yapılandırması yeniden oluşturuluyor..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "GRUB yapılandırma yeniden oluşturma başarısız oldu"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Zaman kaydırma geri yüklemesi başarısız oldu: {}"
@@ -120,4 +112,4 @@ msgstr "Yeniden Başlatma Hatası"
 msgid "Could not restart system: {}"
 msgstr "Sistemi yeniden başlatılamadı: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

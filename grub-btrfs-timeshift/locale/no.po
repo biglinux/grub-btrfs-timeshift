@@ -82,14 +82,6 @@ msgstr "Sjekker systemtilstand..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Gjenoppretting fullført. Sjekker systemkonsistens..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "Regenererer GRUB-konfigurasjon..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "GRUB-konfigurasjonsregenerering mislyktes"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Tidsforskyvning gjenoppretting mislyktes: {}"
@@ -119,4 +111,4 @@ msgstr "Omstartfeil"
 msgid "Could not restart system: {}"
 msgstr "Kunne ikke starte systemet på nytt: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447

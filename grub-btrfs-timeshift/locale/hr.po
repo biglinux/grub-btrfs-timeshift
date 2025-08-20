@@ -83,14 +83,6 @@ msgstr "Provjera stanja sustava..."
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Obnova završena. Provjera dosljednosti sustava..."
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 343
-msgid "Regenerating GRUB configuration..."
-msgstr "Ponovno generiranje GRUB konfiguracije..."
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 350
-msgid "GRUB configuration regeneration failed"
-msgstr "Neuspjela regeneracija GRUB konfiguracije"
-# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Obnova Timeshift-a nije uspjela: {}"
