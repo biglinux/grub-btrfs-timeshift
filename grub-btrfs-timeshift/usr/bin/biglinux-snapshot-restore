@@ -5,11 +5,4 @@
 # This wrapper executes the Python GTK4 application
 #
 
-# Check if already running as root
-if [ "$(id -u)" -eq 0 ]; then
-    # Already root, execute directly
-    python /usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py "$@"
-else
-    # Not root, use pkexec to get privileges
-    pkexec env DISPLAY="$DISPLAY" XAUTHORITY="$XAUTHORITY" python /usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py "$@"
-fi
+python /usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py "$@"

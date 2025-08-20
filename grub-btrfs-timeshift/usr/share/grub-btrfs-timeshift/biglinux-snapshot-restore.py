@@ -99,9 +99,9 @@ class BtrfsManager:
         """List all BTRFS subvolumes"""
         try:
             result = subprocess.run(['btrfs', 'subvolume', 'list', '/'], 
-                                 capture_output=True, text=True, check=True)
+                                capture_output=True, text=True, check=True)
             return result.stdout
-        except subprocess.CalledProcessError:
+        except (subprocess.CalledProcessError, PermissionError):
             return ""
     
     @staticmethod
@@ -150,11 +150,12 @@ class TimeshiftManager:
             # Kill any running timeshift processes
             subprocess.run(['killall', 'timeshift-gtk'], capture_output=True)
             
-            # Execute timeshift restore
-            cmd = ['timeshift', '--restore', '--snapshot', snapshot_name, '--scripted', '--yes']
+            # Execute timeshift restore with pkexec for privileges
+            cmd = ['pkexec', 'timeshift', '--restore', '--snapshot', snapshot_name, '--scripted', '--yes']
             process = subprocess.Popen(cmd, stdin=subprocess.PIPE, 
-                                     stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
-                                     text=True)
+                                    stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
+                                    text=True, env={"DISPLAY": os.environ.get("DISPLAY", ""), 
+                                                "XAUTHORITY": os.environ.get("XAUTHORITY", "")})
             
             # Send empty responses to any prompts
             stdout, stderr = process.communicate(input='\n' * 10)
