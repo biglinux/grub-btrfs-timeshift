@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=oneshot
 ExecStartPre=/bin/sleep 15
-ExecStart=/usr/local/bin/biglinux-snapshot-restore
+ExecStart=/usr/bin/biglinux-snapshot-restore
 
 [Install]
 WantedBy=default.target
