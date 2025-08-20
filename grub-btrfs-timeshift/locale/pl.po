@@ -111,3 +111,5 @@ msgid "Could not restart system: {}"
 msgstr "Nie można zrestartować systemu: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447
+msgid "OK"
+msgstr "OK"
