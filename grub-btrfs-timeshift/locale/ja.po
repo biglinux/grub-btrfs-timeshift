@@ -110,4 +110,4 @@ msgstr "再起動エラー"
 msgid "Could not restart system: {}"
 msgstr "システムを再起動できませんでした: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 448

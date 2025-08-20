@@ -113,4 +113,4 @@ msgstr "Eroare la repornire"
 msgid "Could not restart system: {}"
 msgstr "Nu s-a putut reporni sistemul: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 448

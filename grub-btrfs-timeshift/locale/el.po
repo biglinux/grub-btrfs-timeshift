@@ -113,4 +113,4 @@ msgstr "Σφάλμα επανεκκίνησης"
 msgid "Could not restart system: {}"
 msgstr "Δεν ήταν δυνατή η επανεκκίνηση του συστήματος: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 448
