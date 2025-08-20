@@ -206,7 +206,7 @@ class SnapshotRestoreApp(Adw.Application):
         """Create the main application window"""
         self.window = Adw.ApplicationWindow(application=self)
         self.window.set_title(f"Snapshot {self.snapshot_info['name']}")
-        self.window.set_default_size(500, 630)
+        self.window.set_default_size(500, 640)
         self.window.set_resizable(False)
         
         # Main container - exactly like WelcomeDialog
@@ -387,15 +387,8 @@ class SnapshotRestoreApp(Adw.Application):
                 # Check post-restore state
                 post_restore_has_root = BtrfsManager.check_root_subvolume_exists()
                 
-                # Always regenerate GRUB for consistency
-                update_progress(_("Regenerating GRUB configuration..."))
-                grub_success, grub_output = GrubManager.regenerate_config()
-                
-                if grub_success and GrubManager.verify_config():
-                    GLib.idle_add(self._restoration_completed)
-                else:
-                    GLib.idle_add(self._restoration_failed, 
-                                _("GRUB configuration regeneration failed"))
+                # GRUB will be updated automatically on next normal boot
+                GLib.idle_add(self._restoration_completed)
             else:
                 GLib.idle_add(self._restoration_failed, 
                             _("Timeshift restoration failed: {}").format(output))
