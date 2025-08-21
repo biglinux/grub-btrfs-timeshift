@@ -113,4 +113,4 @@ msgstr "Грешка при рестартиране"
 msgid "Could not restart system: {}"
 msgstr "Не може да се рестартира системата: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 448
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487

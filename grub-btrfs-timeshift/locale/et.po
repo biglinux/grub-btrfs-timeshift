@@ -112,4 +112,4 @@ msgstr "Taaskäivitamise viga"
 msgid "Could not restart system: {}"
 msgstr "Süsteemi ei saanud taaskäivitada: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 448
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487

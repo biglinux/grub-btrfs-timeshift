@@ -111,4 +111,4 @@ msgstr "Omstartfeil"
 msgid "Could not restart system: {}"
 msgstr "Kunne ikke starte systemet på nytt: {}"
 # 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 448
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
