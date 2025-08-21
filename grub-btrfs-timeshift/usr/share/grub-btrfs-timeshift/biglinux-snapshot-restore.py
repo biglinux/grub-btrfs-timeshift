@@ -207,7 +207,7 @@ class SnapshotRestoreApp(Adw.Application):
         """Create the main application window"""
         self.window = Adw.ApplicationWindow(application=self)
         self.window.set_title(f"Snapshot {self.snapshot_info['name']}")
-        self.window.set_default_size(500, 640)
+        self.window.set_default_size(500, 650)
         self.window.set_resizable(False)
         
         # Center the window on the screen
