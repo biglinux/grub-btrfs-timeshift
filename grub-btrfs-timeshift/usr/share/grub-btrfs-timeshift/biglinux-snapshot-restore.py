@@ -20,7 +20,7 @@ from pathlib import Path
 import gi
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
-from gi.repository import Gtk, Adw, GLib, Gio
+from gi.repository import Gtk, Adw, GLib, Gio, Gdk
 
 
 # Translation setup
@@ -210,15 +210,18 @@ class SnapshotRestoreApp(Adw.Application):
         self.window.set_default_size(500, 640)
         self.window.set_resizable(False)
         
+        # Center the window on the screen
+        self.window.set_modal(True)
+        
         # Main container - exactly like WelcomeDialog
         main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
 
         # Header with close button - exactly like WelcomeDialog  
         header_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
-        header_box.set_size_request(-1, 50)
+        header_box.set_size_request(-1, 35)
         header_box.set_margin_start(20)
-        header_box.set_margin_end(15)
-        header_box.set_margin_top(5)
+        header_box.set_margin_end(8)
+        header_box.set_margin_top(4)
         header_box.add_css_class("header-area")
         
         # Spacer to push close button to the right
@@ -233,6 +236,9 @@ class SnapshotRestoreApp(Adw.Application):
         close_button.add_css_class("flat")
         close_button.add_css_class("circular")
         close_button.set_size_request(32, 32)
+        # Ensure button is perfectly square for circular effect
+        close_button.set_valign(Gtk.Align.CENTER)
+        close_button.set_halign(Gtk.Align.CENTER)
         close_button.connect('clicked', self._on_close_clicked)
         header_box.append(close_button)
         
@@ -245,13 +251,13 @@ class SnapshotRestoreApp(Adw.Application):
 
         # Content container
         content_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=16)
-        content_box.set_margin_top(8)
+        content_box.set_margin_top(4)
         content_box.set_margin_bottom(16)
         content_box.set_margin_start(20)
         content_box.set_margin_end(20)
 
         # Icon centered
-        icon = Gtk.Image.new_from_icon_name("timeshift")
+        icon = Gtk.Image.new_from_icon_name("big-timeshift")
         icon.set_pixel_size(72)
         icon.set_halign(Gtk.Align.CENTER)
         icon.set_margin_bottom(8)
@@ -336,6 +342,39 @@ class SnapshotRestoreApp(Adw.Application):
         # Set the content
         self.window.set_content(main_box)
         self.window.present()
+
+        # Center after presenting
+        GLib.idle_add(self._center_window)
+
+    def _center_window(self):
+        """Center window after it's been presented"""
+        try:
+            # Use native window positioning
+            native = self.window.get_native()
+            if native:
+                surface = native.get_surface()
+                if surface:
+                    display = Gdk.Display.get_default()
+                    monitor = display.get_monitors().get_item(0)  # Primary monitor
+                    if monitor:
+                        geometry = monitor.get_geometry()
+                        window_width, window_height = 500, 640
+                        x = (geometry.width - window_width) // 2
+                        y = (geometry.height - window_height) // 2
+                        
+                        # Try different positioning methods
+                        if hasattr(surface, 'set_position'):
+                            surface.set_position(x, y)
+                        elif hasattr(surface, 'move_to_rect'):
+                            rect = Gdk.Rectangle()
+                            rect.x = x
+                            rect.y = y
+                            rect.width = window_width
+                            rect.height = window_height
+                            surface.move_to_rect(rect, Gdk.Gravity.NORTH_WEST, Gdk.Gravity.NORTH_WEST, Gdk.AnchorHints.NONE, 0, 0)
+        except Exception:
+            pass  # Fallback to default positioning
+        return False
 
     def _on_close_clicked(self, button):
         """Handle close button click"""
