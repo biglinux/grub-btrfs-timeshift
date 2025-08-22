@@ -7,7 +7,7 @@ arch=('any')
 license=('GPL')
 url="https://github.com/biglinux/grub-btrfs-timeshift"
 pkgdesc="Fix to timeshift and refresh grub configuration after new snapshot"
-depends=('timeshift' 'bigbashview' 'grub-btrfs' 'inotify-tools')
+depends=('timeshift' 'grub-btrfs' 'inotify-tools' 'python-gobject' 'python-psutil' 'libadwaita')
 source=("git+https://github.com/biglinux/grub-btrfs-timeshift.git")
 md5sums=(SKIP)
 if [ -e "${pkgname}.install" ];then
