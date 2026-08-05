@@ -114,30 +114,3 @@ msgid "Could not restart system: {}"
 msgstr "Δεν ήταν δυνατή η επανεκκίνηση του συστήματος: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-msgid "Back to the main menu"
-msgstr "Επιστροφή στο κύριο μενού"
-
-msgid "UEFI firmware settings"
-msgstr "Ρυθμίσεις υλικολογισμικού UEFI"
-
-msgid "Restore points (snapshots)"
-msgstr "Σημεία επαναφοράς (snapshots)"
-
-msgid "boot"
-msgstr "στην εκκίνηση"
-
-msgid "hourly"
-msgstr "ωριαίο"
-
-msgid "daily"
-msgstr "ημερήσιο"
-
-msgid "weekly"
-msgstr "εβδομαδιαίο"
-
-msgid "monthly"
-msgstr "μηνιαίο"
-
-msgid "ondemand"
-msgstr "χειροκίνητο"

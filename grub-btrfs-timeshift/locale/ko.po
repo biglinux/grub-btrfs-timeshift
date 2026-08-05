@@ -113,30 +113,3 @@ msgstr "시스템을 재시작할 수 없습니다: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 448
 msgid "OK"
 msgstr "알겠습니다."
-
-msgid "Back to the main menu"
-msgstr "주 메뉴로 돌아가기"
-
-msgid "UEFI firmware settings"
-msgstr "UEFI 펌웨어 설정"
-
-msgid "Restore points (snapshots)"
-msgstr "복원 지점 (snapshots)"
-
-msgid "boot"
-msgstr "부팅 시"
-
-msgid "hourly"
-msgstr "매시간"
-
-msgid "daily"
-msgstr "매일"
-
-msgid "weekly"
-msgstr "매주"
-
-msgid "monthly"
-msgstr "매월"
-
-msgid "ondemand"
-msgstr "수동"
