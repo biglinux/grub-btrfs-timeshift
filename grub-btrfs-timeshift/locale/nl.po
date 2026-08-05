@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -113,3 +113,43 @@ msgid "Could not restart system: {}"
 msgstr "Kon systeem niet opnieuw opstarten: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "Terug naar het hoofdmenu"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "Herstelpunten (momentopnamen)"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "UEFI-firmware-instellingen"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Menu-item voor de UEFI-firmware-instellingen wordt toegevoegd ..."
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "Op verzoek"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "Bij opstarten"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "Elk uur"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "Dagelijks"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "Wekelijks"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "Maandelijks"

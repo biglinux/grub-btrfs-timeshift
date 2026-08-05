@@ -139,6 +139,15 @@ if restore_pristine /etc/grub.d/41_snapshots-btrfs; then
 	# entire catalog header - Project-Id-Version and all - inside the menu
 	# title. The -- keeps a field starting with a dash from being read as an
 	# option.
+	#
+	# Timeshift records why it took a snapshot as a single letter in its
+	# info.json, and that letter is what reached the menu: a bare "O" next to a
+	# date tells nobody anything. The letters become words here, and the words
+	# are what the catalogs translate. Anything else - the date column, or a
+	# snapshot carrying several tags - passes through untouched.
+	# Kept to one line: patch_line detects an already-applied patch with grep
+	# -F, and a multi-line needle would match on any single line of itself.
+	translated_field='$(field=$(trim "${var}"); case "$field" in O) field="On demand";; B) field="At boot";; H) field="Hourly";; D) field="Daily";; W) field="Weekly";; M) field="Monthly";; N/A) field="";; esac; if [ -n "$field" ]; then TEXTDOMAIN=grub-btrfs-timeshift TEXTDOMAINDIR=/usr/share/locale gettext -- "$field"; fi)'
 	patch_line /etc/grub.d/41_snapshots-btrfs instead \
 		'    title_menu="|" # "|" is for visuals only' \
 		'    title_menu=""'
@@ -147,10 +156,10 @@ if restore_pristine /etc/grub.d/41_snapshots-btrfs; then
 		'    title_submenu=""'
 	patch_line /etc/grub.d/41_snapshots-btrfs instead \
 		'            title_menu+="${var}|"' \
-		'            title_menu+="$(field=$(trim "${var}"); if [ -n "$field" ]; then TEXTDOMAIN=grub-btrfs-timeshift TEXTDOMAINDIR=/usr/share/locale gettext -- "$field"; fi)   "'
+		"            title_menu+=\"$translated_field   \""
 	patch_line /etc/grub.d/41_snapshots-btrfs instead \
 		'            title_submenu+=" $(trim "${var}") |"' \
-		'            title_submenu+="$(field=$(trim "${var}"); if [ -n "$field" ]; then TEXTDOMAIN=grub-btrfs-timeshift TEXTDOMAINDIR=/usr/share/locale gettext -- "$field"; fi)   "'
+		"            title_submenu+=\"$translated_field   \""
 	patch_line /etc/grub.d/41_snapshots-btrfs instead \
 		'header_menu' \
 		'# header_menu - the column header means nothing without the columns'

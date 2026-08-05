@@ -7,7 +7,10 @@ arch=('any')
 license=('GPL')
 url="https://github.com/biglinux/grub-btrfs-timeshift"
 pkgdesc="Fix to timeshift and refresh grub configuration after new snapshot"
-depends=('timeshift' 'grub-btrfs' 'inotify-tools' 'python-gobject' 'python-psutil' 'libadwaita')
+# grub provides grub-mkconfig and grub-script-check; gettext provides the menu
+# text. The generators run under set -e, so a missing gettext does not just
+# lose a translation, it aborts the whole grub.cfg.
+depends=('timeshift' 'grub' 'grub-btrfs' 'gettext' 'inotify-tools' 'python-gobject' 'python-psutil' 'libadwaita')
 source=("git+https://github.com/biglinux/grub-btrfs-timeshift.git")
 md5sums=(SKIP)
 if [ -e "${pkgname}.install" ];then
