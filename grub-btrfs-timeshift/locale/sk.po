@@ -112,30 +112,3 @@ msgid "Could not restart system: {}"
 msgstr "Nemožno reštartovať systém: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-msgid "Back to the main menu"
-msgstr "Späť do hlavnej ponuky"
-
-msgid "UEFI firmware settings"
-msgstr "Nastavenia firmvéru UEFI"
-
-msgid "Restore points (snapshots)"
-msgstr "Body obnovenia (snapshots)"
-
-msgid "boot"
-msgstr "pri štarte"
-
-msgid "hourly"
-msgstr "každú hodinu"
-
-msgid "daily"
-msgstr "denne"
-
-msgid "weekly"
-msgstr "týždenne"
-
-msgid "monthly"
-msgstr "mesačne"
-
-msgid "ondemand"
-msgstr "ručne"

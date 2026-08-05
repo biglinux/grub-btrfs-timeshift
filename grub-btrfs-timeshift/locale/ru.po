@@ -111,30 +111,3 @@ msgid "Could not restart system: {}"
 msgstr "Не удалось перезапустить систему: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-msgid "Back to the main menu"
-msgstr "Вернуться в главное меню"
-
-msgid "UEFI firmware settings"
-msgstr "Настройки прошивки UEFI"
-
-msgid "Restore points (snapshots)"
-msgstr "Точки восстановления (snapshots)"
-
-msgid "boot"
-msgstr "при загрузке"
-
-msgid "hourly"
-msgstr "ежечасно"
-
-msgid "daily"
-msgstr "ежедневно"
-
-msgid "weekly"
-msgstr "еженедельно"
-
-msgid "monthly"
-msgstr "ежемесячно"
-
-msgid "ondemand"
-msgstr "вручную"

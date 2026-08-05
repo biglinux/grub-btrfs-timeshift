@@ -111,30 +111,3 @@ msgid "Could not restart system: {}"
 msgstr "Gat ekki endurræsa kerfið: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-msgid "Back to the main menu"
-msgstr "Til baka í aðalvalmyndina"
-
-msgid "UEFI firmware settings"
-msgstr "Stillingar UEFI-fastbúnaðar"
-
-msgid "Restore points (snapshots)"
-msgstr "Endurheimtupunktar (snapshots)"
-
-msgid "boot"
-msgstr "við ræsingu"
-
-msgid "hourly"
-msgstr "á klukkustundar fresti"
-
-msgid "daily"
-msgstr "daglega"
-
-msgid "weekly"
-msgstr "vikulega"
-
-msgid "monthly"
-msgstr "mánaðarlega"
-
-msgid "ondemand"
-msgstr "handvirkt"
