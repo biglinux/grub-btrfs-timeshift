@@ -6,50 +6,15 @@ pre_install() {
 ## arg 1:  the new package version
 post_install() {
 
-    sed -i '/ExecStart=/s/.*/ExecStart=\/usr\/bin\/grub-btrfsd --syslog --timeshift-auto/' /usr/lib/systemd/system/grub-btrfsd.service
-    systemctl enable --now grub-btrfsd.service
     systemctl --global enable biglinux-snapshot-detect
-    
-    contem_classe() {
-        local linha="$1"
-        local classe="$2"
-        if echo "$linha" | grep -q -- "--class $classe"; then
-            return 0
-        else
-            return 1
-        fi
-    }
-    linha353=$(sed -n '353p' /etc/grub.d/10_linux)
-    if ! contem_classe "$linha353" "advanced"; then
-        sed -i '353s/\(\$menuentry_id_option .*\) {/\1 --class advanced {/' /etc/grub.d/10_linux
-    fi
-    linha193=$(sed -n '193p' /etc/grub.d/41_snapshots-btrfs)
-    linha194=$(sed -n '194p' /etc/grub.d/41_snapshots-btrfs)
-    linha503=$(sed -n '503p' /etc/grub.d/41_snapshots-btrfs)
-    linha591=$(sed -n '591p' /etc/grub.d/41_snapshots-btrfs)
-    if ! contem_classe "$linha193" "snapshot"; then
-        sed -i '193s/{$/--class snapshot {/' /etc/grub.d/41_snapshots-btrfs
-    fi
-    if ! contem_classe "$linha194" "calendar"; then        
-        sed -i '194s/\({ echo }"\)$/--class calendar \1/' /etc/grub.d/41_snapshots-btrfs
-    fi
-    if ! contem_classe "$linha503" "calendar"; then
-        sed -i '503s/{ echo }/--class calendar { echo }/' /etc/grub.d/41_snapshots-btrfs
-    fi
-    if ! contem_classe "$linha591" "snapshot"; then
-        sed -i '591s/{$/ --class snapshot {/' /etc/grub.d/41_snapshots-btrfs
-    fi
-    
-    linha35=$(sed -n '35p' /etc/grub.d/30_uefi-firmware)
-    if ! contem_classe "$linha35" "bios"; then
-        sudo sed -i '35s/{$/ --class bios {/' /etc/grub.d/30_uefi-firmware
-    fi    
-    
-    sudo sed -i 's/^#GRUB_BTRFS_TITLE_FORMAT=("date" "snapshot" "type" "description")/GRUB_BTRFS_TITLE_FORMAT=("date" "type" "description")/' /etc/default/grub-btrfs/config
 
-    sudo sed -i 's/^GRUB_BTRFS_IGNORE_SPECIFIC_PATH=.*/GRUB_BTRFS_IGNORE_SPECIFIC_PATH=("@" "Manjaro")/' /etc/default/grub-btrfs/config
-    
-    update-grub
+    sed -i 's/^GRUB_BTRFS_IGNORE_SPECIFIC_PATH=.*/GRUB_BTRFS_IGNORE_SPECIFIC_PATH=("@" "Manjaro")/' /etc/default/grub-btrfs/config
+
+    # The boot menu itself, the grub-btrfsd unit and update-grub are handled by
+    # /usr/share/libalpm/scripts/grub-btrfs-timeshift, which the hook runs after
+    # this and again whenever grub or grub-btrfs are upgraded. The menu entries
+    # used to be patched here by line number, which silently stopped matching
+    # every time one of those files changed.
 }
 
 ## arg 2:  the old package version
@@ -65,6 +30,10 @@ post_upgrade() {
 ## arg 1:  the old package version
 pre_remove() {
 	systemctl --global disable biglinux-snapshot-detect
+
+	# The stock firmware entry was disabled in favour of ours, which is about
+	# to be removed with the package.
+	chmod +x /etc/grub.d/30_uefi-firmware
 }
 
 ## arg 1:  the old package version

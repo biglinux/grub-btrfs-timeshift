@@ -78,11 +78,15 @@ restore_pristine() {
 	cat "$saved" >"$1"
 }
 
-# Advanced options for <OS>, from the grub package.
+# Advanced options for <OS>, from the grub package. The class is what gives the
+# entry its icon: the theme picks the icon by class name.
 if restore_pristine /etc/grub.d/10_linux; then
 	patch_line /etc/grub.d/10_linux after \
 		"gnulinux-advanced-\$boot_device_id'" \
 		"    echo \"	$back_entry\""
+	patch_line /etc/grub.d/10_linux instead \
+		"    echo \"submenu '\$(gettext_printf \"Advanced options for %s\" \"\${OS}\" | grub_quote)' \\\$menuentry_id_option 'gnulinux-advanced-\$boot_device_id' {\"" \
+		"    echo \"submenu '\$(gettext_printf \"Advanced options for %s\" \"\${OS}\" | grub_quote)' \\\$menuentry_id_option 'gnulinux-advanced-\$boot_device_id' --class advanced {\""
 fi
 
 if restore_pristine /etc/grub.d/41_snapshots-btrfs; then
@@ -94,10 +98,17 @@ if restore_pristine /etc/grub.d/41_snapshots-btrfs; then
 		"submenu '\${title_submenu}' { echo }\"" \
 		"    $back_entry"
 
-	# The restore points deserve an icon of their own in the main menu.
+	# Icons, again by class: the list in the main menu, each restore point in
+	# the list, and the date heading inside a restore point.
 	patch_line /etc/grub.d/41_snapshots-btrfs instead \
 		"submenu '\${submenuname}' \${protection_authorized_users}\${unrestricted_access_submenu}{" \
 		"submenu '\${submenuname}' --class snapshot \${protection_authorized_users}\${unrestricted_access_submenu}{"
+	patch_line /etc/grub.d/41_snapshots-btrfs instead \
+		'    entry "submenu '"'"'${title_menu}'"'"' {' \
+		'    entry "submenu '"'"'${title_menu}'"'"' --class snapshot {'
+	patch_line /etc/grub.d/41_snapshots-btrfs instead \
+		'    submenu '"'"'${title_submenu}'"'"' { echo }"' \
+		'    submenu '"'"'${title_submenu}'"'"' --class calendar { echo }"' 
 
 	# grub-btrfs lays the entries out as a table, pipes and all, and tops it
 	# with a column header. A boot menu is read by people in a hurry, so the
