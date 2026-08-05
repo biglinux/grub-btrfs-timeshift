@@ -9,11 +9,19 @@ set -e
 export TEXTDOMAIN=grub-btrfs-timeshift
 export TEXTDOMAINDIR=/usr/share/locale
 
+# grub_quote escapes the label for the single quotes it is about to sit inside.
+# Without it a translation containing an apostrophe - French and Italian have
+# several - closes the quote early and the whole grub.cfg stops parsing.
+# pkgdatadir is exported by grub-mkconfig, which is the only thing that runs us,
+# so shellcheck can neither see it assigned nor follow the file it names.
+# shellcheck disable=SC1091,SC2154
+. "$pkgdatadir/grub-mkconfig_lib"
+
 printf '%s\n' "$(gettext "Adding boot menu entry for the UEFI firmware settings ...")" >&2
 
 cat <<EOF
 if [ "\$grub_platform" = "efi" ]; then
-	menuentry '$(gettext "UEFI firmware settings")' \$menuentry_id_option 'uefi-firmware' --class bios {
+	menuentry '$(gettext "UEFI firmware settings" | grub_quote)' \$menuentry_id_option 'uefi-firmware' --class bios {
 		fwsetup
 	}
 fi
