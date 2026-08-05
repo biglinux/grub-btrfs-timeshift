@@ -1,26 +1,42 @@
 ## arg 1:  the new package version
 pre_install() {
-	systemctl stop grub-btrfsd.service
+	# There is no init to talk to inside a build chroot.
+	if [ -d /run/systemd/system ]; then
+		systemctl stop grub-btrfsd.service
+	fi
+
+	return 0
 }
 
 ## arg 1:  the new package version
 post_install() {
+	systemctl --global enable biglinux-snapshot-detect
 
-    systemctl --global enable biglinux-snapshot-detect
+	# Snapshots of @ and of Manjaro's own subvolume are not restore points a
+	# person would pick from a boot menu. Removed and appended rather than
+	# substituted: a commented-out default gives a substitution nothing to
+	# match, and the setting would then silently not apply.
+	config=/etc/default/grub-btrfs/config
+	if [ -f "$config" ]; then
+		sed -i '/^GRUB_BTRFS_IGNORE_SPECIFIC_PATH=/d' "$config"
+		printf '%s\n' 'GRUB_BTRFS_IGNORE_SPECIFIC_PATH=("@" "Manjaro")' >>"$config"
+	fi
 
-    sed -i 's/^GRUB_BTRFS_IGNORE_SPECIFIC_PATH=.*/GRUB_BTRFS_IGNORE_SPECIFIC_PATH=("@" "Manjaro")/' /etc/default/grub-btrfs/config
+	# The boot menu itself, the grub-btrfsd unit and update-grub are handled by
+	# /usr/share/libalpm/scripts/grub-btrfs-timeshift, which the hook runs after
+	# this and again whenever grub or grub-btrfs are upgraded. The menu entries
+	# used to be patched here by line number, which silently stopped matching
+	# every time one of those files changed.
 
-    # The boot menu itself, the grub-btrfsd unit and update-grub are handled by
-    # /usr/share/libalpm/scripts/grub-btrfs-timeshift, which the hook runs after
-    # this and again whenever grub or grub-btrfs are upgraded. The menu entries
-    # used to be patched here by line number, which silently stopped matching
-    # every time one of those files changed.
+	return 0
 }
 
 ## arg 2:  the old package version
-#pre_upgrade() {
-	# do something here
-#}
+pre_upgrade() {
+	# The daemon is replaced along with the package, so it is stopped for an
+	# upgrade exactly as it is for a first install.
+	pre_install
+}
 
 ## arg 2:  the old package version
 post_upgrade() {
@@ -32,11 +48,35 @@ pre_remove() {
 	systemctl --global disable biglinux-snapshot-detect
 
 	# The stock firmware entry was disabled in favour of ours, which is about
-	# to be removed with the package.
-	chmod +x /etc/grub.d/30_uefi-firmware
+	# to be removed with the package. It is not there on a system without
+	# grub, and a scriptlet that returns non-zero makes pacman report an error.
+	[ -e /etc/grub.d/30_uefi-firmware ] && chmod +x /etc/grub.d/30_uefi-firmware
+
+	return 0
 }
 
 ## arg 1:  the old package version
-#post_remove() {
-	# do something here
-#}
+post_remove() {
+	# The generators under /etc/grub.d belong to grub and grub-btrfs; this
+	# package rewrote them in place and kept the originals aside. Leaving the
+	# rewritten versions behind would keep a removed package's boot menu, so
+	# they go back before the menu is generated one last time.
+	for generator in 10_linux 41_snapshots-btrfs; do
+		pristine=/var/lib/grub-btrfs-timeshift/$generator
+		[ -f "$pristine" ] || continue
+		[ -f "/etc/grub.d/$generator" ] || continue
+		cat "$pristine" >"/etc/grub.d/$generator"
+	done
+	rm -rf /var/lib/grub-btrfs-timeshift
+	rm -f /etc/systemd/system/grub-btrfsd.service.d/timeshift.conf
+	rmdir /etc/systemd/system/grub-btrfsd.service.d 2>/dev/null
+
+	if [ -d /run/systemd/system ]; then
+		systemctl daemon-reload
+	fi
+	if [ -x /usr/bin/update-grub ]; then
+		update-grub
+	fi
+
+	return 0
+}

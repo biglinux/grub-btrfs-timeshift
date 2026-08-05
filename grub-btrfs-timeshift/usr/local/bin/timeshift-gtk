@@ -1,7 +1,12 @@
 #!/bin/bash
+# Shadows the timeshift package's own launcher, which being in /usr/local/bin
+# makes possible. The point is the first run: Timeshift asks which snapshot
+# type to use, and on BigLinux the answer is always btrfs.
 
 if [[ ! -e /etc/timeshift/timeshift.json ]]; then
-    timeshift --btrfs
+	/usr/bin/timeshift --btrfs
 fi
 
-/usr/bin/timeshift-gtk $*
+# "$@" and not $*: an argument holding a space or a glob must reach timeshift
+# as the one argument it was.
+exec /usr/bin/timeshift-gtk "$@"

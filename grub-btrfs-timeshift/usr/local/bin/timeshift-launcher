@@ -1,4 +1,10 @@
 #!/bin/bash
+# Shadows the timeshift package's launcher so the root GUI goes through the
+# btrfs-aware wrapper next to this file.
+#
+# The quoting matters: unquoted, a DISPLAY or XAUTHORITY holding whitespace
+# splits into further arguments, and env reads those as more VAR=VALUE pairs
+# to place in the environment of a process about to run as root.
 
-pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/local/bin/timeshift-gtk $*
-
+exec pkexec env "DISPLAY=$DISPLAY" "XAUTHORITY=$XAUTHORITY" \
+	/usr/local/bin/timeshift-gtk "$@"
