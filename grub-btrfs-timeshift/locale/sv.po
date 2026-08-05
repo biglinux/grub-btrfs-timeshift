@@ -113,3 +113,30 @@ msgstr "Kunde inte starta om systemet: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
 msgid "OK"
 msgstr "Okej"
+
+msgid "Back to the main menu"
+msgstr "Tillbaka till huvudmenyn"
+
+msgid "UEFI firmware settings"
+msgstr "UEFI-firmwareinställningar"
+
+msgid "Restore points (snapshots)"
+msgstr "Återställningspunkter (snapshots)"
+
+msgid "boot"
+msgstr "vid start"
+
+msgid "hourly"
+msgstr "varje timme"
+
+msgid "daily"
+msgstr "dagligen"
+
+msgid "weekly"
+msgstr "varje vecka"
+
+msgid "monthly"
+msgstr "varje månad"
+
+msgid "ondemand"
+msgstr "manuellt"

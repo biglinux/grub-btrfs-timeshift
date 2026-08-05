@@ -132,3 +132,53 @@ msgstr  ""
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
 msgid   "OK"
 msgstr  ""
+
+#
+# File: grub-btrfs-timeshift/usr/share/libalpm/scripts/grub-btrfs-timeshift
+msgid   "Back to the main menu"
+msgstr  ""
+
+#
+# File: grub-btrfs-timeshift/etc/grub.d/42_uefi-firmware
+msgid   "UEFI firmware settings"
+msgstr  ""
+
+#
+# File: grub-btrfs-timeshift/etc/grub.d/42_uefi-firmware
+msgid   "Restore points (snapshots)"
+msgstr  ""
+
+#
+# File: grub-btrfs-timeshift/etc/grub.d/42_uefi-firmware
+msgid   "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr  ""
+
+#
+# Snapshot type, shown in the restore point list
+msgid   "boot"
+msgstr  ""
+
+#
+# Snapshot type, shown in the restore point list
+msgid   "hourly"
+msgstr  ""
+
+#
+# Snapshot type, shown in the restore point list
+msgid   "daily"
+msgstr  ""
+
+#
+# Snapshot type, shown in the restore point list
+msgid   "weekly"
+msgstr  ""
+
+#
+# Snapshot type, shown in the restore point list
+msgid   "monthly"
+msgstr  ""
+
+#
+# Snapshot type, shown in the restore point list
+msgid   "ondemand"
+msgstr  ""

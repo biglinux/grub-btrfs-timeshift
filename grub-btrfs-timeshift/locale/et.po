@@ -113,3 +113,30 @@ msgid "Could not restart system: {}"
 msgstr "Süsteemi ei saanud taaskäivitada: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+
+msgid "Back to the main menu"
+msgstr "Tagasi peamenüüsse"
+
+msgid "UEFI firmware settings"
+msgstr "UEFI püsivara sätted"
+
+msgid "Restore points (snapshots)"
+msgstr "Taastepunktid (snapshots)"
+
+msgid "boot"
+msgstr "alglaadimisel"
+
+msgid "hourly"
+msgstr "iga tund"
+
+msgid "daily"
+msgstr "iga päev"
+
+msgid "weekly"
+msgstr "iga nädal"
+
+msgid "monthly"
+msgstr "iga kuu"
+
+msgid "ondemand"
+msgstr "käsitsi"

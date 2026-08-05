@@ -115,3 +115,30 @@ msgstr "Sistemi yeniden başlatılamadı: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447
 msgid "OK"
 msgstr "Tamam"
+
+msgid "Back to the main menu"
+msgstr "Ana menüye dön"
+
+msgid "UEFI firmware settings"
+msgstr "UEFI donanım yazılımı ayarları"
+
+msgid "Restore points (snapshots)"
+msgstr "Geri yükleme noktaları (snapshots)"
+
+msgid "boot"
+msgstr "açılışta"
+
+msgid "hourly"
+msgstr "saatlik"
+
+msgid "daily"
+msgstr "günlük"
+
+msgid "weekly"
+msgstr "haftalık"
+
+msgid "monthly"
+msgstr "aylık"
+
+msgid "ondemand"
+msgstr "elle"

@@ -115,3 +115,30 @@ msgstr "Kunne ikke genstarte systemet: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 454
 msgid "OK"
 msgstr "OK"
+
+msgid "Back to the main menu"
+msgstr "Tilbage til hovedmenuen"
+
+msgid "UEFI firmware settings"
+msgstr "UEFI-firmwareindstillinger"
+
+msgid "Restore points (snapshots)"
+msgstr "Gendannelsespunkter (snapshots)"
+
+msgid "boot"
+msgstr "ved opstart"
+
+msgid "hourly"
+msgstr "hver time"
+
+msgid "daily"
+msgstr "dagligt"
+
+msgid "weekly"
+msgstr "ugentligt"
+
+msgid "monthly"
+msgstr "månedligt"
+
+msgid "ondemand"
+msgstr "manuelt"

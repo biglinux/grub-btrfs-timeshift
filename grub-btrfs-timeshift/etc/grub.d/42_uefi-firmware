@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+
+# Replaces the stock 30_uefi-firmware, which the hook disables.
+#
+# Two reasons: its label is a literal string that never goes through gettext,
+# so it shows up in English on a translated menu, and its number puts firmware
+# settings above the restore points, which people reach far more often.
+export TEXTDOMAIN=grub-btrfs-timeshift
+export TEXTDOMAINDIR=/usr/share/locale
+
+printf '%s\n' "$(gettext "Adding boot menu entry for the UEFI firmware settings ...")" >&2
+
+cat <<EOF
+if [ "\$grub_platform" = "efi" ]; then
+	menuentry '$(gettext "UEFI firmware settings")' \$menuentry_id_option 'uefi-firmware' --class bios {
+		fwsetup
+	}
+fi
+EOF

@@ -113,3 +113,30 @@ msgstr "Nie można zrestartować systemu: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 447
 msgid "OK"
 msgstr "OK"
+
+msgid "Back to the main menu"
+msgstr "Powrót do menu głównego"
+
+msgid "UEFI firmware settings"
+msgstr "Ustawienia oprogramowania UEFI"
+
+msgid "Restore points (snapshots)"
+msgstr "Punkty przywracania (snapshots)"
+
+msgid "boot"
+msgstr "przy starcie"
+
+msgid "hourly"
+msgstr "co godzinę"
+
+msgid "daily"
+msgstr "codziennie"
+
+msgid "weekly"
+msgstr "co tydzień"
+
+msgid "monthly"
+msgstr "co miesiąc"
+
+msgid "ondemand"
+msgstr "ręcznie"

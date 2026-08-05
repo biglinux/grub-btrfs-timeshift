@@ -3,6 +3,8 @@ Type = Package
 Operation = Install
 Operation = Upgrade
 Target = grub-btrfs
+Target = grub
+Target = grub-btrfs-timeshift
 
 [Action]
 Description = Fix to timeshift and refresh grub configuration after new snapshot

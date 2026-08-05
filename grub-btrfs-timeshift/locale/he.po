@@ -113,3 +113,30 @@ msgstr "לא ניתן להפעיל מחדש את המערכת: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
 msgid "OK"
 msgstr "אוקי"
+
+msgid "Back to the main menu"
+msgstr "חזרה לתפריט הראשי"
+
+msgid "UEFI firmware settings"
+msgstr "הגדרות קושחת UEFI"
+
+msgid "Restore points (snapshots)"
+msgstr "נקודות שחזור (snapshots)"
+
+msgid "boot"
+msgstr "באתחול"
+
+msgid "hourly"
+msgstr "מדי שעה"
+
+msgid "daily"
+msgstr "יומי"
+
+msgid "weekly"
+msgstr "שבועי"
+
+msgid "monthly"
+msgstr "חודשי"
+
+msgid "ondemand"
+msgstr "ידני"

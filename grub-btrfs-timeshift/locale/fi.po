@@ -111,3 +111,30 @@ msgid "Could not restart system: {}"
 msgstr "Järjestelmää ei voitu käynnistää uudelleen: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+
+msgid "Back to the main menu"
+msgstr "Takaisin päävalikkoon"
+
+msgid "UEFI firmware settings"
+msgstr "UEFI-laiteohjelmiston asetukset"
+
+msgid "Restore points (snapshots)"
+msgstr "Palautuspisteet (snapshots)"
+
+msgid "boot"
+msgstr "käynnistyksessä"
+
+msgid "hourly"
+msgstr "tunneittain"
+
+msgid "daily"
+msgstr "päivittäin"
+
+msgid "weekly"
+msgstr "viikoittain"
+
+msgid "monthly"
+msgstr "kuukausittain"
+
+msgid "ondemand"
+msgstr "manuaalinen"

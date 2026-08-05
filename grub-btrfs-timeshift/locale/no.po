@@ -112,3 +112,30 @@ msgid "Could not restart system: {}"
 msgstr "Kunne ikke starte systemet på nytt: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+
+msgid "Back to the main menu"
+msgstr "Tilbake til hovedmenyen"
+
+msgid "UEFI firmware settings"
+msgstr "UEFI-fastvareinnstillinger"
+
+msgid "Restore points (snapshots)"
+msgstr "Gjenopprettingspunkter (snapshots)"
+
+msgid "boot"
+msgstr "ved oppstart"
+
+msgid "hourly"
+msgstr "hver time"
+
+msgid "daily"
+msgstr "daglig"
+
+msgid "weekly"
+msgstr "ukentlig"
+
+msgid "monthly"
+msgstr "månedlig"
+
+msgid "ondemand"
+msgstr "manuelt"
