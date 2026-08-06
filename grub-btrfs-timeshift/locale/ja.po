@@ -15,6 +15,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "メインメニューに戻る"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "復元ポイント (スナップショット)"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "UEFI ファームウェア設定"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "UEFI ファームウェア設定のメニュー項目を追加しています ..."
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "手動"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "起動時"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "1 時間ごと"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "毎日"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "毎週"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "毎月"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
 msgstr "タイムシフト復元を開始しています..."
@@ -111,43 +143,3 @@ msgid "Could not restart system: {}"
 msgstr "システムを再起動できませんでした: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "メインメニューに戻る"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "復元ポイント (スナップショット)"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "UEFI ファームウェア設定"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "UEFI ファームウェア設定のメニュー項目を追加しています ..."
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "手動"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "起動時"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "1 時間ごと"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "毎日"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "毎週"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "毎月"

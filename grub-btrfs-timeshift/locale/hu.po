@@ -116,43 +116,33 @@ msgstr "A rendszert nem lehet újraindítani: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
 msgid "OK"
 msgstr "Rendben"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Back to the main menu"
 msgstr "Vissza a főmenübe"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Restore points (snapshots)"
 msgstr "Visszaállítási pontok (pillanatképek)"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "UEFI firmware settings"
 msgstr "UEFI firmware beállítások"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Adding boot menu entry for the UEFI firmware settings ..."
 msgstr "Menüelem hozzáadása az UEFI firmware beállításokhoz ..."
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "On demand"
 msgstr "Igény szerint"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "At boot"
 msgstr "Rendszerindításkor"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Hourly"
 msgstr "Óránként"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Daily"
 msgstr "Naponta"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Weekly"
 msgstr "Hetente"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Monthly"
 msgstr "Havonta"

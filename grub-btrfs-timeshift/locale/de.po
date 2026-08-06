@@ -15,6 +15,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "Zurück zum Hauptmenü"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "Wiederherstellungspunkte (Snapshots)"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "UEFI-Firmware-Einstellungen"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Menüeintrag für die UEFI-Firmware-Einstellungen wird hinzugefügt ..."
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "Bei Bedarf"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "Beim Systemstart"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "Stündlich"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "Täglich"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "Wöchentlich"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "Monatlich"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
 msgstr "Starte die Timeshift-Wiederherstellung..."
@@ -114,43 +146,3 @@ msgid "Could not restart system: {}"
 msgstr "System konnte nicht neu gestartet werden: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "Zurück zum Hauptmenü"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "Wiederherstellungspunkte (Snapshots)"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "UEFI-Firmware-Einstellungen"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "Menüeintrag für die UEFI-Firmware-Einstellungen wird hinzugefügt ..."
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "Bei Bedarf"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "Beim Systemstart"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "Stündlich"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "Täglich"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "Wöchentlich"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "Monatlich"

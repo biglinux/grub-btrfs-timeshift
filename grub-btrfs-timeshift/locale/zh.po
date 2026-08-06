@@ -15,6 +15,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "返回主菜单"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "还原点（快照）"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "UEFI 固件设置"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "正在添加 UEFI 固件设置的启动菜单项 ..."
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "手动"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "启动时"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "每小时"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "每天"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "每周"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "每月"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
 msgstr "正在启动时间快照恢复..."
@@ -111,43 +143,3 @@ msgid "Could not restart system: {}"
 msgstr "无法重启系统：{}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "返回主菜单"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "还原点（快照）"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "UEFI 固件设置"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "正在添加 UEFI 固件设置的启动菜单项 ..."
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "手动"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "启动时"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "每小时"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "每天"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "每周"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "每月"

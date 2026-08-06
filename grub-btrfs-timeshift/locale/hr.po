@@ -115,43 +115,33 @@ msgstr "Nije moguće ponovo pokrenuti sustav: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
 msgid "OK"
 msgstr "U redu"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Back to the main menu"
 msgstr "Natrag na glavni izbornik"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Restore points (snapshots)"
 msgstr "Točke vraćanja (snimke)"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "UEFI firmware settings"
 msgstr "Postavke UEFI firmvera"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Adding boot menu entry for the UEFI firmware settings ..."
 msgstr "Dodavanje stavke izbornika za postavke UEFI firmvera ..."
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "On demand"
 msgstr "Na zahtjev"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "At boot"
 msgstr "Pri pokretanju"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Hourly"
 msgstr "Svaki sat"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Daily"
 msgstr "Dnevno"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Weekly"
 msgstr "Tjedno"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Monthly"
 msgstr "Mjesečno"

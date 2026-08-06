@@ -9,10 +9,50 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: en\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#
+msgid "Back to the main menu"
+msgstr "Back to the main menu"
+
+#
+msgid "Restore points (snapshots)"
+msgstr "Restore points (snapshots)"
+
+#
+msgid "UEFI firmware settings"
+msgstr "UEFI firmware settings"
+
+#
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Adding boot menu entry for the UEFI firmware settings ..."
+
+#
+msgid "On demand"
+msgstr "On demand"
+
+#
+msgid "At boot"
+msgstr "At boot"
+
+#
+msgid "Hourly"
+msgstr "Hourly"
+
+#
+msgid "Daily"
+msgstr "Daily"
+
+#
+msgid "Weekly"
+msgstr "Weekly"
+
+#
+msgid "Monthly"
+msgstr "Monthly"
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
@@ -138,43 +178,3 @@ msgstr "Could not restart system: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
 msgid "OK"
 msgstr "OK"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "Back to the main menu"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "Restore points (snapshots)"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "UEFI firmware settings"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "Adding boot menu entry for the UEFI firmware settings ..."
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "On demand"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "At boot"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "Hourly"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "Daily"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "Weekly"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "Monthly"

@@ -15,6 +15,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "Späť do hlavnej ponuky"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "Body obnovenia (snímky)"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "Nastavenia firmvéru UEFI"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Pridávanie položky ponuky pre nastavenia firmvéru UEFI ..."
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "Na požiadanie"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "Pri spustení"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "Každú hodinu"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "Denne"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "Týždenne"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "Mesačne"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
 msgstr "Spúšťam obnovenie Timeshiftu..."
@@ -112,43 +144,3 @@ msgid "Could not restart system: {}"
 msgstr "Nemožno reštartovať systém: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "Späť do hlavnej ponuky"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "Body obnovenia (snímky)"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "Nastavenia firmvéru UEFI"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "Pridávanie položky ponuky pre nastavenia firmvéru UEFI ..."
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "Na požiadanie"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "Pri spustení"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "Každú hodinu"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "Denne"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "Týždenne"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "Mesačne"

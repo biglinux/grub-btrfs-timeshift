@@ -15,6 +15,46 @@ msgstr  "Project-Id-Version: grub-btrfs-timeshift\n"
         "Content-Transfer-Encoding: 8bit\n"
 
 #
+msgid   "Back to the main menu"
+msgstr  ""
+
+#
+msgid   "Restore points (snapshots)"
+msgstr  ""
+
+#
+msgid   "UEFI firmware settings"
+msgstr  ""
+
+#
+msgid   "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr  ""
+
+#
+msgid   "On demand"
+msgstr  ""
+
+#
+msgid   "At boot"
+msgstr  ""
+
+#
+msgid   "Hourly"
+msgstr  ""
+
+#
+msgid   "Daily"
+msgstr  ""
+
+#
+msgid   "Weekly"
+msgstr  ""
+
+#
+msgid   "Monthly"
+msgstr  ""
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid   "Starting Timeshift restoration..."
 msgstr  ""
@@ -132,43 +172,3 @@ msgstr  ""
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
 msgid   "OK"
 msgstr  ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr ""
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr ""

@@ -15,6 +15,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "Назад към главното меню"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "Точки за възстановяване (снимки)"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "Настройки на фърмуера UEFI"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Добавяне на елемент от менюто за настройките на фърмуера UEFI ..."
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "При поискване"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "При зареждане"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "На всеки час"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "Ежедневно"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "Ежеседмично"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "Ежемесечно"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
 msgstr "Започване на възстановяване на Timeshift..."
@@ -114,43 +146,3 @@ msgid "Could not restart system: {}"
 msgstr "Не може да се рестартира системата: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "Назад към главното меню"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "Точки за възстановяване (снимки)"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "Настройки на фърмуера UEFI"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "Добавяне на елемент от менюто за настройките на фърмуера UEFI ..."
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "При поискване"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "При зареждане"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "На всеки час"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "Ежедневно"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "Ежеседмично"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "Ежемесечно"

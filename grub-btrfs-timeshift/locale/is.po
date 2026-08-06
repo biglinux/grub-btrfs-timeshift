@@ -15,6 +15,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "Til baka í aðalvalmyndina"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "Endurheimtupunktar (skyndimyndir)"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "Stillingar UEFI-fastbúnaðar"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Bæti við valmyndarfærslu fyrir stillingar UEFI-fastbúnaðar ..."
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "Eftir þörfum"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "Við ræsingu"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "Á klukkustundar fresti"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "Daglega"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "Vikulega"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "Mánaðarlega"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
 msgstr "Byrjar að endurheimta Timeshift..."
@@ -111,43 +143,3 @@ msgid "Could not restart system: {}"
 msgstr "Gat ekki endurræsa kerfið: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "Til baka í aðalvalmyndina"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "Endurheimtupunktar (skyndimyndir)"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "Stillingar UEFI-fastbúnaðar"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "Bæti við valmyndarfærslu fyrir stillingar UEFI-fastbúnaðar ..."
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "Eftir þörfum"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "Við ræsingu"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "Á klukkustundar fresti"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "Daglega"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "Vikulega"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "Mánaðarlega"

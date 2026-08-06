@@ -15,6 +15,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "Înapoi la meniul principal"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "Puncte de restaurare (instantanee)"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "Setări firmware UEFI"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Se adaugă intrarea de meniu pentru setările firmware UEFI ..."
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "La cerere"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "La pornire"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "În fiecare oră"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "Zilnic"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "Săptămânal"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "Lunar"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
 msgstr "Restaurare Timeshift începând..."
@@ -114,43 +146,3 @@ msgid "Could not restart system: {}"
 msgstr "Nu s-a putut reporni sistemul: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "Înapoi la meniul principal"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "Puncte de restaurare (instantanee)"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "Setări firmware UEFI"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "Se adaugă intrarea de meniu pentru setările firmware UEFI ..."
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "La cerere"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "La pornire"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "În fiecare oră"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "Zilnic"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "Săptămânal"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "Lunar"

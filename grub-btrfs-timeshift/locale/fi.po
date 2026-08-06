@@ -15,6 +15,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "Takaisin päävalikkoon"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "Palautuspisteet (tilannevedokset)"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "UEFI-laiteohjelmiston asetukset"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Lisätään valikkokohta UEFI-laiteohjelmiston asetuksille ..."
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "Pyydettäessä"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "Käynnistyksessä"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "Tunneittain"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "Päivittäin"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "Viikoittain"
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "Kuukausittain"
+# 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
 msgstr "Aloitetaan Timeshift-palautus..."
@@ -111,43 +143,3 @@ msgid "Could not restart system: {}"
 msgstr "Järjestelmää ei voitu käynnistää uudelleen: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "Takaisin päävalikkoon"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "Palautuspisteet (tilannevedokset)"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "UEFI-laiteohjelmiston asetukset"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "Lisätään valikkokohta UEFI-laiteohjelmiston asetuksille ..."
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "Pyydettäessä"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "Käynnistyksessä"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "Tunneittain"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "Päivittäin"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "Viikoittain"
-
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "Kuukausittain"

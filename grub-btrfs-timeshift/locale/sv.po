@@ -113,43 +113,33 @@ msgstr "Kunde inte starta om systemet: {}"
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
 msgid "OK"
 msgstr "Okej"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Back to the main menu"
 msgstr "Tillbaka till huvudmenyn"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Restore points (snapshots)"
 msgstr "Återställningspunkter (ögonblicksbilder)"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "UEFI firmware settings"
 msgstr "Inställningar för UEFI-firmware"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Adding boot menu entry for the UEFI firmware settings ..."
 msgstr "Lägger till menypost för inställningar för UEFI-firmware ..."
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "On demand"
 msgstr "Vid behov"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "At boot"
 msgstr "Vid uppstart"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Hourly"
 msgstr "Varje timme"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Daily"
 msgstr "Dagligen"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Weekly"
 msgstr "Veckovis"
-
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Monthly"
 msgstr "Månadsvis"
