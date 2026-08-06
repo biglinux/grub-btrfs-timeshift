@@ -143,6 +143,5 @@ msgid "Could not restart system: {}"
 msgstr "Gat ekki endurræst kerfið: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
-
 msgid "OK"
 msgstr "Í lagi"
