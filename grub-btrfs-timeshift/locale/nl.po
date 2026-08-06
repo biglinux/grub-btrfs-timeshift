@@ -21,7 +21,7 @@ msgid "Back to the main menu"
 msgstr "Terug naar het hoofdmenu"
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Restore points (snapshots)"
-msgstr "Herstelpunten (momentopnamen)"
+msgstr "Herstelpunten (snapshots)"
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "UEFI firmware settings"
 msgstr "UEFI-firmware-instellingen"
@@ -49,11 +49,11 @@ msgstr "Maandelijks"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
 msgid "Starting Timeshift restoration..."
-msgstr "Herstel van Timeshift wordt gestart..."
+msgstr "Timeshift-herstel wordt gestart..."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
 msgid "Timeshift restoration completed"
-msgstr "Tijdverschuiving herstel voltooid"
+msgstr "Timeshift-herstel voltooid"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 190
 msgid "Snapshot not detected: This application only runs when booted from a Timeshift snapshot."
@@ -63,7 +63,7 @@ msgstr ""
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 191
 msgid "Did you really boot into the snapshot?"
-msgstr "Ben je echt opgestart in de snapshot?"
+msgstr "Bent u echt opgestart vanuit de snapshot?"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 197
 msgid "Error"
@@ -117,11 +117,11 @@ msgstr "Herstel voltooid. Systeemconsistentie controleren..."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
-msgstr "Tijdverschuiving herstel mislukt: {}"
+msgstr "Timeshift-herstel mislukt: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 370
 msgid "Restoration completed successfully! Please reboot the system."
-msgstr "Herstel succesvol voltooid! Herstart alstublieft het systeem."
+msgstr "Herstel succesvol voltooid! Start het systeem opnieuw op."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 374
 msgid "Restart"
@@ -145,3 +145,6 @@ msgid "Could not restart system: {}"
 msgstr "Kon systeem niet opnieuw opstarten: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+
+msgid "OK"
+msgstr "Oké"

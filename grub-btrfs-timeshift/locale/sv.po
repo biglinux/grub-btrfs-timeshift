@@ -21,11 +21,11 @@ msgstr "Startar Timeshift-återställning..."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
 msgid "Timeshift restoration completed"
-msgstr "Återställning av tidskopiering slutförd"
+msgstr "Timeshift-återställning slutförd"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 190
 msgid "Snapshot not detected: This application only runs when booted from a Timeshift snapshot."
-msgstr "Snapshot inte upptäckt: Denna applikation körs endast när den startas från en Timeshift-snapshot."
+msgstr "Ögonblicksbild upptäcktes inte: Denna applikation körs endast när den startas från en Timeshift-ögonblicksbild."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 191
 msgid "Did you really boot into the snapshot?"
@@ -33,7 +33,7 @@ msgstr "Startade du verkligen i ögonblicksbilden?"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 197
 msgid "Error"
-msgstr "Felaktigt"
+msgstr "Fel"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 198
 msgid "Could not parse snapshot information"
@@ -61,7 +61,7 @@ msgid ""
 "\n"
 "To make this restore point the default boot option, click the button below."
 msgstr ""
-"Systemet startades från en återställningspunkt (Snapshot).\n"
+"Systemet startades från en återställningspunkt (ögonblicksbild).\n"
 "\n"
 "För att göra denna återställningspunkt till standardstartalternativ, klicka på knappen nedan."
 # 
@@ -83,7 +83,7 @@ msgstr "Återställning slutförd. Kontrollerar systemets konsistens..."
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
-msgstr "Återställning av tidskopiering misslyckades: {}"
+msgstr "Timeshift-återställning misslyckades: {}"
 # 
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 370
 msgid "Restoration completed successfully! Please reboot the system."
