@@ -1,0 +1,45 @@
+#!/bin/sh
+# Firmware without a boot entry for this system starts the fallback
+# \EFI\BOOT\BOOTX64.EFI. install-grub copies the new loader over it only when
+# the two already differed, so a fallback that was a copy of the loader keeps
+# the old GRUB, which stops at "grub rescue>" against the new modules.
+#
+# grub-install records in the image where the modules are: the filesystem UUID
+# it searches for, or the prefix, such as (,gpt2)/@/boot/grub. That record
+# follows the modules, whose text can hold a lookalike, so the last match names
+# the system the image belongs to. Only a fallback naming the same system as
+# the loader is replaced.
+
+[ -e /etc/grub-biglinux-hooks.disabled ] && exit 0
+
+owner() {
+	grep -a -o -E 'search\.fs_uuid [[:alnum:]-]+|\([^()]+\)/([[:print:]]*/)?grub' "$1" | tail -n 1
+}
+
+# The loader directory is the first word of GRUB_DISTRIBUTOR, read the way
+# install-grub reads it.
+id=$(
+	for f in /etc/default/grub /etc/default/grub.d/*.cfg; do
+		# shellcheck source=/dev/null
+		[ -e "$f" ] && . "$f" >/dev/null
+	done
+	printf %s "${GRUB_DISTRIBUTOR%% *}"
+)
+[ -n "$id" ] || exit 0
+
+# vfat looks names up regardless of case, as the firmware does.
+findmnt -rn -t vfat -o TARGET | while read -r esp; do
+	for arch in x64 ia32; do
+		loader=$esp/EFI/$id/grub$arch.efi
+		fallback=$esp/EFI/BOOT/BOOT$arch.EFI
+		[ -f "$loader" ] && [ -f "$fallback" ] || continue
+		cmp -s "$loader" "$fallback" && continue
+		system=$(owner "$loader")
+		[ -n "$system" ] && [ "$(owner "$fallback")" = "$system" ] || continue
+		printf 'Updating the EFI fallback loader %s\n' "$fallback"
+		if ! cp "$loader" "$fallback.new" || ! mv -f "$fallback.new" "$fallback"; then
+			rm -f "$fallback.new"
+			exit 1
+		fi
+	done
+done
