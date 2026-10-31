@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the grub-btrfs-timeshift package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: grub-btrfs-timeshift\n"
@@ -14,49 +14,103 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
-msgid "Starting Timeshift restoration..."
-msgstr "Pokretanje vraćanja Timeshift-a..."
-# 
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "Natrag na glavni izbornik"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "Točke vraćanja (snimke)"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "Postavke UEFI firmvera"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Dodavanje stavke izbornika za postavke UEFI firmvera ..."
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "Na zahtjev"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "Pri pokretanju"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "Svaki sat"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "Dnevno"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "Tjedno"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "Mjesečno"
+
+#
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 151
+msgid "Restoring the snapshot and reinstalling the boot loader..."
+msgstr "Obnavljanje snimke i ponovna instalacija pokretača sustava..."
+
+#
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
+msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
+msgstr "Sustav je vraćen, ali njegov pokretač sustava nije mogao biti ponovno instaliran: {}. Ponovno pokretanje sada može stati na \"grub rescue\" poziv. Pokušajte ponovno vratiti, ili popravite pokretač sustava s BigLinux GRUB Restore s live USB-a."
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
 msgid "Timeshift restoration completed"
 msgstr "Obnova vremenskog pomaka završena"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 190
 msgid "Snapshot not detected: This application only runs when booted from a Timeshift snapshot."
-msgstr ""
-"Trenutna snimka nije otkrivena: Ova aplikacija se pokreće samo kada je pokrenuta iz Timeshift "
-"snimke."
-# 
+msgstr "Trenutna snimka nije otkrivena: Ova aplikacija se pokreće samo kada je pokrenuta iz Timeshift snimke."
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 191
 msgid "Did you really boot into the snapshot?"
 msgstr "Jeste li se stvarno pokrenuli iz snimke?"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 197
 msgid "Error"
 msgstr "Greška"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 198
 msgid "Could not parse snapshot information"
 msgstr "Nije moguće analizirati informacije o snimku."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 231
 msgid "Close"
 msgstr "Zatvori"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
 msgid "File"
 msgstr "Datoteka"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 249
 msgid "Date"
 msgstr "Datum"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 255
 msgid "Time"
 msgstr "Vrijeme"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 295
 msgid ""
 "The system was booted from a restore point (Snapshot).\n"
@@ -66,82 +120,64 @@ msgstr ""
 "Sustav je pokrenut s točke vraćanja (Snapshot).\n"
 "\n"
 "Da biste ovu točku vraćanja postavili kao zadanu opciju pokretanja, kliknite gumb ispod."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 322
 msgid "Restore system to this snapshot"
 msgstr "Vrati sustav na ovu snimku."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
 msgid "Restoring..."
 msgstr "Obnavljanje..."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 330
 msgid "Checking system state..."
 msgstr "Provjera stanja sustava..."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 337
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Obnova završena. Provjera dosljednosti sustava..."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Obnova Timeshift-a nije uspjela: {}"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 370
 msgid "Restoration completed successfully! Please reboot the system."
 msgstr "Obnova je uspješno završena! Molimo ponovno pokrenite sustav."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 374
 msgid "Restart"
 msgstr "Ponovno pokreni"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 385
 msgid "Error: {}"
 msgstr "Greška: {}"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
 msgid "Restore System"
 msgstr "Obnovi sustav"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
 msgid "Reboot Error"
 msgstr "Pogreška pri ponovnom pokretanju"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 399
 msgid "Could not restart system: {}"
 msgstr "Nije moguće ponovo pokrenuti sustav: {}"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
 msgid "OK"
 msgstr "U redu"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "Natrag na glavni izbornik"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "Točke vraćanja (snimke)"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "Postavke UEFI firmvera"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "Dodavanje stavke izbornika za postavke UEFI firmvera ..."
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "Na zahtjev"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "Pri pokretanju"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "Svaki sat"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "Dnevno"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "Tjedno"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "Mjesečno"

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the grub-btrfs-timeshift package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: grub-btrfs-timeshift\n"
@@ -14,49 +14,103 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
-msgid "Starting Timeshift restoration..."
-msgstr "Időeltolódás helyreállításának megkezdése..."
-# 
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Back to the main menu"
+msgstr "Vissza a főmenübe"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Restore points (snapshots)"
+msgstr "Visszaállítási pontok (pillanatképek)"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "UEFI firmware settings"
+msgstr "UEFI firmware beállítások"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Adding boot menu entry for the UEFI firmware settings ..."
+msgstr "Menüelem hozzáadása az UEFI firmware beállításokhoz ..."
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "On demand"
+msgstr "Igény szerint"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "At boot"
+msgstr "Rendszerindításkor"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Hourly"
+msgstr "Óránként"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Daily"
+msgstr "Naponta"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Weekly"
+msgstr "Hetente"
+
+# Boot menu, from locale/boot-menu-strings.sh
+msgid "Monthly"
+msgstr "Havonta"
+
+#
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 151
+msgid "Restoring the snapshot and reinstalling the boot loader..."
+msgstr "A pillanatkép visszaállítása és a rendszerindító betöltő újratelepítése..."
+
+#
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
+msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
+msgstr "A rendszert visszaállították, de a betöltője nem lett újratelepítve: {}. A mostani újraindítás a \"grub rescue\" parancssornál megakadhat. Próbálja meg újra a visszaállítást, vagy javítsa a betöltőt a BigLinux GRUB Restore segítségével egy élő USB-ről."
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
 msgid "Timeshift restoration completed"
 msgstr "A visszaállítás befejeződött."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 190
 msgid "Snapshot not detected: This application only runs when booted from a Timeshift snapshot."
-msgstr ""
-"A pillanatkép nem észlelhető: Ez az alkalmazás csak akkor fut, ha egy Timeshift pillanatképből "
-"indítják."
-# 
+msgstr "A pillanatkép nem észlelhető: Ez az alkalmazás csak akkor fut, ha egy Timeshift pillanatképből indítják."
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 191
 msgid "Did you really boot into the snapshot?"
 msgstr "Valóban a pillanatképbe indultál?"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 197
 msgid "Error"
 msgstr "Hiba"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 198
 msgid "Could not parse snapshot information"
 msgstr "Nem sikerült a pillanatkép információinak elemzése."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 231
 msgid "Close"
 msgstr "Bezárás"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
 msgid "File"
 msgstr "Fájl"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 249
 msgid "Date"
 msgstr "Dátum"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 255
 msgid "Time"
 msgstr "Idő"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 295
 msgid ""
 "The system was booted from a restore point (Snapshot).\n"
@@ -65,84 +119,65 @@ msgid ""
 msgstr ""
 "A rendszer egy visszaállítási pontról (Snapshot) indult.\n"
 "\n"
-"A visszaállítási pont alapértelmezett indítási lehetőségként való beállításához kattintson az "
-"alábbi gombra."
-# 
+"A visszaállítási pont alapértelmezett indítási lehetőségként való beállításához kattintson az alábbi gombra."
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 322
 msgid "Restore system to this snapshot"
 msgstr "Állítsa vissza a rendszert erre a pillanatképra."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
 msgid "Restoring..."
 msgstr "Visszaállítás..."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 330
 msgid "Checking system state..."
 msgstr "Rendszerállapot ellenőrzése..."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 337
 msgid "Restoration completed. Checking system consistency..."
 msgstr "A helyreállítás befejeződött. A rendszer konzisztenciájának ellenőrzése..."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "A Timeshift visszaállítása meghiúsult: {}"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 370
 msgid "Restoration completed successfully! Please reboot the system."
 msgstr "A helyreállítás sikeresen befejeződött! Kérjük, indítsa újra a rendszert."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 374
 msgid "Restart"
 msgstr "Újraindítás"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 385
 msgid "Error: {}"
 msgstr "Hiba: {}"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
 msgid "Restore System"
 msgstr "Rendszer visszaállítása"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
 msgid "Reboot Error"
 msgstr "Újraindítási hiba"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 399
 msgid "Could not restart system: {}"
 msgstr "A rendszert nem lehet újraindítani: {}"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 404
 msgid "OK"
 msgstr "Rendben"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Back to the main menu"
-msgstr "Vissza a főmenübe"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Restore points (snapshots)"
-msgstr "Visszaállítási pontok (pillanatképek)"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "UEFI firmware settings"
-msgstr "UEFI firmware beállítások"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Adding boot menu entry for the UEFI firmware settings ..."
-msgstr "Menüelem hozzáadása az UEFI firmware beállításokhoz ..."
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "On demand"
-msgstr "Igény szerint"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "At boot"
-msgstr "Rendszerindításkor"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Hourly"
-msgstr "Óránként"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Daily"
-msgstr "Naponta"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Weekly"
-msgstr "Hetente"
-# Boot menu, from locale/boot-menu-strings.sh
-msgid "Monthly"
-msgstr "Havonta"

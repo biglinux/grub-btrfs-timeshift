@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the grub-btrfs-timeshift package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: grub-btrfs-timeshift\n"
@@ -14,81 +14,105 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Back to the main menu"
 msgstr "Torna al menu principale"
+
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Restore points (snapshots)"
 msgstr "Punti di ripristino (snapshot)"
+
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "UEFI firmware settings"
 msgstr "Impostazioni del firmware UEFI"
+
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Adding boot menu entry for the UEFI firmware settings ..."
 msgstr "Aggiunta della voce di menu per le impostazioni del firmware UEFI ..."
+
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "On demand"
 msgstr "Su richiesta"
+
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "At boot"
 msgstr "All'avvio"
+
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Hourly"
 msgstr "Ogni ora"
+
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Daily"
 msgstr "Giornaliero"
+
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Weekly"
 msgstr "Settimanale"
+
 # Boot menu, from locale/boot-menu-strings.sh
 msgid "Monthly"
 msgstr "Mensile"
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 148
-msgid "Starting Timeshift restoration..."
-msgstr "Avvio del ripristino di Timeshift..."
-# 
+
+#
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 151
+msgid "Restoring the snapshot and reinstalling the boot loader..."
+msgstr "Ripristino dello snapshot e reinstallazione del boot loader..."
+
+#
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
+msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
+msgstr "Il sistema è stato ripristinato, ma il suo boot loader non può essere reinstallato: {}. Riavviare ora potrebbe fermarsi al prompt \"grub rescue\". Prova a ripristinare di nuovo o ripara il boot loader con BigLinux GRUB Restore da una USB live."
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
 msgid "Timeshift restoration completed"
 msgstr "Ripristino di Timeshift completato"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 190
 msgid "Snapshot not detected: This application only runs when booted from a Timeshift snapshot."
-msgstr ""
-"Snapshot non rilevato: Questa applicazione funziona solo quando avviata da un'istantanea di "
-"Timeshift."
-# 
+msgstr "Snapshot non rilevato: Questa applicazione funziona solo quando avviata da un'istantanea di Timeshift."
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 191
 msgid "Did you really boot into the snapshot?"
 msgstr "Hai davvero avviato il sistema nella snapshot?"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 197
 msgid "Error"
 msgstr "Errore"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 198
 msgid "Could not parse snapshot information"
 msgstr "Impossibile analizzare le informazioni dello snapshot"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 231
 msgid "Close"
 msgstr "Chiudi"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 243
 msgid "File"
 msgstr "File"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 249
 msgid "Date"
 msgstr "Data"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 255
 msgid "Time"
 msgstr "Tempo"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 295
 msgid ""
 "The system was booted from a restore point (Snapshot).\n"
@@ -97,52 +121,65 @@ msgid ""
 msgstr ""
 "Il sistema è stato avviato da un punto di ripristino (Snapshot).\n"
 "\n"
-"Per rendere questo punto di ripristino l'opzione di avvio predefinita, fare clic sul pulsante qui "
-"sotto."
-# 
+"Per rendere questo punto di ripristino l'opzione di avvio predefinita, fare clic sul pulsante qui sotto."
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 322
 msgid "Restore system to this snapshot"
 msgstr "Ripristina il sistema a questo snapshot"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 309
 msgid "Restoring..."
 msgstr "Ripristinando..."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 330
 msgid "Checking system state..."
 msgstr "Controllo dello stato del sistema..."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 337
 msgid "Restoration completed. Checking system consistency..."
 msgstr "Ripristino completato. Controllo della coerenza del sistema..."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Il ripristino di Timeshift è fallito: {}"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 370
 msgid "Restoration completed successfully! Please reboot the system."
 msgstr "Ripristino completato con successo! Si prega di riavviare il sistema."
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 374
 msgid "Restart"
 msgstr "Riavvia"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 385
 msgid "Error: {}"
 msgstr "Errore: {}"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 284
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 389
 msgid "Restore System"
 msgstr "Ripristina sistema"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 398
 msgid "Reboot Error"
 msgstr "Errore di riavvio"
-# 
+
+#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 399
 msgid "Could not restart system: {}"
 msgstr "Impossibile riavviare il sistema: {}"
-# 
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 487
+
+#
+# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 501
+msgid "OK"
+msgstr ""
