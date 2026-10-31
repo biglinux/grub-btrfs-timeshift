@@ -1,0 +1,58 @@
+#!/bin/sh
+# Timeshift runs the files in this directory after it restores a btrfs
+# snapshot, with TS_SNAPSHOT_PATH naming the snapshot under the mounted top
+# level; Pamac does the same after it rolls back or promotes a root of its own.
+# The restored @ brings back /boot/grub as it was on the day of the
+# snapshot, while the boot loader on the disk or the EFI partition stays the
+# one installed since. When the GRUB version changed in between, the next boot
+# stops at "grub rescue>" with "symbol ... not found". Installing GRUB from
+# inside the restored @ writes a loader that matches its modules.
+#
+# The exit status says whether the loader now matches the restored modules:
+# Pamac undoes its rollback on a failure. Timeshift ignores it, so a failure
+# is also printed on stdout, in the line biglinux-snapshot-restore looks for.
+
+# The new @ sits at the top level of the btrfs the snapshot lives on, which
+# the restoring tool has mounted.
+[ -e "$TS_SNAPSHOT_PATH" ] || exit 0
+[ "$(findmnt -no FSTYPE -T "$TS_SNAPSHOT_PATH")" = btrfs ] || exit 0
+[ "$(findmnt -no FSROOT -T "$TS_SNAPSHOT_PATH")" = / ] || exit 0
+top=$(findmnt -no TARGET -T "$TS_SNAPSHOT_PATH")
+
+# A /boot outside @ was not restored, and a system without GRUB on @ has
+# nothing to match.
+[ -d "$top/@/boot/grub" ] || exit 0
+
+fail() {
+	printf 'grub-btrfs-timeshift: boot loader not reinstalled: %s\n' "$1"
+	exit 1
+}
+
+# grub-install derives the prefix it writes into the loader from the subvolume
+# its /boot/grub sits on, as seen from a mount point: a chroot into a plain
+# directory of the top level yields /boot/grub instead of /@/boot/grub.
+root=$(mktemp -d) || fail 'no temporary directory'
+trap 'umount -R "$root" 2>/dev/null; rmdir "$root"' EXIT
+mount --bind "$top/@" "$root" || fail "cannot mount $top/@"
+
+# install-grub looks for the EFI partition among the mounts it sees, and
+# arch-chroot mounts only the kernel filesystems. An entry marked nofail may
+# name a device that is not attached.
+findmnt --fstab --tab-file "$root/etc/fstab" -t vfat -no SOURCE,TARGET,OPTIONS |
+	while read -r source target options; do
+		mount "$source" "$root$target" && continue
+		case ",$options," in
+		*,nofail,*) ;;
+		*) exit 1 ;;
+		esac
+	done || fail 'cannot mount the EFI partition listed in the restored /etc/fstab'
+
+[ -x "$root/usr/bin/install-grub" ] ||
+	fail 'the restored system has no install-grub; repair it from a live system with biglinux-grub-restore'
+arch-chroot "$root" install-grub || fail 'install-grub failed'
+
+# The menu restored with @ lists the restore points of its own day. A failure
+# here keeps that menu, which still boots, so it does not fail the hook.
+arch-chroot "$root" /usr/share/libalpm/scripts/grub-btrfs-timeshift ||
+	printf '%s\n' 'grub-btrfs-timeshift: the boot menu was not regenerated; the restored one stays'
+exit 0
