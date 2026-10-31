@@ -63,7 +63,7 @@ msgstr "Przywracanie migawki i ponowna instalacja programu rozruchowego..."
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "System został przywrócony, ale jego program rozruchowy nie mógł zostać ponownie zainstalowany: {}. Ponowne uruchomienie może zatrzymać się na monicie \"grub rescue\". Spróbuj ponownie przywrócić system lub napraw program rozruchowy za pomocą BigLinux GRUB Restore z aktywnego USB."
+msgstr "System został przywrócony, ale jego program rozruchowy nie mógł zostać ponownie zainstalowany: {}. Ponowne uruchomienie może zatrzymać się na monicie \"grub rescue\". Spróbuj ponownie przywrócić system lub napraw program rozruchowy za pomocą BigLinux GRUB Restore z Live USB."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

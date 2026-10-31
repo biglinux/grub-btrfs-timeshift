@@ -65,7 +65,7 @@ msgstr "Відновлення знімка та перевстановленн�
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "Систему було відновлено, але її завантажувач не вдалося перевстановити: {}. Перезапуск зараз може зупинитися на запиті \"grub rescue\". Спробуйте відновлення ще раз або відремонтуйте завантажувач за допомогою BigLinux GRUB Restore з живого USB."
+msgstr "Систему було відновлено, але її завантажувач не вдалося перевстановити: {}. Перезапуск зараз може зупинитися на запиті \"grub rescue\". Спробуйте відновлення ще раз або відремонтуйте завантажувач за допомогою BigLinux GRUB Restore з Live USB."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

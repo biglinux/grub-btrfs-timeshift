@@ -58,12 +58,12 @@ msgstr "Měsíčně"
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 151
 msgid "Restoring the snapshot and reinstalling the boot loader..."
-msgstr "Obnovení snímku a přeinstalace zaváděcího zavaděče..."
+msgstr "Obnovení snímku a přeinstalace zavaděče..."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "Systém byl obnoven, ale jeho zaváděcí program nebylo možné znovu nainstalovat: {}. Restartování nyní může zastavit na výzvě \"grub rescue\". Zkuste obnovení znovu, nebo opravte zaváděcí program pomocí BigLinux GRUB Restore z živého USB."
+msgstr "Systém byl obnoven, ale jeho zaváděcí program nebylo možné znovu nainstalovat: {}. Restartování nyní může zastavit na výzvě \"grub rescue\". Zkuste obnovení znovu, nebo opravte zaváděcí program pomocí BigLinux GRUB Restore z Live USB."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

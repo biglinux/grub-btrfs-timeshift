@@ -60,12 +60,12 @@ msgstr "Mensual"
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 151
 msgid "Restoring the snapshot and reinstalling the boot loader..."
-msgstr "Restaurando el instantáneo y reinstalando el cargador de arranque..."
+msgstr "Restaurando la instantánea y reinstalando el cargador de arranque..."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "El sistema fue restaurado, pero su cargador de arranque no pudo ser reinstalado: {}. Reiniciar ahora puede detenerse en el aviso \"grub rescue\". Intenta restaurar de nuevo o repara el cargador de arranque con BigLinux GRUB Restore desde un USB en vivo."
+msgstr "El sistema fue restaurado, pero su cargador de arranque no pudo ser reinstalado: {}. Reiniciar ahora puede detenerse en el aviso \"grub rescue\". Intenta restaurar de nuevo o repara el cargador de arranque con BigLinux GRUB Restore desde un USB Live."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

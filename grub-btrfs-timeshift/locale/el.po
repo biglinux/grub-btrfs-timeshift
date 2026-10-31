@@ -65,7 +65,7 @@ msgstr "Αποκαθιστώντας το στιγμιότυπο και επαν
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "Το σύστημα αποκαταστάθηκε, αλλά ο φορτωτής εκκίνησης δεν μπόρεσε να επανεγκατασταθεί: {}. Η επανεκκίνηση τώρα μπορεί να σταματήσει στην προτροπή \"grub rescue\". Δοκιμάστε ξανά την αποκατάσταση ή επισκευάστε τον φορτωτή εκκίνησης με το BigLinux GRUB Restore από ένα ζωντανό USB."
+msgstr "Το σύστημα αποκαταστάθηκε, αλλά ο φορτωτής εκκίνησης δεν μπόρεσε να επανεγκατασταθεί: {}. Η επανεκκίνηση τώρα μπορεί να σταματήσει στην προτροπή \"grub rescue\". Δοκιμάστε ξανά την αποκατάσταση ή επισκευάστε τον φορτωτή εκκίνησης με το BigLinux GRUB Restore από ένα Live USB."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

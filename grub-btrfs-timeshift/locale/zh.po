@@ -65,7 +65,7 @@ msgstr "正在恢复快照并重新安装引导加载程序..."
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "系统已恢复，但其引导加载程序无法重新安装：{}。现在重新启动可能会停在“grub rescue”提示符。请再次尝试恢复，或使用 BigLinux GRUB 恢复从实时 USB 修复引导加载程序。"
+msgstr "系统已恢复，但其引导加载程序无法重新安装：{}。现在重新启动可能会停在“grub rescue”提示符。请再次尝试恢复，或从 Live USB 使用 BigLinux GRUB Restore 修复引导加载程序。"
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

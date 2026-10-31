@@ -63,7 +63,7 @@ msgstr "שחזור התמונה והתקנת מנהל האתחול מחדש..."
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "המערכת שוחזרה, אך לא ניתן היה להתקין מחדש את מנהל האתחול שלה: {}. הפעלה מחדש עכשיו עשויה לעצור בהנחיית \"grub rescue\". נסה לשחזר שוב, או לתקן את מנהל האתחול עם BigLinux GRUB Restore מ-USB חי."
+msgstr "המערכת שוחזרה, אך לא ניתן היה להתקין מחדש את מנהל האתחול שלה: {}. הפעלה מחדש עכשיו עשויה לעצור בהנחיית \"grub rescue\". נסה לשחזר שוב, או לתקן את מנהל האתחול עם BigLinux GRUB Restore מ-Live USB."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

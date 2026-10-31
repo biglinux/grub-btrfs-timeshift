@@ -63,7 +63,7 @@ msgstr "A pillanatkép visszaállítása és a rendszerindító betöltő újrat
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "A rendszert visszaállították, de a betöltője nem lett újratelepítve: {}. A mostani újraindítás a \"grub rescue\" parancssornál megakadhat. Próbálja meg újra a visszaállítást, vagy javítsa a betöltőt a BigLinux GRUB Restore segítségével egy élő USB-ről."
+msgstr "A rendszert visszaállították, de a betöltője nem lett újratelepítve: {}. A mostani újraindítás a \"grub rescue\" parancssornál megakadhat. Próbálja meg újra a visszaállítást, vagy javítsa a betöltőt a BigLinux GRUB Restore segítségével egy Live USB-ről."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

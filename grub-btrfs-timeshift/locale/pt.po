@@ -65,7 +65,7 @@ msgstr "Restaurando o instantâneo e reinstalando o carregador de inicializaçã
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "O sistema foi restaurado, mas seu carregador de inicialização não pôde ser reinstalado: {}. Reiniciar agora pode parar no prompt \"grub rescue\". Tente a restauração novamente ou repare o carregador de inicialização com o BigLinux GRUB Restore a partir de um USB ao vivo."
+msgstr "O sistema foi restaurado, mas seu carregador de inicialização não pôde ser reinstalado: {}. Reiniciar agora pode parar no prompt \"grub rescue\". Tente a restauração novamente ou repare o carregador de inicialização com o BigLinux GRUB Restore a partir de um pendrive Live."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

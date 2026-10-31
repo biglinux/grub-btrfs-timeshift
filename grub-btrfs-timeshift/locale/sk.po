@@ -65,7 +65,7 @@ msgstr "Obnovovanie snímky a preinštalovanie zavádzača..."
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "Systém bol obnovený, ale jeho zavádzač sa nedal znovu nainštalovať: {}. Reštartovanie teraz môže zastaviť na výzve \"grub rescue\". Skúste obnovenie znova, alebo opravte zavádzač pomocou BigLinux GRUB Restore z živého USB."
+msgstr "Systém bol obnovený, ale jeho zavádzač sa nedal znovu nainštalovať: {}. Reštartovanie teraz môže zastaviť na výzve \"grub rescue\". Skúste obnovenie znova, alebo opravte zavádzač pomocou BigLinux GRUB Restore z Live USB."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

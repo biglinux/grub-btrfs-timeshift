@@ -65,7 +65,7 @@ msgstr "Възстановяване на моментната снимка и �
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "Системата беше възстановена, но зареждащият мениджър не можа да бъде преинсталиран: {}. Рестартирането сега може да спре на подсказката \"grub rescue\". Опитайте отново възстановяването или поправете зареждащия мениджър с BigLinux GRUB Restore от активен USB."
+msgstr "Системата беше възстановена, но зареждащият мениджър не можа да бъде преинсталиран: {}. Рестартирането сега може да спре на подсказката \"grub rescue\". Опитайте отново възстановяването или поправете зареждащия мениджър с BigLinux GRUB Restore от Live USB."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164

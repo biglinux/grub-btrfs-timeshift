@@ -65,7 +65,7 @@ msgstr "Að endurheimta myndina og endursetja ræsivélina..."
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "Kerfið var endurreist, en ekki var hægt að endursetja boot loader þess: {}. Að endurræsa núna gæti stoppað við \"grub rescue\" fyrirmælin. Reyndu að endurheimta aftur, eða lagaðu boot loaderinn með BigLinux GRUB Restore frá lifandi USB."
+msgstr "Kerfið var endurreist, en ekki var hægt að endursetja boot loader þess: {}. Að endurræsa núna gæti stoppað við \"grub rescue\" fyrirmælin. Reyndu að endurheimta aftur, eða lagaðu boot loaderinn með BigLinux GRUB Restore frá Live USB."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
