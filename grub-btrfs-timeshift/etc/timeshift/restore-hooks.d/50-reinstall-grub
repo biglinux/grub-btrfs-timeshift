@@ -19,8 +19,10 @@
 [ "$(findmnt -no FSROOT -T "$TS_SNAPSHOT_PATH")" = / ] || exit 0
 top=$(findmnt -no TARGET -T "$TS_SNAPSHOT_PATH")
 
-# A /boot outside @ was not restored, and a system without GRUB on @ has
-# nothing to match.
+# A /boot outside @ was not restored, so its loader still matches its modules;
+# files left in @/boot under that mount point are not the ones that boot. A
+# system without GRUB on @ has nothing to match.
+findmnt --fstab --tab-file "$top/@/etc/fstab" -no TARGET /boot >/dev/null && exit 0
 [ -d "$top/@/boot/grub" ] || exit 0
 
 fail() {
