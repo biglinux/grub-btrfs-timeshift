@@ -60,12 +60,12 @@ msgstr "Iga kuu"
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 151
 msgid "Restoring the snapshot and reinstalling the boot loader..."
-msgstr "Snaipide taastamine ja käivitaja uuesti installimine..."
+msgstr "Hetktõmmise taastamine ja alglaaduri uuesti installimine..."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 172
 msgid "The system was restored, but its boot loader could not be reinstalled: {}. Restarting now may stop at the \"grub rescue\" prompt. Try the restore again, or repair the boot loader with BigLinux GRUB Restore from a live USB."
-msgstr "Süsteem taastati, kuid selle käivitaja ei saanud uuesti installida: {}. Taaskäivitamine võib nüüd peatuda \"grub rescue\" käsureal. Proovige taastamist uuesti või parandage käivitajat BigLinux GRUB Restore abil Live USB-lt."
+msgstr "Süsteem taastati, kuid selle alglaadurit ei õnnestunud uuesti installida: {}. Taaskäivitamine võib nüüd peatuda \"grub rescue\" käsureal. Proovige taastamist uuesti või parandage alglaadurit BigLinux GRUB Restore abil Live USB-lt."
 
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 164
