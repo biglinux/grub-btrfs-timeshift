@@ -27,6 +27,9 @@ from gi.repository import Gtk, Adw, GLib, Gio, Gdk
 TEXTDOMAIN = 'grub-btrfs-timeshift'
 LOCALEDIR = '/usr/share/locale'
 
+# What /etc/timeshift/restore-hooks.d/50-reinstall-grub prints when it fails.
+GRUB_HOOK_FAILURE = 'grub-btrfs-timeshift: boot loader not reinstalled:'
+
 try:
     locale.setlocale(locale.LC_ALL, '')
     gettext.bindtextdomain(TEXTDOMAIN, LOCALEDIR)
@@ -145,7 +148,7 @@ class TimeshiftManager:
         """Restore a specific snapshot using Timeshift"""
         try:
             if self.progress_callback:
-                self.progress_callback(_("Starting Timeshift restoration..."))
+                self.progress_callback(_("Restoring the snapshot and reinstalling the boot loader..."))
             
             # Kill any running timeshift processes
             subprocess.run(['killall', 'timeshift-gtk'], capture_output=True)
@@ -160,6 +163,18 @@ class TimeshiftManager:
             # Send empty responses to any prompts
             stdout, stderr = process.communicate(input='\n' * 10)
             
+            # The restore hook that reinstalls GRUB reports through Timeshift's
+            # output, because Timeshift ignores the exit status of its hooks.
+            for line in (stdout + stderr).splitlines():
+                if line.startswith(GRUB_HOOK_FAILURE):
+                    reason = line[len(GRUB_HOOK_FAILURE):].strip()
+                    return False, _(
+                        "The system was restored, but its boot loader could not be "
+                        "reinstalled: {}. Restarting now may stop at the \"grub rescue\" "
+                        "prompt. Try the restore again, or repair the boot loader with "
+                        "BigLinux GRUB Restore from a live USB."
+                    ).format(reason)
+
             if process.returncode == 0:
                 if self.progress_callback:
                     self.progress_callback(_("Timeshift restoration completed"))
@@ -427,7 +442,6 @@ class SnapshotRestoreApp(Adw.Application):
                 # Check post-restore state
                 post_restore_has_root = BtrfsManager.check_root_subvolume_exists()
                 
-                # GRUB will be updated automatically on next normal boot
                 GLib.idle_add(self._restoration_completed)
             else:
                 GLib.idle_add(self._restoration_failed, 
