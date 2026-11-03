@@ -4,16 +4,18 @@
 # the two already differed, so a fallback that was a copy of the loader keeps
 # the old GRUB, which stops at "grub rescue>" against the new modules.
 #
-# grub-install records in the image where the modules are: the filesystem UUID
-# it searches for, or the prefix, such as (,gpt2)/@/boot/grub. That record
-# follows the modules, whose text can hold a lookalike, so the last match names
-# the system the image belongs to. Only a fallback naming the same system as
-# the loader is replaced.
+# grub-install records in the image where the modules are: a search for the
+# filesystem and the path in it, such as "search.fs_uuid <uuid> root" and
+# "set prefix=($root)'/@/boot/grub'", or a prefix such as (,gpt2)/@/boot/grub.
+# That record follows the modules, whose text can hold a lookalike, so the last
+# match, with the search before a "set prefix", names the system the image
+# belongs to. Only a fallback naming the same system as the loader is replaced.
 
 [ -e /etc/grub-biglinux-hooks.disabled ] && exit 0
 
 owner() {
-	grep -a -o -E 'search\.fs_uuid [[:alnum:]-]+|\([^()]+\)/([[:print:]]*/)?grub' "$1" | tail -n 1
+	grep -a -o -E 'search\.[[:alnum:]_]+ [^[:space:]]+|set prefix=[[:print:]]+|\([^()]+\)/([[:print:]]*/)?grub' "$1" |
+		awk '{ prev = last; last = $0 } END { if (last ~ /^set prefix=/) print prev; print last }'
 }
 
 # The loader directory is the first word of GRUB_DISTRIBUTOR, read the way
