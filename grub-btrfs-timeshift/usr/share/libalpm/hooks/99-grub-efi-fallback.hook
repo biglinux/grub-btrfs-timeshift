@@ -1,0 +1,17 @@
+# Runs after 98-install-grub, which installs the new loader. Installing or
+# upgrading this package also repairs a fallback an earlier upgrade left old.
+[Trigger]
+Type = Package
+Operation = Upgrade
+Target = grub
+
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = grub-btrfs-timeshift
+
+[Action]
+Description = Updating the EFI fallback boot loader
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/grub-efi-fallback

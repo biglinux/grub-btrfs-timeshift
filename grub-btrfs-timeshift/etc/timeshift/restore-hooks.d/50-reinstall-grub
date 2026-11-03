@@ -52,6 +52,10 @@ findmnt --fstab --tab-file "$root/etc/fstab" -t vfat -no SOURCE,TARGET,OPTIONS |
 [ -x "$root/usr/bin/install-grub" ] ||
 	fail 'the restored system has no install-grub; repair it from a live system with biglinux-grub-restore'
 arch-chroot "$root" install-grub || fail 'install-grub failed'
+# install-grub leaves the EFI fallback with the GRUB it replaced. The restored
+# system may predate grub-efi-fallback, so it runs the copy installed here.
+arch-chroot "$root" sh -s </usr/share/libalpm/scripts/grub-efi-fallback ||
+	fail 'the EFI fallback loader was not updated'
 
 # The menu restored with @ lists the restore points of its own day. A failure
 # here keeps that menu, which still boots, so it does not fail the hook.
