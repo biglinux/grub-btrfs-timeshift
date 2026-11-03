@@ -30,7 +30,7 @@ id=$(
 [ -n "$id" ] || exit 0
 
 # vfat looks names up regardless of case, as the firmware does.
-findmnt -rn -t vfat -o TARGET | while read -r esp; do
+findmnt -ln -t vfat -o TARGET | while IFS= read -r esp; do
 	for arch in x64 ia32; do
 		loader=$esp/EFI/$id/grub$arch.efi
 		fallback=$esp/EFI/BOOT/BOOT$arch.EFI
