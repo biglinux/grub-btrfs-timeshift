@@ -182,4 +182,4 @@ msgstr "Не удалось перезапустить систему: {}"
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 501
 msgid "OK"
-msgstr ""
+msgstr "ОК"

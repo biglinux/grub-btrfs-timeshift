@@ -182,4 +182,4 @@ msgstr "Nu s-a putut reporni sistemul: {}"
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 501
 msgid "OK"
-msgstr ""
+msgstr "Bine"

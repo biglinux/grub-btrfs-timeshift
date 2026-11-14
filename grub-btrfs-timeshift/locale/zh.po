@@ -182,4 +182,4 @@ msgstr "无法重启系统：{}"
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 501
 msgid "OK"
-msgstr ""
+msgstr "确定"
