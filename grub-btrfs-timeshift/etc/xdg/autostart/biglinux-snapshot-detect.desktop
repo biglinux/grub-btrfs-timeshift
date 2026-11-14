@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=BigLinux Snapshot Detect
+Comment=Offers to restore the Timeshift snapshot the system was booted from
+# Started by the desktop session, which has the display the window needs. Any
+# boot that is not from a snapshot stops at the grep, before Python and GTK load.
+Exec=sh -c "grep -q timeshift-btrfs/snapshots /proc/cmdline || exit 0; exec /usr/bin/biglinux-snapshot-restore"
+Icon=big-timeshift
+NoDisplay=true

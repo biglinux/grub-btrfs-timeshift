@@ -10,8 +10,6 @@ pre_install() {
 
 ## arg 1:  the new package version
 post_install() {
-	systemctl --global enable biglinux-snapshot-detect
-
 	# Snapshots of @ and of Manjaro's own subvolume are not restore points a
 	# person would pick from a boot menu. Removed and appended rather than
 	# substituted: a commented-out default gives a substitution nothing to
@@ -40,13 +38,14 @@ pre_upgrade() {
 
 ## arg 2:  the old package version
 post_upgrade() {
+	# Versions that shipped the snapshot notice as a user unit enabled it here.
+	# The autostart entry starts it with the desktop, which has a display.
+	rm -f /etc/systemd/user/default.target.wants/biglinux-snapshot-detect.service
 	post_install
 }
 
 ## arg 1:  the old package version
 pre_remove() {
-	systemctl --global disable biglinux-snapshot-detect
-
 	# The stock firmware entry was disabled in favour of ours, which is about
 	# to be removed with the package. It is not there on a system without
 	# grub, and a scriptlet that returns non-zero makes pacman report an error.
