@@ -40,6 +40,6 @@ jobs:
           payload=$(jq -n --arg repo "$REPOSITORY" --arg branch "$BRANCH" \
             '{event_type: $repo, client_payload: {branch: $branch, url: ("https://github.com/" + $repo)}}')
           for target in build-package build-package-ARM; do
-            curl -X POST -H "Accept: application/json" -H "Authorization: token $WEBHOOK_TOKEN" \
+            curl --fail-with-body -sS -X POST -H "Accept: application/json" -H "Authorization: token $WEBHOOK_TOKEN" \
               --data "$payload" "https://api.github.com/repos/BigLinux-Package-Build/$target/dispatches"
           done
