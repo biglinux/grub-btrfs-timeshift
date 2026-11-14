@@ -1,0 +1,45 @@
+name: Build Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'With TMATE'
+        required: false
+        default: false
+
+  push:
+    branches: [ "*" ]
+
+permissions: {}
+
+# Translations are kept in locale/ by hand and reviewed with the code; the
+# build only packages what is committed.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      ## Tmate ##
+      - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+        with:
+          persist-credentials: false
+
+      - name: Setup TMATE Session
+        uses: mxschmitt/action-tmate@35b54afac29c97fb54faba5b513f8fbd1882f113 # v3
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+
+      - name: Send Hooks BigLinux Build Package
+        shell: bash
+        env:
+          WEBHOOK_TOKEN: ${{ secrets.WEBHOOK_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          payload=$(jq -n --arg repo "$REPOSITORY" --arg branch "$BRANCH" \
+            '{event_type: $repo, client_payload: {branch: $branch, url: ("https://github.com/" + $repo)}}')
+          for target in build-package build-package-ARM; do
+            curl -X POST -H "Accept: application/json" -H "Authorization: token $WEBHOOK_TOKEN" \
+              --data "$payload" "https://api.github.com/repos/BigLinux-Package-Build/$target/dispatches"
+          done
