@@ -38,8 +38,9 @@ pre_upgrade() {
 
 ## arg 2:  the old package version
 post_upgrade() {
-	# Versions that shipped the snapshot notice as a user unit enabled it here.
-	# The autostart entry starts it with the desktop, which has a display.
+	# Earlier versions enabled the snapshot notice as a user unit for every
+	# account; pacman does not own that link. The autostart entry starts it
+	# with the desktop, which has a display.
 	rm -f /etc/systemd/user/default.target.wants/biglinux-snapshot-detect.service
 	post_install
 }
