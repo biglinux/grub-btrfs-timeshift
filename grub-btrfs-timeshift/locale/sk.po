@@ -134,16 +134,6 @@ msgid "Restoring..."
 msgstr "Obnovovanie..."
 
 #
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 330
-msgid "Checking system state..."
-msgstr "Kontrola stavu systému..."
-
-#
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 337
-msgid "Restoration completed. Checking system consistency..."
-msgstr "Obnova dokončená. Kontrola konzistencie systému..."
-
-#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Obnovenie Timeshiftu zlyhalo: {}"
