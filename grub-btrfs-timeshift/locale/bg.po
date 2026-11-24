@@ -134,16 +134,6 @@ msgid "Restoring..."
 msgstr "Възстановяване..."
 
 #
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 330
-msgid "Checking system state..."
-msgstr "Проверка на състоянието на системата..."
-
-#
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 337
-msgid "Restoration completed. Checking system consistency..."
-msgstr "Възстановяването е завършено. Проверка на системната консистентност..."
-
-#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 353
 msgid "Timeshift restoration failed: {}"
 msgstr "Възстановяването на Timeshift не успя: {}"
@@ -182,4 +172,4 @@ msgstr "Не може да се рестартира системата: {}"
 #
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 501
 msgid "OK"
-msgstr ""
+msgstr "Добре"

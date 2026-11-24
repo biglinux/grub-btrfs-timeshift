@@ -101,9 +101,16 @@ if restore_pristine /etc/grub.d/10_linux; then
 	patch_line /etc/grub.d/10_linux after \
 		"gnulinux-advanced-\$boot_device_id'" \
 		"    echo \"	$back_entry\""
-	patch_line /etc/grub.d/10_linux instead \
-		"    echo \"submenu '\$(gettext_printf \"Advanced options for %s\" \"\${OS}\" | grub_quote)' \\\$menuentry_id_option 'gnulinux-advanced-\$boot_device_id' {\"" \
-		"    echo \"submenu '\$(gettext_printf \"Advanced options for %s\" \"\${OS}\" | grub_quote)' \\\$menuentry_id_option 'gnulinux-advanced-\$boot_device_id' --class advanced {\""
+	# GRUB 2.16 ends the line with a call that may add --unrestricted; older
+	# versions end it with the brace alone.
+	advanced="    echo \"submenu '\$(gettext_printf \"Advanced options for %s\" \"\${OS}\" | grub_quote)' \\\$menuentry_id_option 'gnulinux-advanced-\$boot_device_id'"
+	for ending in ' $(grub_echo_unrestricted_maybe){"' ' {"'; do
+		grep -qF "$advanced$ending" /etc/grub.d/10_linux || continue
+		patch_line /etc/grub.d/10_linux instead \
+			"$advanced$ending" "$advanced --class advanced$ending"
+	done
+	grep -qF "$advanced --class advanced" /etc/grub.d/10_linux ||
+		printf '%s\n' "grub-btrfs-timeshift: nothing matches in /etc/grub.d/10_linux: $advanced" >&2
 fi
 
 if restore_pristine /etc/grub.d/41_snapshots-btrfs; then

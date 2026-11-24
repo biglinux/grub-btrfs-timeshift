@@ -15,12 +15,11 @@ import threading
 import gettext
 import locale
 from datetime import datetime
-from pathlib import Path
 
 import gi
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
-from gi.repository import Gtk, Adw, GLib, Gio, Gdk
+from gi.repository import Gtk, Adw, GLib, Gdk
 
 
 # Translation setup
@@ -32,12 +31,12 @@ GRUB_HOOK_FAILURE = 'grub-btrfs-timeshift: boot loader not reinstalled:'
 
 try:
     locale.setlocale(locale.LC_ALL, '')
-    gettext.bindtextdomain(TEXTDOMAIN, LOCALEDIR)
-    gettext.textdomain(TEXTDOMAIN)
-    _ = gettext.gettext
-except:
-    # Fallback if translation fails
-    _ = lambda x: x
+except locale.Error:
+    # A locale the system does not have: the dialog stays in English.
+    pass
+gettext.bindtextdomain(TEXTDOMAIN, LOCALEDIR)
+gettext.textdomain(TEXTDOMAIN)
+_ = gettext.gettext
 
 
 class SnapshotDetector:
@@ -92,50 +91,6 @@ class SnapshotDetector:
             return None
         except Exception:
             return None
-
-
-class BtrfsManager:
-    """Handles BTRFS subvolume operations"""
-    
-    @staticmethod
-    def list_subvolumes():
-        """List all BTRFS subvolumes"""
-        try:
-            result = subprocess.run(['btrfs', 'subvolume', 'list', '/'], 
-                                capture_output=True, text=True, check=True)
-            return result.stdout
-        except (subprocess.CalledProcessError, PermissionError):
-            return ""
-    
-    @staticmethod
-    def check_root_subvolume_exists():
-        """Check if original @ subvolume still exists"""
-        subvolumes = BtrfsManager.list_subvolumes()
-        return 'path @\n' in subvolumes or 'path @' in subvolumes.split('\n')[-1]
-
-
-class GrubManager:
-    """Handles GRUB configuration regeneration"""
-    
-    @staticmethod
-    def regenerate_config():
-        """Regenerate GRUB configuration"""
-        try:
-            result = subprocess.run(['grub-mkconfig', '-o', '/boot/grub/grub.cfg'], 
-                                 capture_output=True, text=True, check=True)
-            return True, result.stdout
-        except subprocess.CalledProcessError as e:
-            return False, e.stderr
-    
-    @staticmethod
-    def verify_config():
-        """Verify GRUB configuration has subvolume entries"""
-        try:
-            with open('/boot/grub/grub.cfg', 'r') as f:
-                content = f.read()
-            return 'rootflags=subvol=' in content
-        except Exception:
-            return False
 
 
 class TimeshiftManager:
@@ -198,6 +153,7 @@ class SnapshotRestoreApp(Adw.Application):
         self.progress_bar = None
         self.is_restoring = False
         self.is_restored = False
+        self.pulse_source = 0
         
     def do_activate(self):
         """Application activation handler"""
@@ -222,7 +178,7 @@ class SnapshotRestoreApp(Adw.Application):
         """Create the main application window"""
         self.window = Adw.ApplicationWindow(application=self)
         self.window.set_title(f"Snapshot {self.snapshot_info['name']}")
-        self.window.set_default_size(500, 650)
+        self.window.set_default_size(500, -1)
         self.window.set_resizable(False)
         
         # Center the window on the screen
@@ -263,6 +219,10 @@ class SnapshotRestoreApp(Adw.Application):
         scrolled_window = Gtk.ScrolledWindow()
         scrolled_window.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
         scrolled_window.set_vexpand(True)
+        # The window grows with a long status message, up to what a 768-pixel
+        # screen shows; past that the content scrolls.
+        scrolled_window.set_propagate_natural_height(True)
+        scrolled_window.set_max_content_height(680)
 
         # Content container
         content_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=16)
@@ -280,7 +240,8 @@ class SnapshotRestoreApp(Adw.Application):
         
         # Title
         title_label = Gtk.Label()
-        title_label.set_markup(f"<span size='large' weight='bold'>Snapshot {self.snapshot_info['name']}</span>")
+        name = GLib.markup_escape_text(self.snapshot_info['name'])
+        title_label.set_markup(f"<span size='large' weight='bold'>Snapshot {name}</span>")
         title_label.set_halign(Gtk.Align.CENTER)
         title_label.set_margin_bottom(12)
         content_box.append(title_label)
@@ -331,6 +292,9 @@ class SnapshotRestoreApp(Adw.Application):
         
         # Status label
         self.status_label = Gtk.Label()
+        self.status_label.set_wrap(True)
+        self.status_label.set_max_width_chars(50)
+        self.status_label.set_justify(Gtk.Justification.CENTER)
         self.status_label.set_visible(False)
         content_box.append(self.status_label)
         
@@ -412,7 +376,7 @@ class SnapshotRestoreApp(Adw.Application):
         self.restore_button.set_label(_("Restoring..."))
         
         self.progress_bar.set_visible(True)
-        self.progress_bar.pulse()
+        self.pulse_source = GLib.timeout_add(100, self._pulse_progress)
         self.status_label.set_visible(True)
         
         # Start restoration in background thread
@@ -429,19 +393,9 @@ class SnapshotRestoreApp(Adw.Application):
         timeshift = TimeshiftManager(progress_callback=update_progress)
         
         try:
-            # Store pre-restore state
-            update_progress(_("Checking system state..."))
-            pre_restore_has_root = BtrfsManager.check_root_subvolume_exists()
-            
-            # Execute restoration
             success, output = timeshift.restore_snapshot(self.snapshot_info['name'])
             
             if success:
-                update_progress(_("Restoration completed. Checking system consistency..."))
-                
-                # Check post-restore state
-                post_restore_has_root = BtrfsManager.check_root_subvolume_exists()
-                
                 GLib.idle_add(self._restoration_completed)
             else:
                 GLib.idle_add(self._restoration_failed, 
@@ -453,15 +407,25 @@ class SnapshotRestoreApp(Adw.Application):
     def _update_status(self, message):
         """Update status label from main thread"""
         self.status_label.set_text(message)
-        self.progress_bar.pulse()
         return False
+
+    def _pulse_progress(self):
+        """Keep the bar moving while Timeshift, which reports no progress, runs"""
+        self.progress_bar.pulse()
+        return GLib.SOURCE_CONTINUE
+
+    def _stop_progress(self):
+        if self.pulse_source:
+            GLib.source_remove(self.pulse_source)
+            self.pulse_source = 0
+        self.progress_bar.set_visible(False)
     
     def _restoration_completed(self):
         """Handle successful restoration completion"""
         self.is_restoring = False
         self.is_restored = True
         
-        self.progress_bar.set_visible(False)
+        self._stop_progress()
         self.status_label.set_text(_("Restoration completed successfully! Please reboot the system."))
         self.status_label.add_css_class("success")
         
@@ -476,7 +440,7 @@ class SnapshotRestoreApp(Adw.Application):
         """Handle restoration failure"""
         self.is_restoring = False
         
-        self.progress_bar.set_visible(False)
+        self._stop_progress()
         self.status_label.set_text(_("Error: {}").format(error_message))
         self.status_label.add_css_class("error")
         
@@ -501,11 +465,10 @@ class SnapshotRestoreApp(Adw.Application):
         dialog.add_response("ok", _("OK"))
         dialog.set_response_appearance("ok", Adw.ResponseAppearance.DEFAULT)
         dialog.connect("response", lambda d, r: self.quit())
-        if self.window:
-            dialog.present(self.window)
-        else:
-            # If no window exists, just quit
-            self.quit()
+        if not self.window:
+            # Without a window nothing else keeps the application running.
+            self.hold()
+        dialog.present(self.window)
 
 
 def main():

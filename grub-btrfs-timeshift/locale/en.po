@@ -132,16 +132,6 @@ msgid "Restoring..."
 msgstr "Restoring..."
 
 #
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 433
-msgid "Checking system state..."
-msgstr "Checking system state..."
-
-#
-# File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 440
-msgid "Restoration completed. Checking system consistency..."
-msgstr "Restoration completed. Checking system consistency..."
-
-#
 # File: grub-btrfs-timeshift/grub-btrfs-timeshift/usr/share/grub-btrfs-timeshift/biglinux-snapshot-restore.py, line: 448
 msgid "Timeshift restoration failed: {}"
 msgstr "Timeshift restoration failed: {}"
